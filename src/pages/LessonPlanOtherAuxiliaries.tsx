@@ -29,7 +29,7 @@ const LessonPlanOtherAuxiliaries = () => {
         <CardContent className="space-y-2">
           <p><strong>Function:</strong> 1. Marine Engineering at Operational Level</p>
           <p><strong>Topic:</strong> 1.2.1 The English language to enable the officer to perform engineering duties and to use engineering publications</p>
-          <p><strong>Sub-topic:</strong> 1.4) Other auxiliaries, including air compressor, purifier, fresh water generator, heat exchanger, refrigeration, air-conditioning and ventilation systems.</p>
+          <p><strong>Sub-topic:</strong> 1.4) Other auxiliaries, including pumps, air compressor, purifier, fresh water generator, heat exchanger, refrigeration, air-conditioning and ventilation systems.</p>
         </CardContent>
       </Card>
 
@@ -39,7 +39,7 @@ const LessonPlanOtherAuxiliaries = () => {
         </CardHeader>
         <CardContent className="space-y-2">
           <ul className="list-disc list-inside space-y-1">
-            <li>3.1.1 Menjelaskan fungsi dasar dari kompresor udara, pemurni, generator air tawar, penukar panas, sistem refrigerasi, dan sistem AC & ventilasi. / Explain the basic functions of air compressors, purifiers, fresh water generators, heat exchangers, refrigeration, and AC & ventilation systems.</li>
+            <li>3.1.1 Menjelaskan fungsi dasar dari pompa-pompa, kompresor udara, pemurni, generator air tawar, penukar panas, sistem refrigerasi, dan sistem AC & ventilasi. / Explain the basic functions of pumps, air compressors, purifiers, fresh water generators, heat exchangers, refrigeration, and AC & ventilation systems.</li>
             <li>3.1.2 Mengidentifikasi komponen dasar dari mesin-mesin bantu tersebut. / Identify the basic components of this auxiliary machinery.</li>
             <li>4.1.1 Menggunakan kosakata teknis terkait dalam konteks kalimat. / Use related technical vocabulary in sentence context.</li>
             <li>4.1.2 Berpartisipasi dalam percakapan dasar tentang pengoperasian dan pemantauan mesin bantu. / Participate in basic conversations about the operation and monitoring of auxiliary machinery.</li>
@@ -54,7 +54,7 @@ const LessonPlanOtherAuxiliaries = () => {
         <CardContent className="space-y-4">
           <div>
             <h3 className="text-xl font-medium mb-2">Uni-structural:</h3>
-            <p>Siswa dapat menyatakan fungsi satu mesin bantu (misalnya, "Kompresor menghasilkan udara bertekanan"). / Students can state the function of one auxiliary machine (e.g., "A compressor produces compressed air").</p>
+            <p>Siswa dapat menyatakan fungsi satu mesin bantu (misalnya, "Pompa memindahkan cairan" atau "Kompresor menghasilkan udara bertekanan"). / Students can state the function of one auxiliary machine (e.g., "A pump moves liquid" or "A compressor produces compressed air").</p>
           </div>
           <Separator />
           <div>
@@ -80,6 +80,7 @@ const LessonPlanOtherAuxiliaries = () => {
         </CardHeader>
         <CardContent className="space-y-2">
           <ul className="list-disc list-inside space-y-1">
+            <li>Pompa-pompa / Pumps</li>
             <li>Kompresor Udara / Air Compressor</li>
             <li>Pemurni / Purifier</li>
             <li>Generator Air Tawar / Fresh Water Generator</li>
