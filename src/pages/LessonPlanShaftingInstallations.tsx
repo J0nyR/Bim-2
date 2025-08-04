@@ -76,6 +76,69 @@ const LessonPlanShaftingInstallations = () => {
 
       <Card className="bg-card text-card-foreground shadow-lg">
         <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Langkah-langkah Pembelajaran / Learning Activities</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="text-xl font-medium mb-2">Pertemuan 1 / Meeting 1</h3>
+            <ol className="list-decimal list-inside space-y-4">
+              <li>
+                <strong>Pendahuluan (15 Menit) / Introduction (15 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru membuka pelajaran dan bertanya, "How does the power from the engine make the ship move?"</li>
+                  <li>Guru memperkenalkan tujuan pembelajaran tentang sistem poros dan baling-baling.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Kegiatan Inti (65 Menit) / Core Activities (65 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li><strong>Mengamati:</strong> Siswa mempelajari materi ajar digital, fokus pada fungsi dan komponen utama sistem poros (Thrust Block, Plummer Block, Stern Tube).</li>
+                  <li><strong>Menanya:</strong> Diskusi kelas tentang fungsi setiap komponen, terutama bagaimana thrust block mentransfer daya dorong ke kapal.</li>
+                  <li><strong>Mengeksplorasi:</strong> Siswa mengerjakan Bagian 1 (Kosakata) dan Bagian 2 (Pemahaman Konsep) pada Lembar Kerja.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Penutup (10 Menit) / Closing (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru dan siswa menyimpulkan alur transmisi daya dari mesin ke badan kapal.</li>
+                  <li>Pratinjau untuk pertemuan berikutnya: jenis-jenis baling-baling dan masalah umum.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="text-xl font-medium mb-2">Pertemuan 2 / Meeting 2</h3>
+            <ol className="list-decimal list-inside space-y-4">
+              <li>
+                <strong>Pendahuluan (10 Menit) / Introduction (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru mereview komponen sistem poros.</li>
+                  <li>Apersepsi: Menampilkan gambar FPP dan CPP, lalu bertanya, "What is the difference you can see?"</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Kegiatan Inti (70 Menit) / Core Activities (70 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li><strong>Mengamati:</strong> Siswa mempelajari perbedaan antara FPP dan CPP pada materi ajar.</li>
+                  <li><strong>Mengasosiasi:</strong> Dalam kelompok, siswa mendiskusikan keuntungan CPP untuk manuver dan mengerjakan Bagian 3 (Analisis Skenario) tentang getaran.</li>
+                  <li><strong>Mengomunikasikan:</strong> Kelompok mempresentasikan kemungkinan penyebab getaran dan tindakan yang harus diambil. Siswa berlatih percakapan tentang inspeksi di terowongan poros.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Penutup (10 Menit) / Closing (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Siswa mengerjakan kuis formatif interaktif.</li>
+                  <li>Guru menekankan pentingnya alignment dan menutup pelajaran.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
           <CardTitle className="text-2xl font-semibold">Materi Pembelajaran / Learning Material</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">

@@ -99,6 +99,70 @@ const LessonPlanMarineBoiler = () => {
 
       <Card className="bg-card text-card-foreground shadow-lg">
         <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Langkah-langkah Pembelajaran / Learning Activities</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="text-xl font-medium mb-2">Pertemuan 1 / Meeting 1</h3>
+            <ol className="list-decimal list-inside space-y-4">
+              <li>
+                <strong>Pendahuluan (15 Menit) / Introduction (15 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru membuka pelajaran dan mereview singkat tentang kebutuhan uap di kapal.</li>
+                  <li>Apersepsi: Guru bertanya, "Why do ships need steam even if they use diesel engines?"</li>
+                  <li>Guru menyampaikan tujuan pembelajaran tentang boiler.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Kegiatan Inti (65 Menit) / Core Activities (65 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li><strong>Mengamati:</strong> Siswa mengakses materi ajar digital, fokus pada pengantar, glosarium, dan perbedaan antara boiler pipa api dan pipa air.</li>
+                  <li><strong>Menanya:</strong> Guru memfasilitasi diskusi tentang kelebihan dan kekurangan masing-masing jenis boiler.</li>
+                  <li><strong>Mengeksplorasi:</strong> Siswa mengerjakan Bagian 1 (Kosakata) dan pertanyaan 1 & 2 dari Bagian 2 (Pemahaman Konsep) pada Lembar Kerja.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Penutup (10 Menit) / Closing (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru dan siswa menyimpulkan perbedaan utama antara boiler pipa api dan pipa air.</li>
+                  <li>Pratinjau untuk pertemuan berikutnya: perlengkapan keselamatan boiler.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="text-xl font-medium mb-2">Pertemuan 2 / Meeting 2</h3>
+            <ol className="list-decimal list-inside space-y-4">
+              <li>
+                <strong>Pendahuluan (10 Menit) / Introduction (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru mereview jenis-jenis boiler.</li>
+                  <li>Apersepsi: Guru bertanya, "What might happen if the pressure in a boiler gets too high?" untuk mengarahkan ke topik keselamatan.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Kegiatan Inti (70 Menit) / Core Activities (70 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li><strong>Mengamati:</strong> Siswa mempelajari bagian "Komponen Utama & Perlengkapan Keselamatan" pada materi ajar.</li>
+                  <li><strong>Mengasosiasi:</strong> Dalam kelompok, siswa mendiskusikan fungsi dari setiap perlengkapan keselamatan dan mengerjakan Bagian 3 (Analisis Skenario) pada Lembar Kerja.</li>
+                  <li><strong>Mengomunikasikan:</strong> Kelompok mempresentasikan analisis mereka tentang skenario level air yang hilang. Siswa berlatih percakapan tentang pemeriksaan boiler.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Penutup (10 Menit) / Closing (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Siswa mengerjakan kuis formatif interaktif.</li>
+                  <li>Guru menekankan pentingnya keselamatan boiler dan menutup pelajaran.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
           <CardTitle className="text-2xl font-semibold">Materi Pembelajaran / Learning Material</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">

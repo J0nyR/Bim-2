@@ -76,6 +76,69 @@ const LessonPlanOtherAuxiliaries = () => {
 
       <Card className="bg-card text-card-foreground shadow-lg">
         <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Langkah-langkah Pembelajaran / Learning Activities</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="text-xl font-medium mb-2">Pertemuan 1 / Meeting 1</h3>
+            <ol className="list-decimal list-inside space-y-4">
+              <li>
+                <strong>Pendahuluan (15 Menit) / Introduction (15 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru membuka pelajaran dan bertanya, "Besides the main engine, what other machines do you think are running in the engine room?"</li>
+                  <li>Guru memperkenalkan tujuan pembelajaran tentang berbagai mesin bantu.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Kegiatan Inti (65 Menit) / Core Activities (65 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li><strong>Mengamati:</strong> Siswa mempelajari materi ajar digital tentang Pompa, Kompresor Udara, dan Pemisah Sentrifugal (Purifier).</li>
+                  <li><strong>Menanya:</strong> Diskusi kelas tentang perbedaan pompa sentrifugal vs. positive displacement, dan purifier vs. clarifier.</li>
+                  <li><strong>Mengeksplorasi:</strong> Siswa mengerjakan Bagian 1 (Kosakata) pada Lembar Kerja.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Penutup (10 Menit) / Closing (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru dan siswa menyimpulkan fungsi dari tiga mesin bantu pertama.</li>
+                  <li>Pratinjau untuk pertemuan berikutnya: sistem pendingin, pemanas, dan pembangkit listrik.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="text-xl font-medium mb-2">Pertemuan 2 / Meeting 2</h3>
+            <ol className="list-decimal list-inside space-y-4">
+              <li>
+                <strong>Pendahuluan (10 Menit) / Introduction (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru mereview singkat materi pertemuan sebelumnya.</li>
+                  <li>Apersepsi: Guru bertanya, "How do we get fresh water and electricity on a ship in the middle of the ocean?"</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Kegiatan Inti (70 Menit) / Core Activities (70 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li><strong>Mengamati:</strong> Siswa mempelajari materi ajar tentang FWG, Heat Exchanger, Sistem Refrigerasi, dan Generator.</li>
+                  <li><strong>Mengasosiasi:</strong> Dalam kelompok, siswa mengerjakan Bagian 2 (Pemahaman Konsep) dan Bagian 3 (Analisis Skenario) pada Lembar Kerja.</li>
+                  <li><strong>Mengomunikasikan:</strong> Kelompok mempresentasikan analisis mereka tentang skenario masalah refrigerasi. Siswa berlatih contoh percakapan yang mencakup beberapa mesin bantu.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Penutup (10 Menit) / Closing (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Siswa mengerjakan kuis formatif interaktif.</li>
+                  <li>Guru menutup pelajaran dan memberikan arahan untuk persiapan ujian sumatif.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
           <CardTitle className="text-2xl font-semibold">Materi Pembelajaran / Learning Material</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">

@@ -99,6 +99,70 @@ const LessonPlanMarineEngines = () => {
 
       <Card className="bg-card text-card-foreground shadow-lg">
         <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Langkah-langkah Pembelajaran / Learning Activities</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="text-xl font-medium mb-2">Pertemuan 1 / Meeting 1</h3>
+            <ol className="list-decimal list-inside space-y-4">
+              <li>
+                <strong>Pendahuluan (15 Menit) / Introduction (15 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru membuka pelajaran dengan salam dan doa.</li>
+                  <li>Apersepsi: Guru bertanya, "What comes to your mind when you hear 'ship's engine'?" untuk merangsang pemikiran awal.</li>
+                  <li>Guru menyampaikan tujuan pembelajaran dari modul ini.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Kegiatan Inti (65 Menit) / Core Activities (65 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li><strong>Mengamati:</strong> Siswa diminta untuk mengakses dan membaca materi ajar digital pada topik "Marine Diesel Engines".</li>
+                  <li><strong>Menanya:</strong> Guru memfasilitasi sesi tanya jawab mengenai prinsip kerja dan komponen utama mesin diesel.</li>
+                  <li><strong>Mengeksplorasi:</strong> Siswa secara individu mulai mengerjakan Bagian 1 (Kosakata) dan Bagian 2 (Pemahaman Konsep) pada Lembar Kerja.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Penutup (10 Menit) / Closing (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru dan siswa menyimpulkan poin-poin kunci tentang mesin diesel.</li>
+                  <li>Guru memberikan pratinjau singkat tentang turbin uap dan gas untuk pertemuan berikutnya.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="text-xl font-medium mb-2">Pertemuan 2 / Meeting 2</h3>
+            <ol className="list-decimal list-inside space-y-4">
+              <li>
+                <strong>Pendahuluan (10 Menit) / Introduction (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Guru mereview singkat materi pertemuan sebelumnya.</li>
+                  <li>Guru memperkenalkan topik turbin uap dan gas.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Kegiatan Inti (70 Menit) / Core Activities (70 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li><strong>Mengamati:</strong> Siswa melanjutkan membaca materi ajar digital tentang "Marine Steam & Gas Turbines".</li>
+                  <li><strong>Mengasosiasi:</strong> Dalam kelompok kecil, siswa mendiskusikan tabel perbandingan sistem propulsi dan mengerjakan Bagian 3 (Analisis Skenario) pada Lembar Kerja.</li>
+                  <li><strong>Mengomunikasikan:</strong> Setiap kelompok mempresentasikan hasil analisis skenarionya. Guru memberikan umpan balik. Siswa juga berlatih contoh percakapan.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Penutup (10 Menit) / Closing (10 Minutes)</strong>
+                <ul className="list-disc list-inside ml-4 mt-1 text-muted-foreground">
+                  <li>Siswa mengerjakan kuis formatif interaktif pada materi ajar.</li>
+                  <li>Guru menutup pelajaran dan memberikan arahan untuk modul berikutnya.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
           <CardTitle className="text-2xl font-semibold">Materi Pembelajaran / Learning Material</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">
