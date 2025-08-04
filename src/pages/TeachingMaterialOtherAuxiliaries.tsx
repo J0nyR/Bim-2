@@ -49,14 +49,32 @@ const TeachingMaterialOtherAuxiliaries = () => {
           
           <div>
             <h3 className="text-xl font-medium mb-2">1. Pompa-pompa / Pumps</h3>
-            <p>Pompa sangat penting untuk memindahkan berbagai jenis cairan di sekitar kapal, seperti air laut untuk pendinginan, air tawar, bahan bakar, dan oli pelumas.</p>
-            <p className="text-muted-foreground mb-2"><em>Pumps are essential for moving all types of liquids around the ship, such as sea water for cooling, fresh water, fuel, and lubricating oil.</em></p>
-            <ul className="list-disc list-inside space-y-1 ml-4">
-              <li><strong>Pompa Sentrifugal (Centrifugal Pump):</strong> Menggunakan impeler yang berputar untuk menciptakan aliran. Umum untuk volume besar, tekanan rendah (mis. pompa pendingin air laut).</li>
-              <li className="text-muted-foreground"><em>Uses a rotating impeller to create flow. Common for high volume, low pressure (e.g., sea water cooling pumps).</em></li>
-              <li><strong>Pompa Perpindahan Positif (Positive Displacement Pump):</strong> Memindahkan volume fluida yang tetap setiap putaran (mis. pompa roda gigi/gear pump, pompa ulir/screw pump). Digunakan untuk cairan kental seperti oli dan bahan bakar.</li>
-              <li className="text-muted-foreground"><em>Moves a fixed volume of fluid per rotation (e.g., gear pump, screw pump). Used for viscous fluids like oil and fuel.</em></li>
-            </ul>
+            <p>Pompa sangat penting untuk memindahkan berbagai jenis cairan di sekitar kapal untuk berbagai sistem. / Pumps are essential for moving various types of liquids around the ship for numerous systems.</p>
+            
+            <div className="mt-4 space-y-4">
+              <div>
+                <h4 className="font-semibold text-lg">A. Pompa Sentrifugal / Centrifugal Pump</h4>
+                <p className="text-muted-foreground mb-2">Prinsip kerjanya menggunakan impeler (impeller) yang berputar cepat untuk melemparkan fluida ke luar karena gaya sentrifugal. Fluida kemudian dikumpulkan di dalam rumah pompa (casing) dan diarahkan ke saluran keluar (discharge).</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Karakteristik:</strong> Ideal untuk memindahkan volume cairan yang besar pada tekanan yang relatif rendah. Alirannya lancar dan tidak berdenyut.</li>
+                  <li><strong>Aplikasi Umum:</strong> Pompa Pendingin Air Laut (Sea Water Cooling Pumps), Pompa Ballast (Ballast Pumps), Pompa Pemadam Kebakaran (Fire Pumps).</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-lg">B. Pompa Perpindahan Positif / Positive Displacement Pump</h4>
+                <p className="text-muted-foreground mb-2">Prinsip kerjanya adalah "menjebak" sejumlah volume fluida dan "memaksanya" pindah dari sisi isap (suction) ke sisi keluar (discharge). Alirannya hampir konstan terlepas dari tekanan.</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Karakteristik:</strong> Mampu menghasilkan tekanan tinggi, cocok untuk cairan kental (viscous), dan seringkali dapat menghisap sendiri (self-priming).</li>
+                  <li><strong>Sub-jenis & Aplikasi Umum:</strong>
+                    <ul className="list-circle list-inside ml-6">
+                      <li><strong>Pompa Roda Gigi (Gear Pump):</strong> Digunakan untuk oli pelumas dan transfer bahan bakar.</li>
+                      <li><strong>Pompa Ulir (Screw Pump):</strong> Digunakan untuk transfer bahan bakar dan oli pelumas, menghasilkan aliran yang sangat halus.</li>
+                      <li><strong>Pompa Piston (Piston Pump):</strong> Digunakan untuk aplikasi tekanan sangat tinggi seperti sistem hidrolik.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <Separator />
 
@@ -66,11 +84,8 @@ const TeachingMaterialOtherAuxiliaries = () => {
             <p className="text-muted-foreground mb-2"><em>Produces high-pressure air stored in air receivers for various purposes.</em></p>
             <ul className="list-disc list-inside space-y-1 ml-4">
               <li><strong>Udara Start (Starting Air):</strong> Tekanan sangat tinggi (sekitar 30 bar) untuk menyalakan mesin diesel utama dan generator.</li>
-              <li className="text-muted-foreground"><em>Very high pressure (around 30 bar) to start the main diesel engine and generators.</em></li>
               <li><strong>Udara Servis/Kerja (Service/Working Air):</strong> Tekanan lebih rendah (sekitar 7-10 bar) untuk peralatan pneumatik, pembersihan, dll.</li>
-              <li className="text-muted-foreground"><em>Lower pressure (around 7-10 bar) for pneumatic tools, cleaning, etc.</em></li>
               <li><strong>Udara Kontrol (Control Air):</strong> Udara yang sangat kering dan bersih untuk sistem kontrol otomatis.</li>
-              <li className="text-muted-foreground"><em>Very dry and clean air for automated control systems.</em></li>
             </ul>
           </div>
           <Separator />
@@ -93,15 +108,33 @@ const TeachingMaterialOtherAuxiliaries = () => {
 
           <div>
             <h3 className="text-xl font-medium mb-2">5. Penukar Panas / Heat Exchanger</h3>
-            <p>Mentransfer panas dari satu fluida ke fluida lain. Di kamar mesin, ini biasanya berarti mendinginkan sesuatu.</p>
-            <p className="text-muted-foreground mb-2"><em>Transfers heat from one fluid to another. In the engine room, this usually means cooling something.</em></p>
-            <ul className="list-disc list-inside space-y-1 ml-4">
-              <li><strong>Jenis Pelat (Plate Type):</strong> Terdiri dari banyak pelat tipis yang disusun. Sangat efisien dan kompak.</li>
-              <li className="text-muted-foreground"><em>Consists of many thin plates stacked together. Very efficient and compact.</em></li>
-              <li><strong>Jenis Shell & Tube:</strong> Satu fluida mengalir di dalam banyak pipa kecil, sementara fluida lain mengalir di luar pipa di dalam sebuah cangkang (shell).</li>
-              <li className="text-muted-foreground"><em>One fluid flows inside many small tubes, while the other flows outside the tubes within a shell.</em></li>
-              <li><strong>Contoh / Examples:</strong> Pendingin oli pelumas (Lube Oil Cooler), Pendingin air tawar jaket (Jacket Water Cooler).</li>
-            </ul>
+            <p>Mentransfer panas dari satu fluida ke fluida lain tanpa mencampurnya. Di kamar mesin, ini biasanya digunakan untuk mendinginkan atau memanaskan fluida. / Transfers heat from one fluid to another without mixing them. In the engine room, this is usually used to cool or heat a fluid.</p>
+            <div className="mt-4 space-y-4">
+              <div>
+                <h4 className="font-semibold text-lg">A. Jenis Pelat / Plate Type</h4>
+                <p className="text-muted-foreground mb-2">Terdiri dari tumpukan pelat logam tipis bergelombang yang dipisahkan oleh paking (gasket). Fluida panas dan dingin mengalir di saluran-saluran alternatif di antara pelat.</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Kelebihan:</strong> Transfer panas sangat efisien, desain kompak, mudah dibersihkan.</li>
+                  <li><strong>Kekurangan:</strong> Paking bisa rusak, tidak cocok untuk tekanan/suhu yang sangat tinggi.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-lg">B. Jenis Shell & Tube</h4>
+                <p className="text-muted-foreground mb-2">Terdiri dari sebuah bejana (shell) dengan sekelompok pipa (tube bundle) di dalamnya. Satu fluida mengalir di dalam pipa-pipa, sementara fluida lainnya mengalir di luar pipa di dalam shell.</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Kelebihan:</strong> Sangat kuat, andal, dapat menangani tekanan dan suhu tinggi.</li>
+                  <li><strong>Kekurangan:</strong> Kurang efisien dan lebih besar dari jenis pelat untuk kapasitas yang sama.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-lg">Aplikasi Umum / Common Applications</h4>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Pendingin Oli Pelumas (Lube Oil Cooler):</strong> Mendinginkan oli pelumas panas dari mesin.</li>
+                  <li><strong>Pendingin Air Tawar Jaket (Jacket Water Cooler):</strong> Mendinginkan air tawar pendingin mesin menggunakan air laut.</li>
+                  <li><strong>Pemanas Bahan Bakar (Fuel Oil Heater):</strong> Memanaskan bahan bakar berat (HFO) agar tidak terlalu kental.</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <Separator />
 
