@@ -29,7 +29,7 @@ const LessonPlanOtherAuxiliaries = () => {
         <CardContent className="space-y-2">
           <p><strong>Function:</strong> 1. Marine Engineering at Operational Level</p>
           <p><strong>Topic:</strong> 1.2.1 The English language to enable the officer to perform engineering duties and to use engineering publications</p>
-          <p><strong>Sub-topic:</strong> 1.4) Other auxiliaries, including various pumps, air compressors, purifiers, and steering gear</p>
+          <p><strong>Sub-topic:</strong> 1.4) Other auxiliaries, including air compressor, purifier, fresh water generator, heat exchanger, refrigeration, air-conditioning and ventilation systems.</p>
         </CardContent>
       </Card>
 
@@ -39,8 +39,8 @@ const LessonPlanOtherAuxiliaries = () => {
         </CardHeader>
         <CardContent className="space-y-2">
           <ul className="list-disc list-inside space-y-1">
-            <li>3.1.1 Menjelaskan fungsi dasar dari berbagai mesin bantu: pompa, pemurni, kompresor udara, dan mesin kemudi. / Explain the basic functions of various auxiliary machinery: pumps, purifiers, air compressors, and steering gear.</li>
-            <li>3.1.2 Mengidentifikasi jenis-jenis utama dan komponen dasar dari mesin-mesin bantu tersebut. / Identify the main types and basic components of this auxiliary machinery.</li>
+            <li>3.1.1 Menjelaskan fungsi dasar dari kompresor udara, pemurni, generator air tawar, penukar panas, sistem refrigerasi, dan sistem AC & ventilasi. / Explain the basic functions of air compressors, purifiers, fresh water generators, heat exchangers, refrigeration, and AC & ventilation systems.</li>
+            <li>3.1.2 Mengidentifikasi komponen dasar dari mesin-mesin bantu tersebut. / Identify the basic components of this auxiliary machinery.</li>
             <li>4.1.1 Menggunakan kosakata teknis terkait dalam konteks kalimat. / Use related technical vocabulary in sentence context.</li>
             <li>4.1.2 Berpartisipasi dalam percakapan dasar tentang pengoperasian dan pemantauan mesin bantu. / Participate in basic conversations about the operation and monitoring of auxiliary machinery.</li>
           </ul>
@@ -54,22 +54,22 @@ const LessonPlanOtherAuxiliaries = () => {
         <CardContent className="space-y-4">
           <div>
             <h3 className="text-xl font-medium mb-2">Uni-structural:</h3>
-            <p>Siswa dapat menyatakan fungsi satu mesin bantu (misalnya, "Pompa memindahkan cairan"). / Students can state the function of one auxiliary machine (e.g., "A pump moves liquid").</p>
+            <p>Siswa dapat menyatakan fungsi satu mesin bantu (misalnya, "Kompresor menghasilkan udara bertekanan"). / Students can state the function of one auxiliary machine (e.g., "A compressor produces compressed air").</p>
           </div>
           <Separator />
           <div>
             <h3 className="text-xl font-medium mb-2">Multi-structural:</h3>
-            <p>Siswa dapat menyebutkan beberapa jenis mesin bantu dan fungsi dasarnya (misalnya, kompresor untuk udara start, pemurni untuk membersihkan oli). / Students can name several types of auxiliary machinery and their basic functions (e.g., compressor for starting air, purifier to clean oil).</p>
+            <p>Siswa dapat menyebutkan beberapa jenis mesin bantu dan fungsi dasarnya (misalnya, pemurni untuk membersihkan oli, generator air tawar untuk membuat air minum). / Students can name several types of auxiliary machinery and their basic functions (e.g., purifier to clean oil, fresh water generator to make drinking water).</p>
           </div>
           <Separator />
           <div>
             <h3 className="text-xl font-medium mb-2">Relational:</h3>
-            <p>Siswa dapat menjelaskan hubungan antara mesin bantu yang berbeda (misalnya, bagaimana kompresor mengisi tabung udara, yang kemudian digunakan untuk menyalakan mesin utama). / Students can explain the relationship between different auxiliaries (e.g., how a compressor fills an air receiver, which is then used to start the main engine).</p>
+            <p>Siswa dapat menjelaskan hubungan antara mesin bantu (misalnya, bagaimana penukar panas menggunakan air laut untuk mendinginkan air tawar di sistem pendingin mesin). / Students can explain the relationship between auxiliaries (e.g., how a heat exchanger uses sea water to cool fresh water in an engine cooling system).</p>
           </div>
           <Separator />
           <div>
             <h3 className="text-xl font-medium mb-2">Extended Abstract:</h3>
-            <p>Siswa dapat menganalisis skenario sederhana (misalnya, "Apa yang terjadi jika pompa bahan bakar berhenti?") dan memprediksi dampaknya pada sistem lain. / Students can analyze a simple scenario (e.g., "What happens if a fuel oil pump stops?") and predict the impact on other systems.</p>
+            <p>Siswa dapat menganalisis skenario sederhana (misalnya, "Apa yang terjadi jika pemurni bahan bakar berhenti berfungsi?") dan memprediksi dampaknya pada mesin utama. / Students can analyze a simple scenario (e.g., "What happens if the fuel oil purifier stops working?") and predict the impact on the main engine.</p>
           </div>
         </CardContent>
       </Card>
@@ -80,10 +80,12 @@ const LessonPlanOtherAuxiliaries = () => {
         </CardHeader>
         <CardContent className="space-y-2">
           <ul className="list-disc list-inside space-y-1">
-            <li>Pompa (Sentrifugal, Roda Gigi, Sekrup) / Pumps (Centrifugal, Gear, Screw)</li>
-            <li>Pemurni (Pemisah Oli dan Bahan Bakar) / Purifiers (Oil and Fuel Separators)</li>
-            <li>Kompresor Udara (Untuk Start, Servis, Kontrol) / Air Compressors (For Starting, Service, Control)</li>
-            <li>Mesin Kemudi (Hidrolik) / Steering Gear (Hydraulic)</li>
+            <li>Kompresor Udara / Air Compressor</li>
+            <li>Pemurni / Purifier</li>
+            <li>Generator Air Tawar / Fresh Water Generator</li>
+            <li>Penukar Panas / Heat Exchanger</li>
+            <li>Sistem Pendingin (Refrigerasi) / Refrigeration System</li>
+            <li>Sistem Pendingin Udara (AC) & Ventilasi / Air-Conditioning & Ventilation Systems</li>
           </ul>
           <p className="mt-4">
             <Link to="/teaching-material-other-auxiliaries" className="text-blue-500 hover:underline">
