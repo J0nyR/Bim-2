@@ -30,6 +30,7 @@ import Syllabus from "./pages/Syllabus";
 import SummativeTest from "./pages/SummativeTest";
 import SummativeTestAnswerKey from "./pages/SummativeTestAnswerKey";
 import StudentHandbook from "./pages/StudentHandbook";
+import GrammarReference from "./pages/GrammarReference";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/summative-test" element={<SummativeTest />} />
           <Route path="/summative-test-answer-key" element={<SummativeTestAnswerKey />} />
           <Route path="/student-handbook" element={<StudentHandbook />} />
+          <Route path="/grammar-reference" element={<GrammarReference />} />
 
           <Route element={<Layout />}>
             {/* Marine Engines Module Routes */}

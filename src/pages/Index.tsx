@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { teachingModules } from "@/data/modules";
-import { Book, ClipboardCheck, Ship, BookOpen } from "lucide-react";
+import { Book, ClipboardCheck, Ship, BookOpen, BookText } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Index = () => {
@@ -62,7 +62,7 @@ const Index = () => {
           </Card>
 
           {/* Student Handbook Card */}
-          <Card className="md:col-span-2 bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+          <Card className="bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-xl font-semibold">Buku Saku Taruna</CardTitle>
             </CardHeader>
@@ -71,6 +71,21 @@ const Index = () => {
                 <Link to="/student-handbook">
                   <BookOpen className="mr-2 h-5 w-5" />
                   Buka Buku Saku
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Grammar Reference Card */}
+          <Card className="bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+            <CardHeader className="text-center pb-4">
+              <CardTitle className="text-xl font-semibold">Referensi Tata Bahasa</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild variant="default" className="w-full py-3 text-base h-auto">
+                <Link to="/grammar-reference">
+                  <BookText className="mr-2 h-5 w-5" />
+                  Buka Referensi
                 </Link>
               </Button>
             </CardContent>
