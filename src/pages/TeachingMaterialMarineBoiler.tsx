@@ -147,6 +147,34 @@ const TeachingMaterialMarineBoiler = () => {
 
       <Card className="bg-card text-card-foreground shadow-lg">
         <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Fokus Tata Bahasa / Grammar Focus</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="text-xl font-medium mb-2">1. Modal Verbs for Safety & Obligation (must, should)</h3>
+            <p className="mb-2">Kita menggunakan 'must' untuk kewajiban yang sangat penting dan 'should' untuk rekomendasi atau praktik terbaik. / We use 'must' for critical obligations and 'should' for recommendations or best practices.</p>
+            <ul className="list-disc list-inside space-y-1 ml-4 bg-muted p-4 rounded-md">
+              <li>"You <strong>must</strong> shut down the burner if you cannot see the water level." (Kewajiban)</li>
+              <li>"The safety valves <strong>must</strong> be tested regularly." (Peraturan)</li>
+              <li>"You <strong>should</strong> wear your PPE before performing a blowdown." (Rekomendasi kuat)</li>
+              <li>"The boiler water <strong>should</strong> be tested daily." (Praktik terbaik)</li>
+            </ul>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="text-xl font-medium mb-2">2. Prepositions of Place (in, on, inside, outside)</h3>
+            <p className="mb-2">Preposisi membantu kita menjelaskan lokasi komponen secara akurat. / Prepositions help us describe the location of components accurately.</p>
+            <ul className="list-disc list-inside space-y-1 ml-4 bg-muted p-4 rounded-md">
+              <li>"In a fire-tube boiler, hot gas flows <strong>inside</strong> the tubes."</li>
+              <li>"In a water-tube boiler, water is <strong>in</strong> the tubes and hot gas is <strong>outside</strong>."</li>
+              <li>"The safety valves are located <strong>on</strong> top of the steam drum."</li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
           <CardTitle className="text-2xl font-semibold">Contoh Percakapan / Conversation Example</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">

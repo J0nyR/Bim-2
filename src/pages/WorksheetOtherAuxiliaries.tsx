@@ -102,6 +102,36 @@ const WorksheetOtherAuxiliaries = () => {
         </CardContent>
       </Card>
 
+      <Separator />
+
+      {/* Section 4: Grammar Practice */}
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Bagian 4: Latihan Tata Bahasa / Section 4: Grammar Practice</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="font-semibold mb-2">A. Gerunds as Subjects</h3>
+            <p className="mb-2">Ubah frasa berikut menjadi kalimat lengkap menggunakan gerund sebagai subjek. / Change the following phrases into full sentences using a gerund as the subject.</p>
+            <p className="text-sm text-muted-foreground mb-2">Contoh / Example: (to move liquids) → <strong>Moving liquids</strong> is the function of a pump.</p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>(to compress air) → ______ is the function of a compressor.</li>
+              <li>(to remove water from oil) → ______ is the purpose of a purifier.</li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="font-semibold mb-2">B. Clauses of Purpose</h3>
+            <p className="mb-2">Gabungkan dua kalimat berikut menggunakan 'to' untuk menunjukkan tujuan. / Combine the following two sentences using 'to' to show purpose.</p>
+            <p className="text-sm text-muted-foreground mb-2">Contoh / Example: We use a pump. We move water. → We use a pump <strong>to move</strong> water.</p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>We use a Fresh Water Generator. We produce drinking water.</li>
+              <li>The engineer uses a governor. He controls the engine speed.</li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
+
       <div className="text-center mt-8 space-x-4 hide-on-print">
         <Button asChild>
             <Link to="/answer-key-other-auxiliaries">Lihat Kunci Jawaban / View Answer Key</Link>

@@ -100,6 +100,34 @@ const AnswerKeyShaftingInstallations = () => {
           </div>
         </CardContent>
       </Card>
+
+      <Separator />
+
+      {/* Section 4: Grammar Practice Answers */}
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Bagian 4: Kunci Jawaban Tata Bahasa / Section 4: Grammar Practice Answer Key</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="font-semibold mb-2">A. Cause and Effect</h3>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>Poor shaft alignment <strong>causes</strong> the bearings to wear out quickly.</li>
+              <li><strong>If</strong> the propeller is damaged, the ship <strong>will vibrate</strong>.</li>
+              <li>Cavitation <strong>leads to</strong> damage on the propeller blades.</li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="font-semibold mb-2">B. Comparative Adjectives</h3>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>An FPP is <strong>simpler</strong> than a CPP.</li>
+              <li>A CPP is <strong>more expensive</strong> than an FPP.</li>
+              <li>For maneuvering, a CPP is <strong>better</strong> than an FPP.</li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

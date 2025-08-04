@@ -258,6 +258,33 @@ const TeachingMaterialOtherAuxiliaries = () => {
 
       <Card className="bg-card text-card-foreground shadow-lg">
         <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Fokus Tata Bahasa / Grammar Focus</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="text-xl font-medium mb-2">1. Gerunds as Subjects (Verb-ing)</h3>
+            <p className="mb-2">Kita dapat menggunakan bentuk -ing dari kata kerja (gerund) sebagai subjek kalimat untuk menjelaskan suatu tindakan atau proses. / We can use the -ing form of a verb (a gerund) as the subject of a sentence to describe an action or process.</p>
+            <ul className="list-disc list-inside space-y-1 ml-4 bg-muted p-4 rounded-md">
+              <li>"<strong>Pumping</strong> liquids is the main function of a pump."</li>
+              <li>"<strong>Separating</strong> water from fuel is the purpose of a purifier."</li>
+              <li>"<strong>Synchronizing</strong> generators requires careful attention."</li>
+            </ul>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="text-xl font-medium mb-2">2. Clauses of Purpose (to + verb)</h3>
+            <p className="mb-2">Kita menggunakan 'to + verb' (infinitive) untuk menjelaskan tujuan dari suatu tindakan atau komponen. / We use 'to + verb' (infinitive) to explain the purpose of an action or a component.</p>
+            <ul className="list-disc list-inside space-y-1 ml-4 bg-muted p-4 rounded-md">
+              <li>"A compressor is used <strong>to provide</strong> high-pressure air."</li>
+              <li>"We use a heat exchanger <strong>to cool</strong> the lube oil."</li>
+              <li>"The engineer started another generator <strong>to share</strong> the load."</li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
           <CardTitle className="text-2xl font-semibold">Contoh Percakapan / Conversation Example</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">

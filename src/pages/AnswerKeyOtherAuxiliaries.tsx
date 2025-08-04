@@ -102,6 +102,32 @@ const AnswerKeyOtherAuxiliaries = () => {
           </div>
         </CardContent>
       </Card>
+
+      <Separator />
+
+      {/* Section 4: Grammar Practice Answers */}
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Bagian 4: Kunci Jawaban Tata Bahasa / Section 4: Grammar Practice Answer Key</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="font-semibold mb-2">A. Gerunds as Subjects</h3>
+            <ol className="list-decimal list-inside space-y-2">
+              <li><strong>Compressing air</strong> is the function of a compressor.</li>
+              <li><strong>Removing water from oil</strong> is the purpose of a purifier.</li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="font-semibold mb-2">B. Clauses of Purpose</h3>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>We use a Fresh Water Generator <strong>to produce</strong> drinking water.</li>
+              <li>The engineer uses a governor <strong>to control</strong> the engine speed.</li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

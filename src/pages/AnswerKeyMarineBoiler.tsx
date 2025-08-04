@@ -98,6 +98,34 @@ const AnswerKeyMarineBoiler = () => {
           </div>
         </CardContent>
       </Card>
+
+      <Separator />
+
+      {/* Section 4: Grammar Practice Answers */}
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Bagian 4: Kunci Jawaban Tata Bahasa / Section 4: Grammar Practice Answer Key</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="font-semibold mb-2">A. Modal Verbs (must / should)</h3>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>You <strong>must</strong> always check the water level before lighting up a boiler.</li>
+              <li>The pressure gauge <strong>should</strong> be calibrated annually.</li>
+              <li>Engineers <strong>should</strong> perform a blowdown to control water quality.</li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="font-semibold mb-2">B. Prepositions of Place (in / on / inside / outside)</h3>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>The pressure gauge is located <strong>on</strong> the steam drum.</li>
+              <li>In a water-tube boiler, the hot gas is <strong>outside</strong> the tubes.</li>
+              <li>The furnace is located <strong>inside</strong> the boiler shell.</li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

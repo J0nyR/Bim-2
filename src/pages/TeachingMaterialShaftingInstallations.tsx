@@ -114,6 +114,33 @@ const TeachingMaterialShaftingInstallations = () => {
 
       <Card className="bg-card text-card-foreground shadow-lg">
         <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Fokus Tata Bahasa / Grammar Focus</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="text-xl font-medium mb-2">1. Cause and Effect (If..., causes, leads to)</h3>
+            <p className="mb-2">Kita menggunakan struktur ini untuk menjelaskan hubungan sebab-akibat, yang sangat umum dalam bidang teknik. / We use these structures to explain cause-and-effect relationships, which are very common in engineering.</p>
+            <ul className="list-disc list-inside space-y-1 ml-4 bg-muted p-4 rounded-md">
+              <li>"<strong>If</strong> the shaft alignment is poor, it <strong>will cause</strong> excessive vibration."</li>
+              <li>"Poor alignment <strong>causes</strong> premature bearing wear."</li>
+              <li>"A damaged propeller blade <strong>leads to</strong> a loss of efficiency."</li>
+            </ul>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="text-xl font-medium mb-2">2. Comparative Adjectives (more, -er, than)</h3>
+            <p className="mb-2">Kita menggunakan kata sifat komparatif untuk membandingkan dua hal, seperti FPP dan CPP. / We use comparative adjectives to compare two things, such as an FPP and a CPP.</p>
+            <ul className="list-disc list-inside space-y-1 ml-4 bg-muted p-4 rounded-md">
+              <li>"An FPP is <strong>simpler</strong> and <strong>stronger than</strong> a CPP."</li>
+              <li>"A CPP is <strong>more expensive</strong> and <strong>more complex</strong>."</li>
+              <li>"A CPP offers <strong>better</strong> maneuverability." (better is the irregular comparative of good)</li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
           <CardTitle className="text-2xl font-semibold">Contoh Percakapan / Conversation Example</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">

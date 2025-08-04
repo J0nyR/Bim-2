@@ -102,6 +102,36 @@ const WorksheetMarineBoiler = () => {
         </CardContent>
       </Card>
 
+      <Separator />
+
+      {/* Section 4: Grammar Practice */}
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Bagian 4: Latihan Tata Bahasa / Section 4: Grammar Practice</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="font-semibold mb-2">A. Modal Verbs (must / should)</h3>
+            <p className="mb-2">Pilih kata kerja modal yang paling tepat untuk melengkapi kalimat. / Choose the most appropriate modal verb to complete the sentences.</p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>You (must / should) always check the water level before lighting up a boiler.</li>
+              <li>The pressure gauge (must / should) be calibrated annually.</li>
+              <li>Engineers (must / should) perform a blowdown to control water quality.</li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="font-semibold mb-2">B. Prepositions of Place (in / on / inside / outside)</h3>
+            <p className="mb-2">Isi bagian yang kosong dengan preposisi yang benar. / Fill in the blanks with the correct preposition.</p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>The pressure gauge is located ______ the steam drum.</li>
+              <li>In a water-tube boiler, the hot gas is ______ the tubes.</li>
+              <li>The furnace is located ______ the boiler shell.</li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
+
       <div className="text-center mt-8 space-x-4 hide-on-print">
         <Button asChild>
             <Link to="/answer-key-marine-boiler">Lihat Kunci Jawaban / View Answer Key</Link>

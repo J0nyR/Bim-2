@@ -102,6 +102,36 @@ const WorksheetShaftingInstallations = () => {
         </CardContent>
       </Card>
 
+      <Separator />
+
+      {/* Section 4: Grammar Practice */}
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Bagian 4: Latihan Tata Bahasa / Section 4: Grammar Practice</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="font-semibold mb-2">A. Cause and Effect</h3>
+            <p className="mb-2">Gabungkan dua kalimat berikut menjadi satu kalimat sebab-akibat menggunakan kata yang diberikan. / Combine the two sentences into one cause-and-effect sentence using the given word.</p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>The shaft alignment is poor. The bearings wear out quickly. (causes)</li>
+              <li>The propeller is damaged. The ship vibrates. (If...)</li>
+              <li>Cavitation occurs. It damages the propeller blades. (leads to)</li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="font-semibold mb-2">B. Comparative Adjectives</h3>
+            <p className="mb-2">Lengkapi kalimat berikut dengan bentuk komparatif yang benar dari kata sifat dalam kurung. / Complete the following sentences with the correct comparative form of the adjective in brackets.</p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>An FPP is (simple) ______ than a CPP.</li>
+              <li>A CPP is (expensive) ______ than an FPP.</li>
+              <li>For maneuvering, a CPP is (good) ______ than an FPP.</li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
+
       <div className="text-center mt-8 space-x-4 hide-on-print">
         <Button asChild>
             <Link to="/answer-key-shafting-installations">Lihat Kunci Jawaban / View Answer Key</Link>
