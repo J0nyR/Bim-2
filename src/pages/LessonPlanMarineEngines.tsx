@@ -18,7 +18,8 @@ const LessonPlanMarineEngines = () => {
           <p><strong>Mata Pelajaran / Subject:</strong> Bahasa Inggris Maritim / Maritime English</p>
           <p><strong>Kelas / Class:</strong> X (Sepuluh)</p>
           <p><strong>Program Studi / Study Program:</strong> Teknika Kapal Niaga / Marine Engineering</p>
-          <p><strong>Alokasi Waktu / Time Allocation:</strong> 4 x 45 menit (2 Pertemuan) / 4 x 45 minutes (2 Meetings)</p>
+          <p><strong>Alokasi Waktu Mingguan / Weekly Allocation:</strong> 2 Jam Pelajaran (2 x 45 menit) / 2 Lesson Hours (2 x 45 minutes)</p>
+          <p><strong>Total Durasi Modul / Total Module Duration:</strong> 4 Jam Pelajaran (dalam 2 pertemuan) / 4 Lesson Hours (in 2 meetings)</p>
         </CardContent>
       </Card>
 
