@@ -144,11 +144,20 @@ const LessonPlanMarineEngines = () => {
         <CardHeader>
           <CardTitle className="text-2xl font-semibold">Penilaian / Assessment</CardTitle>
         </CardHeader>
-        <CardContent className="space-y-2">
-          <ul className="list-disc list-inside space-y-1">
-            <li>Pengetahuan (Tes Tertulis) / Knowledge (Written Test)</li>
-            <li>Keterampilan (Percakapan, Lembar Kerja) / Skills (Conversation, Worksheet)</li>
-            <li>Sikap (Observasi) / Attitude (Observation)</li>
+        <CardContent className="space-y-3">
+          <p>Penilaian akan mencakup tiga aspek: Pengetahuan, Keterampilan, dan Sikap. / Assessment will cover three aspects: Knowledge, Skills, and Attitude.</p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <Link to="/worksheet-marine-engines" className="text-blue-500 hover:underline">
+                Lembar Kerja Siswa (Pengetahuan & Keterampilan) / Student Worksheet (Knowledge & Skills)
+              </Link>
+            </li>
+            <li>
+              <Link to="/rubric-marine-engines" className="text-blue-500 hover:underline">
+                Rubrik Penilaian (Keterampilan & Sikap) / Assessment Rubric (Skills & Attitude)
+              </Link>
+            </li>
+            <li>Observasi di kelas untuk partisipasi dan sikap. / In-class observation for participation and attitude.</li>
           </ul>
         </CardContent>
       </Card>
