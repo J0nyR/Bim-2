@@ -32,7 +32,7 @@ const Syllabus = () => {
                     <p><strong>Mata Pelajaran:</strong> Bahasa Inggris Maritim</p>
                     <p><strong>Program Studi:</strong> Teknika Kapal Niaga</p>
                     <p><strong>Kelas / Semester:</strong> X / Ganjil & Genap</p>
-                    <p><strong>Alokasi Waktu:</strong> 36 Jam Pelajaran (JP)</p>
+                    <p><strong>Alokasi Waktu:</strong> 17 Pertemuan @ 2 Jam Pelajaran (2 x 45 menit) per semester</p>
                 </CardContent>
             </Card>
 
@@ -90,11 +90,18 @@ const Syllabus = () => {
                     <CardTitle className="flex items-center text-2xl font-semibold"><Calendar className="mr-3 h-6 w-6 text-primary" />Alokasi Waktu & Jadwal Pertemuan</CardTitle>
                 </CardHeader>
                 <CardContent className="pl-12 space-y-2">
-                    <p><strong>Pertemuan 1-2:</strong> Pengantar & Modul 1.1 (Marine Engines)</p>
-                    <p><strong>Pertemuan 3-4:</strong> Modul 1.2 (Marine Boiler)</p>
-                    <p><strong>Pertemuan 5-6:</strong> Modul 1.3 (Shafting Installations & Propeller)</p>
-                    <p><strong>Pertemuan 7-8:</strong> Modul 1.4 (Other Auxiliaries)</p>
-                    <p><strong>Pertemuan 9:</strong> Ujian Sumatif & Review</p>
+                    <p><strong>Pertemuan 1:</strong> Pengantar, Kontrak Belajar, dan Pre-Test</p>
+                    <p><strong>Pertemuan 2-3:</strong> Modul 1.1 - Marine Engines (Diesel, Steam, Gas)</p>
+                    <p><strong>Pertemuan 4-5:</strong> Modul 1.2 - Marine Boiler</p>
+                    <p><strong>Pertemuan 6:</strong> Review & Latihan Praktis Modul 1.1 & 1.2</p>
+                    <p><strong>Pertemuan 7-8:</strong> Modul 1.3 - Shafting Installations & Propeller</p>
+                    <p><strong>Pertemuan 9:</strong> Ujian Formatif Tengah Semester</p>
+                    <p><strong>Pertemuan 10-11:</strong> Modul 1.4 - Other Auxiliaries (Part 1: Pumps, Compressors, Purifiers)</p>
+                    <p><strong>Pertemuan 12-13:</strong> Modul 1.4 - Other Auxiliaries (Part 2: FWG, Heat Exchangers, Refrigeration)</p>
+                    <p><strong>Pertemuan 14:</strong> Review & Latihan Praktis Modul 1.3 & 1.4</p>
+                    <p><strong>Pertemuan 15-16:</strong> Studi Kasus Terintegrasi & Persiapan Ujian Akhir</p>
+                    <p><strong>Pertemuan 17:</strong> Review Final & Pembahasan Kisi-kisi Ujian Sumatif</p>
+                    <p><strong>Minggu ke-18:</strong> Ujian Sumatif Akhir Semester</p>
                 </CardContent>
             </Card>
 
@@ -137,6 +144,7 @@ const Syllabus = () => {
                             <ul className="list-circle list-inside ml-6 text-muted-foreground">
                                 <li>Pengerjaan Lembar Kerja Siswa (Worksheet) per modul.</li>
                                 <li>Skor dari Kuis Pemahaman di setiap akhir materi ajar.</li>
+                                <li>Ujian Formatif Tengah Semester.</li>
                             </ul>
                         </li>
                         <li><strong>Partisipasi & Sikap (20%):</strong>
