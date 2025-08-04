@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 const AnswerKeyMarineEngines = () => {
   return (
     <div className="container mx-auto p-6 space-y-8">
-      <h1 className="text-4xl font-bold text-center text-primary-foreground mb-8">
+      <h1 className="text-4xl font-bold text-center text-primary mb-8">
         Kunci Jawaban / Answer Key
       </h1>
 
@@ -65,12 +65,6 @@ const AnswerKeyMarineEngines = () => {
           </p>
         </CardContent>
       </Card>
-
-      <div className="text-center mt-8">
-        <Button asChild variant="outline">
-            <Link to="/worksheet-marine-engines">Kembali ke Lembar Kerja / Back to Worksheet</Link>
-        </Button>
-      </div>
     </div>
   );
 };

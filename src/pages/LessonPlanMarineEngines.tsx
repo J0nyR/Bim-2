@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 const LessonPlanMarineEngines = () => {
   return (
     <div className="container mx-auto p-6 space-y-8">
-      <h1 className="text-4xl font-bold text-center text-primary-foreground mb-8">
+      <h1 className="text-4xl font-bold text-center text-primary mb-8">
         Rencana Pelaksanaan Pembelajaran (RPP) / Lesson Plan
       </h1>
 

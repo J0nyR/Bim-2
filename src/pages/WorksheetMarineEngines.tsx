@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 const WorksheetMarineEngines = () => {
   return (
     <div className="container mx-auto p-6 space-y-8">
-      <h1 className="text-4xl font-bold text-center text-primary-foreground mb-8">
+      <h1 className="text-4xl font-bold text-center text-primary mb-8">
         Lembar Kerja Siswa / Student Worksheet
       </h1>
       <p className="text-center text-muted-foreground">Topik: Marine Diesel Engines, Steam Turbines, and Gas Turbines</p>
@@ -82,9 +82,6 @@ const WorksheetMarineEngines = () => {
       <div className="text-center mt-8 space-x-4">
         <Button asChild>
             <Link to="/answer-key-marine-engines">Lihat Kunci Jawaban / View Answer Key</Link>
-        </Button>
-        <Button asChild variant="outline">
-            <Link to="/lesson-plan-marine-engines">Kembali ke RPP / Back to Lesson Plan</Link>
         </Button>
       </div>
     </div>

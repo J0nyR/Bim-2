@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 const TeachingMaterialMarineEngines = () => {
   return (
     <div className="container mx-auto p-6 space-y-8">
-      <h1 className="text-4xl font-bold text-center text-primary-foreground mb-8">
+      <h1 className="text-4xl font-bold text-center text-primary mb-8">
         Materi Pembelajaran / Teaching Material
       </h1>
 
@@ -209,12 +208,6 @@ const TeachingMaterialMarineEngines = () => {
           </div>
         </CardContent>
       </Card>
-
-      <div className="text-center mt-8">
-        <Link to="/lesson-plan-marine-engines" className="text-blue-500 hover:underline">
-          Kembali ke Rencana Pelaksanaan Pembelajaran / Back to Lesson Plan
-        </Link>
-      </div>
     </div>
   );
 };
