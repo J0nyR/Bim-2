@@ -190,6 +190,33 @@ const TeachingMaterialMarineEngines = () => {
 
       <Card className="bg-card text-card-foreground shadow-lg">
         <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Fokus Tata Bahasa / Grammar Focus</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="text-xl font-medium mb-2">1. Simple Present Tense (for Functions and Facts)</h3>
+            <p className="mb-2">Kita menggunakan Simple Present Tense untuk menjelaskan fungsi komponen dan fakta umum tentang cara kerja mesin. / We use the Simple Present Tense to explain the function of components and general facts about how machinery works.</p>
+            <ul className="list-disc list-inside space-y-1 ml-4 bg-muted p-4 rounded-md">
+              <li>"A crankshaft <strong>converts</strong> the linear motion of the piston into rotational motion."</li>
+              <li>"A two-stroke engine <strong>completes</strong> its power cycle in one revolution."</li>
+              <li>"Steam turbines <strong>use</strong> high-pressure steam to rotate the blades."</li>
+            </ul>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="text-xl font-medium mb-2">2. Passive Voice (for Processes)</h3>
+            <p className="mb-2">Kita sering menggunakan Passive Voice (Subject + to be + Verb 3) ketika fokusnya adalah pada prosesnya, bukan siapa yang melakukan tindakan. / We often use the Passive Voice (Subject + to be + Verb 3) when the focus is on the process, not who is doing the action.</p>
+            <ul className="list-disc list-inside space-y-1 ml-4 bg-muted p-4 rounded-md">
+              <li>"Air <strong>is compressed</strong> to a high temperature."</li>
+              <li>"Fuel <strong>is injected</strong> into the cylinder."</li>
+              <li>"Water <strong>is heated</strong> in a boiler to become steam."</li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
           <CardTitle className="text-2xl font-semibold">Contoh Percakapan / Conversation Example</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">

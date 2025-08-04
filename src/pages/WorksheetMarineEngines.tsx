@@ -102,6 +102,36 @@ const WorksheetMarineEngines = () => {
         </CardContent>
       </Card>
 
+      <Separator />
+
+      {/* Section 4: Grammar Practice */}
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Bagian 4: Latihan Tata Bahasa / Section 4: Grammar Practice</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="font-semibold mb-2">A. Simple Present Tense</h3>
+            <p className="mb-2">Lengkapi kalimat berikut dengan bentuk kata kerja yang benar. / Complete the following sentences with the correct form of the verb.</p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>A four-stroke engine ______ (to require) two crankshaft revolutions per power cycle.</li>
+              <li>The piston rings ______ (to seal) the combustion chamber.</li>
+              <li>A gas turbine ______ (to offer) a high power-to-weight ratio.</li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="font-semibold mb-2">B. Passive Voice</h3>
+            <p className="mb-2">Ubah kalimat aktif berikut menjadi kalimat pasif. / Change the following active sentences into passive sentences.</p>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>The turbocharger compresses the air. → The air ______ by the turbocharger.</li>
+              <li>The boiler generates high-pressure steam. → High-pressure steam ______ by the boiler.</li>
+              <li>The fuel injectors spray fuel into the cylinders. → Fuel ______ into the cylinders by the fuel injectors.</li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
+
       <div className="text-center mt-8 space-x-4 hide-on-print">
         <Button asChild>
             <Link to="/answer-key-marine-engines">Lihat Kunci Jawaban / View Answer Key</Link>

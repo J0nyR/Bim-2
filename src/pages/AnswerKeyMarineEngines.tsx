@@ -86,6 +86,34 @@ const AnswerKeyMarineEngines = () => {
           </div>
         </CardContent>
       </Card>
+      
+      <Separator />
+
+      {/* Section 4: Grammar Practice Answers */}
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Bagian 4: Kunci Jawaban Tata Bahasa / Section 4: Grammar Practice Answer Key</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div>
+            <h3 className="font-semibold mb-2">A. Simple Present Tense</h3>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>A four-stroke engine <strong>requires</strong> two crankshaft revolutions per power cycle.</li>
+              <li>The piston rings <strong>seal</strong> the combustion chamber.</li>
+              <li>A gas turbine <strong>offers</strong> a high power-to-weight ratio.</li>
+            </ol>
+          </div>
+          <Separator />
+          <div>
+            <h3 className="font-semibold mb-2">B. Passive Voice</h3>
+            <ol className="list-decimal list-inside space-y-2">
+              <li>The air <strong>is compressed</strong> by the turbocharger.</li>
+              <li>High-pressure steam <strong>is generated</strong> by the boiler.</li>
+              <li>Fuel <strong>is sprayed</strong> into the cylinders by the fuel injectors.</li>
+            </ol>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
