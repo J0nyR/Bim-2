@@ -26,6 +26,9 @@ import TeachingMaterialOtherAuxiliaries from "./pages/TeachingMaterialOtherAuxil
 import WorksheetOtherAuxiliaries from "./pages/WorksheetOtherAuxiliaries";
 import AnswerKeyOtherAuxiliaries from "./pages/AnswerKeyOtherAuxiliaries";
 import RubricOtherAuxiliaries from "./pages/RubricOtherAuxiliaries";
+import Syllabus from "./pages/Syllabus";
+import SummativeTest from "./pages/SummativeTest";
+import SummativeTestAnswerKey from "./pages/SummativeTestAnswerKey";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +41,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           
+          {/* Course Overview Routes */}
+          <Route path="/syllabus" element={<Syllabus />} />
+          <Route path="/summative-test" element={<SummativeTest />} />
+          <Route path="/summative-test-answer-key" element={<SummativeTestAnswerKey />} />
+
           <Route element={<Layout />}>
             {/* Marine Engines Module Routes */}
             <Route path="/lesson-plan-marine-engines" element={<LessonPlanMarineEngines />} />
