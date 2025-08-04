@@ -233,6 +233,39 @@ const ChapterOtherAuxiliaries = () => {
 
         </CardContent>
       </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Contoh Percakapan / Conversation Example</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="font-semibold">Skenario: Second Engineer dan Oiler sedang melakukan pengecekan rutin di kamar mesin.</p>
+          <p className="font-semibold text-muted-foreground"><em>Scenario: The Second Engineer and an Oiler are on a routine check in the engine room.</em></p>
+
+          <div className="space-y-2">
+            <p><strong>Second Engineer:</strong> "Oiler, let's start our rounds. First, check the main sea water pump. What's the discharge pressure and are there any leaks from the mechanical seal?"</p>
+            <p className="text-muted-foreground"><em>"Oiler, mari kita mulai keliling. Pertama, periksa pompa air laut utama. Berapa tekanan keluarnya dan apakah ada kebocoran dari perapat mekanisnya?"</em></p>
+            <p><strong>Oiler:</strong> "The pump pressure is steady at 2.5 bar, sir. The seal is dry, no leaks detected. The motor temperature feels normal."</p>
+            <p className="text-muted-foreground"><em>"Tekanan pompa stabil di 2,5 bar, Pak. Perapatnya kering, tidak ada kebocoran. Suhu motor terasa normal."</em></p>
+            <p><strong>Second Engineer:</strong> "Good. Now, over to the purifiers. How is the fuel oil purifier running? Did it complete its last de-sludge cycle correctly?"</p>
+            <p className="text-muted-foreground"><em>"Bagus. Sekarang, kita ke pemurni. Bagaimana kondisi pemurni bahan bakar? Apakah siklus pembuangan lumpur terakhirnya berjalan dengan benar?"</em></p>
+            <p><strong>Oiler:</strong> "Yes, sir. It de-sludged about 15 minutes ago. The operating water pressure was correct, and the bowl is running quietly. The flow rate is also stable."</p>
+            <p className="text-muted-foreground"><em>"Ya, Pak. Proses de-sludge berjalan 15 menit yang lalu. Tekanan air operasi sudah benar, dan bowl-nya berputar dengan tenang. Laju alirannya juga stabil."</em></p>
+            <p><strong>Second Engineer:</strong> "Excellent. Let's check the Fresh Water Generator. What's the vacuum reading and how much fresh water are we producing per hour?"</p>
+            <p className="text-muted-foreground"><em>"Bagus sekali. Mari kita periksa Generator Air Tawar. Berapa pembacaan vakumnya dan berapa banyak air tawar yang kita produksi per jam?"</em></p>
+            <p><strong>Oiler:</strong> "The vacuum is holding strong at about 92% on the gauge. Production is good, around 1.2 tons per hour, sir."</p>
+            <p className="text-muted-foreground"><em>"Vakumnya kuat, sekitar 92% pada alat ukur. Produksi bagus, sekitar 1,2 ton per jam, Pak."</em></p>
+            <p><strong>Second Engineer:</strong> "Perfect. Now, let's check the power situation. How's number two generator running? What's the load in kilowatts?"</p>
+            <p className="text-muted-foreground"><em>"Sempurna. Sekarang, mari kita periksa situasi kelistrikan. Bagaimana kondisi generator nomor dua? Berapa bebannya dalam kilowatt?"</em></p>
+            <p><strong>Oiler:</strong> "Number two generator is running smoothly, sir. The load is about 250 kW. All parameters are normal."</p>
+            <p className="text-muted-foreground"><em>"Generator nomor dua berjalan lancar, Pak. Bebannya sekitar 250 kW. Semua parameter normal."</em></p>
+            <p><strong>Second Engineer:</strong> "Okay. The bridge just called, they will start cargo operations in about an hour. That means the cranes will be running. We'll need more power. Go and prepare number one generator for start-up. We will need to synchronize it."</p>
+            <p className="text-muted-foreground"><em>"Oke. Anjungan baru saja menelepon, mereka akan memulai operasi kargo sekitar satu jam lagi. Itu artinya crane akan beroperasi. Kita akan butuh daya lebih. Pergi dan siapkan generator nomor satu untuk dinyalakan. Kita perlu menyinkronkannya."</em></p>
+            <p><strong>Oiler:</strong> "Understood, sir. I will perform the pre-start checks on number one generator and have it ready for synchronization."</p>
+            <p className="text-muted-foreground"><em>"Dimengerti, Pak. Saya akan melakukan pemeriksaan pra-start pada generator nomor satu dan menyiapkannya untuk sinkronisasi."</em></p>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

@@ -165,6 +165,31 @@ const ChapterMarineEngines = () => {
           </div>
         </CardContent>
       </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Contoh Percakapan / Conversation Example</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="font-semibold">Skenario: Dua perwira mesin sedang mendiskusikan jenis mesin utama di kapal mereka.</p>
+          <p className="font-semibold text-muted-foreground"><em>Scenario: Two engineering officers are discussing the main engine types on their vessel.</em></p>
+
+          <div className="space-y-2">
+            <p><strong>Officer A:</strong> "Good morning, Chief. I was reviewing the engine specifications. Our vessel is equipped with a two-stroke marine diesel engine, correct?"</p>
+            <p className="text-muted-foreground"><em>"Selamat pagi, Chief. Saya sedang meninjau spesifikasi mesin. Kapal kita dilengkapi dengan mesin diesel laut dua tak, benar?"</em></p>
+            <p><strong>Officer B:</strong> "That's right, Officer. It's a reliable unit. Do you know the main difference between a two-stroke and a four-stroke engine?"</p>
+            <p className="text-muted-foreground"><em>"Betul, Officer. Ini unit yang handal. Apakah Anda tahu perbedaan utama antara mesin dua tak dan empat tak?"</em></p>
+            <p><strong>Officer A:</strong> "Yes, Chief. A two-stroke engine completes its power cycle in one crankshaft revolution, while a four-stroke takes two revolutions. Two-strokes are generally more powerful for their size, but four-strokes are often more fuel-efficient."</p>
+            <p className="text-muted-foreground"><em>"Ya, Chief. Mesin dua tak menyelesaikan siklus dayanya dalam satu putaran poros engkol, sedangkan empat tak membutuhkan dua putaran. Mesin dua tak umumnya lebih bertenaga untuk ukurannya, tetapi empat tak seringkali lebih hemat bahan bakar."</em></p>
+            <p><strong>Officer B:</strong> "Excellent. And what about steam turbines? Have you studied them?"</p>
+            <p className="text-muted-foreground"><em>"Bagus sekali. Dan bagaimana dengan turbin uap? Apakah Anda sudah mempelajarinya?"</em></p>
+            <p><strong>Officer A:</strong> "Yes, Chief. Steam turbines use high-pressure steam from a boiler to turn the turbine blades. They are known for their smooth operation and are common on large vessels like LNG carriers or older tankers. Gas turbines, on the other hand, are more compact and offer quick start-up, often found on fast ferries or naval ships."</p>
+            <p className="text-muted-foreground"><em>"Ya, Chief. Turbin uap menggunakan uap bertekanan tinggi dari boiler untuk memutar bilah turbin. Mereka dikenal karena operasinya yang halus dan umum ditemukan pada kapal besar seperti kapal pengangkut LNG atau tanker tua. Turbin gas, di sisi lain, lebih kompak dan menawarkan start-up cepat, sering ditemukan pada feri cepat atau kapal angkatan laut."</em></p>
+            <p><strong>Officer B:</strong> "Very good, Officer. It's crucial to understand the characteristics of each propulsion system. Keep up the good work."</p>
+            <p className="text-muted-foreground"><em>"Sangat bagus, Officer. Penting untuk memahami karakteristik setiap sistem propulsi. Teruslah bekerja dengan baik."</em></p>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

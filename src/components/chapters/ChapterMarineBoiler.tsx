@@ -122,6 +122,29 @@ const ChapterMarineBoiler = () => {
           </div>
         </CardContent>
       </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Contoh Percakapan / Conversation Example</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="font-semibold">Skenario: Chief Engineer sedang memberikan instruksi kepada Junior Engineer tentang pemeriksaan boiler bantu.</p>
+          <p className="font-semibold text-muted-foreground"><em>Scenario: The Chief Engineer is giving instructions to a Junior Engineer about checking the auxiliary boiler.</em></p>
+
+          <div className="space-y-2">
+            <p><strong>Chief Engineer:</strong> "Junior, before we start the cargo heating, I need you to perform a routine check on the auxiliary boiler. First, check the water level in the gauge glass. What do you see?"</p>
+            <p className="text-muted-foreground"><em>"Junior, sebelum kita mulai pemanasan kargo, saya mau kamu melakukan pemeriksaan rutin pada boiler bantu. Pertama, periksa level air di gelas penduga. Apa yang kamu lihat?"</em></p>
+            <p><strong>Junior Engineer:</strong> "Chief, the water level is normal, about halfway up the glass. The pressure gauge reads 7 bar."</p>
+            <p className="text-muted-foreground"><em>"Chief, level air normal, sekitar setengah dari gelas. Pengukur tekanan menunjukkan 7 bar."</em></p>
+            <p><strong>Chief Engineer:</strong> "Good. That's the correct operating pressure for this fire-tube boiler. Now, I want you to test the safety valves. Just ease the lifting gear, don't pop them fully. We need to ensure they are not stuck."</p>
+            <p className="text-muted-foreground"><em>"Bagus. Itu tekanan operasi yang benar untuk boiler pipa api ini. Sekarang, saya mau kamu menguji katup keselamatan. Cukup angkat tuasnya sedikit, jangan dibuka penuh. Kita perlu memastikan katupnya tidak macet."</em></p>
+            <p><strong>Junior Engineer:</strong> "Understood, Chief. After that, should I perform a quick blowdown?"</p>
+            <p className="text-muted-foreground"><em>"Dimengerti, Chief. Setelah itu, apakah saya perlu melakukan blowdown singkat?"</em></p>
+            <p><strong>Chief Engineer:</strong> "Yes, a short scum blowdown and then a bottom blowdown. Just for a few seconds each. It's important to remove any impurities from the water surface and the bottom of the shell. Safety first, always wear your PPE."</p>
+            <p className="text-muted-foreground"><em>"Ya, lakukan scum blowdown singkat lalu bottom blowdown. Cukup beberapa detik saja masing-masing. Penting untuk membuang kotoran dari permukaan air dan dasar shell. Utamakan keselamatan, selalu kenakan APD-mu."</em></p>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

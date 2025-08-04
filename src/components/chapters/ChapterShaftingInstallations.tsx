@@ -89,6 +89,29 @@ const ChapterShaftingInstallations = () => {
           </div>
         </CardContent>
       </Card>
+
+      <Card className="bg-card text-card-foreground shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-semibold">Contoh Percakapan / Conversation Example</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="font-semibold">Skenario: Second Engineer dan Oiler sedang melakukan inspeksi di terowongan poros (shaft tunnel).</p>
+          <p className="font-semibold text-muted-foreground"><em>Scenario: The Second Engineer and an Oiler are on an inspection round in the shaft tunnel.</em></p>
+
+          <div className="space-y-2">
+            <p><strong>Second Engineer:</strong> "Alright, let's check the plummer blocks. Feel the bearing housing. Is it running hot?"</p>
+            <p className="text-muted-foreground"><em>"Baik, mari kita periksa plummer block. Rasakan rumah bantalannya. Apakah panas saat beroperasi?"</em></p>
+            <p><strong>Oiler:</strong> "No, sir. The temperature feels normal. The oil level in the sight glass is also good."</p>
+            <p className="text-muted-foreground"><em>"Tidak, Pak. Suhunya terasa normal. Level oli di gelas penduga juga bagus."</em></p>
+            <p><strong>Second Engineer:</strong> "Good. Now, let's move to the stern tube forward seal. Shine your torch on it. Any signs of water leakage?"</p>
+            <p className="text-muted-foreground"><em>"Bagus. Sekarang, kita pindah ke perapat depan tabung buritan. Sorot dengan sentermu. Ada tanda-tanda kebocoran air?"</em></p>
+            <p><strong>Oiler:</strong> "It looks dry, sir. No leakage."</p>
+            <p className="text-muted-foreground"><em>"Kelihatannya kering, Pak. Tidak ada kebocoran."</em></p>
+            <p><strong>Second Engineer:</strong> "Excellent. Proper shaft alignment is critical. If we see high temperatures or leaks, it could be a sign of misalignment, which can cause serious damage. We'll check the aft seal from the deck later."</p>
+            <p className="text-muted-foreground"><em>"Bagus sekali. Kelurusan poros yang baik itu sangat penting. Jika kita melihat suhu tinggi atau kebocoran, itu bisa jadi tanda kelurusan yang buruk, yang dapat menyebabkan kerusakan serius. Nanti kita periksa perapat belakang dari dek."</em></p>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
