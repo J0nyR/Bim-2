@@ -2,6 +2,7 @@ import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { teachingModules } from "@/data/modules";
 
 const Index = () => {
   return (
@@ -15,22 +16,29 @@ const Index = () => {
         </p>
       </div>
 
-      <Card className="w-full max-w-md bg-card text-card-foreground shadow-lg p-6">
+      <Card className="w-full max-w-2xl bg-card text-card-foreground shadow-lg p-6">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-semibold">Pilih Perangkat Ajar / Select Teaching Material</CardTitle>
+          <CardTitle className="text-2xl font-semibold">Pilih Modul Pembelajaran / Select Learning Module</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col space-y-4">
-          <Button asChild className="w-full py-3 text-lg">
-            <Link to="/lesson-plan-marine-engines">
-              Rencana Pelaksanaan Pembelajaran (RPP) - Mesin Kapal
-            </Link>
-          </Button>
-          <Button asChild className="w-full py-3 text-lg" variant="secondary">
-            <Link to="/teaching-material-marine-engines">
-              Materi Pembelajaran - Mesin Kapal (Segera Hadir)
-            </Link>
-          </Button>
-          {/* Anda bisa menambahkan tautan ke perangkat ajar lainnya di sini */}
+          {teachingModules.map((module) => (
+            <Button
+              key={module.id}
+              asChild
+              className="w-full py-3 text-lg h-auto"
+              variant={module.status === 'coming-soon' ? 'secondary' : 'default'}
+              disabled={module.status === 'coming-soon'}
+            >
+              <Link to={module.entryPath}>
+                <div className="flex flex-col items-center text-center">
+                  <span>{module.title}</span>
+                  <span className="text-sm font-normal text-primary-foreground/80 dark:text-secondary-foreground/80">
+                    {module.englishTitle} {module.status === 'coming-soon' && '(Segera Hadir / Coming Soon)'}
+                  </span>
+                </div>
+              </Link>
+            </Button>
+          ))}
         </CardContent>
       </Card>
 
