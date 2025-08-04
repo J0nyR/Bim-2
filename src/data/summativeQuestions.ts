@@ -13,7 +13,7 @@ export interface Question {
 }
 
 export const summativeQuestions: Question[] = [
-  // Marine Engines
+  // Marine Engines (20 questions)
   {
     id: 1,
     question: "Apa keuntungan utama dari turbin gas laut dibandingkan dengan mesin diesel?",
@@ -68,8 +68,8 @@ export const summativeQuestions: Question[] = [
   },
   {
     id: 5,
-    question: "Mesin diesel 2-tak paling umum digunakan pada kapal jenis apa?",
-    question_en: "Two-stroke diesel engines are most commonly used on what type of vessel?",
+    question: "Mesin diesel 2-tak putaran lambat paling umum digunakan pada kapal jenis apa?",
+    question_en: "Slow-speed two-stroke diesel engines are most commonly used on what type of vessel?",
     options: {
       A: { text: "Kapal pesiar cepat dan kapal perang", text_en: "Fast yachts and naval ships" },
       B: { text: "Kapal kontainer besar dan tanker minyak", text_en: "Large container ships and oil tankers" },
@@ -79,9 +79,25 @@ export const summativeQuestions: Question[] = [
     answer: "B",
     topic: "Marine Engines",
   },
-  // Marine Boiler
+  { id: 6, question: "Apa fungsi dari 'scavenge air' pada mesin 2-tak?", question_en: "What is the function of 'scavenge air' in a 2-stroke engine?", options: { A: { text: "Mendinginkan piston", text_en: "To cool the piston" }, B: { text: "Mendorong gas buang keluar dari silinder dan mengisinya dengan udara segar", text_en: "To push exhaust gases out of the cylinder and fill it with fresh air" }, C: { text: "Melumasi dinding silinder", text_en: "To lubricate the cylinder walls" }, D: { text: "Membantu menyalakan bahan bakar", text_en: "To help ignite the fuel" } }, answer: "B", topic: "Marine Engines" },
+  { id: 7, question: "Komponen apa yang membuka dan menutup katup isap dan buang pada mesin 4-tak?", question_en: "Which component opens and closes the intake and exhaust valves in a 4-stroke engine?", options: { A: { text: "Crankshaft", text_en: "Crankshaft" }, B: { text: "Piston", text_en: "Piston" }, C: { text: "Camshaft", text_en: "Camshaft" }, D: { text: "Connecting Rod", text_en: "Connecting Rod" } }, answer: "C", topic: "Marine Engines" },
+  { id: 8, question: "Sistem propulsi 'Combined Diesel and Gas' (CODAG) sering digunakan untuk...", question_en: "'Combined Diesel and Gas' (CODAG) propulsion systems are often used for...", options: { A: { text: "Pelayaran ekonomis dengan diesel dan kecepatan tinggi dengan turbin gas", text_en: "Economical cruising on diesel and high speed bursts on gas turbine" }, B: { text: "Mengurangi emisi", text_en: "Reducing emissions" }, C: { text: "Menjalankan kedua mesin secara bersamaan setiap saat", text_en: "Running both engines simultaneously at all times" }, D: { text: "Kapal tanker minyak", text_en: "Oil tankers" } }, answer: "A", topic: "Marine Engines" },
+  { id: 9, question: "Apa fungsi dari 'piston rings'?", question_en: "What is the function of 'piston rings'?", options: { A: { text: "Mendinginkan piston", text_en: "To cool the piston" }, B: { text: "Menghubungkan piston ke connecting rod", text_en: "To connect the piston to the connecting rod" }, C: { text: "Menyekat ruang bakar dan mengontrol pelumasan", text_en: "To seal the combustion chamber and control lubrication" }, D: { text: "Membuka katup", text_en: "To open the valves" } }, answer: "C", topic: "Marine Engines" },
+  { id: 10, question: "Dalam siklus turbin uap, komponen apa yang mengubah uap kembali menjadi air?", question_en: "In a steam turbine cycle, which component turns the steam back into water?", options: { A: { text: "Boiler", text_en: "Boiler" }, B: { text: "Superheater", text_en: "Superheater" }, C: { text: "Turbine", text_en: "Turbine" }, D: { text: "Condenser", text_en: "Condenser" } }, answer: "D", topic: "Marine Engines" },
+  { id: 11, question: "Apa itu 'cylinder liner'?", question_en: "What is a 'cylinder liner'?", options: { A: { text: "Lapisan cat di dalam silinder", text_en: "A layer of paint inside the cylinder" }, B: { text: "Selongsong yang dapat diganti tempat piston bergerak", text_en: "A replaceable sleeve in which the piston moves" }, C: { text: "Pipa bahan bakar ke silinder", text_en: "The fuel pipe to the cylinder" }, D: { text: "Kepala silinder", text_en: "The cylinder head" } }, answer: "B", topic: "Marine Engines" },
+  { id: 12, question: "Mengapa mesin diesel putaran lambat tidak memerlukan gearbox?", question_en: "Why do slow-speed diesel engines not require a gearbox?", options: { A: { text: "Karena mereka tidak cukup kuat", text_en: "Because they are not powerful enough" }, B: { text: "Karena kecepatan putaran optimalnya cocok dengan kecepatan baling-baling", text_en: "Because their optimal rotational speed matches that of the propeller" }, C: { text: "Karena mereka berputar ke arah yang salah", text_en: "Because they rotate in the wrong direction" }, D: { text: "Karena mereka menggunakan turbin gas", text_en: "Because they use a gas turbine" } }, answer: "B", topic: "Marine Engines" },
+  { id: 13, question: "Apa tujuan dari 'intercooler' pada mesin diesel dengan turbocharger?", question_en: "What is the purpose of an 'intercooler' on a turbocharged diesel engine?", options: { A: { text: "Mendinginkan oli pelumas", text_en: "To cool the lubricating oil" }, B: { text: "Mendinginkan udara yang dikompresi sebelum masuk ke silinder", text_en: "To cool the compressed air before it enters the cylinder" }, C: { text: "Memanaskan bahan bakar", text_en: "To heat the fuel" }, D: { text: "Mendinginkan gas buang", text_en: "To cool the exhaust gas" } }, answer: "B", topic: "Marine Engines" },
+  { id: 14, question: "Istilah 'bore' pada mesin mengacu pada...", question_en: "The term 'bore' in an engine refers to...", options: { A: { text: "Panjang langkah piston", text_en: "The length of the piston stroke" }, B: { text: "Diameter dalam silinder", text_en: "The internal diameter of the cylinder" }, C: { text: "Jumlah silinder", text_en: "The number of cylinders" }, D: { text: "Kecepatan mesin", text_en: "The speed of the engine" } }, answer: "B", topic: "Marine Engines" },
+  { id: 15, question: "Apa keuntungan mesin 4-tak dibandingkan 2-tak?", question_en: "What is an advantage of a 4-stroke engine over a 2-stroke?", options: { A: { text: "Konstruksi lebih sederhana", text_en: "Simpler construction" }, B: { text: "Lebih ringan untuk daya yang sama", text_en: "Lighter for the same power" }, C: { text: "Konsumsi oli pelumas lebih rendah dan efisiensi bahan bakar lebih baik", text_en: "Lower lube oil consumption and better fuel efficiency" }, D: { text: "Daya lebih tinggi per putaran", text_en: "Higher power per revolution" } }, answer: "C", topic: "Marine Engines" },
+  { id: 16, question: "Apa fungsi dari 'flywheel'?", question_en: "What is the function of a 'flywheel'?", options: { A: { text: "Menyimpan energi rotasi untuk menjaga putaran tetap halus", text_en: "To store rotational energy to keep the rotation smooth" }, B: { text: "Memompa air pendingin", text_en: "To pump cooling water" }, C: { text: "Menyalakan mesin", text_en: "To start the engine" }, D: { text: "Mengukur kecepatan mesin", text_en: "To measure engine speed" } }, answer: "A", topic: "Marine Engines" },
+  { id: 17, question: "Bahan bakar apa yang paling umum digunakan oleh mesin diesel 2-tak putaran lambat?", question_en: "What fuel is most commonly used by slow-speed 2-stroke diesel engines?", options: { A: { text: "Marine Gas Oil (MGO)", text_en: "Marine Gas Oil (MGO)" }, B: { text: "Heavy Fuel Oil (HFO)", text_en: "Heavy Fuel Oil (HFO)" }, C: { text: "Liquefied Natural Gas (LNG)", text_en: "Liquefied Natural Gas (LNG)" }, D: { text: "Bensin", text_en: "Gasoline" } }, answer: "B", topic: "Marine Engines" },
+  { id: 18, question: "Apa itu 'supercharger'?", question_en: "What is a 'supercharger'?", options: { A: { text: "Kompresor udara yang digerakkan oleh gas buang", text_en: "An air compressor driven by exhaust gas" }, B: { text: "Kompresor udara yang digerakkan secara mekanis oleh mesin", text_en: "An air compressor driven mechanically by the engine" }, C: { text: "Sistem injeksi bahan bakar", text_en: "A fuel injection system" }, D: { text: "Pompa oli pelumas", text_en: "A lube oil pump" } }, answer: "B", topic: "Marine Engines" },
+  { id: 19, question: "Apa yang dimaksud dengan 'TDC'?", question_en: "What does 'TDC' stand for?", options: { A: { text: "Total Diesel Consumption", text_en: "Total Diesel Consumption" }, B: { text: "Top Dead Centre", text_en: "Top Dead Centre" }, C: { text: "Turbine Drive Control", text_en: "Turbine Drive Control" }, D: { text: "Torque Drive Camshaft", text_en: "Torque Drive Camshaft" } }, answer: "B", topic: "Marine Engines" },
+  { id: 20, question: "Dalam turbin gas, komponen apa yang mengompres udara sebelum pembakaran?", question_en: "In a gas turbine, which component compresses the air before combustion?", options: { A: { text: "Turbine", text_en: "Turbine" }, B: { text: "Combustor", text_en: "Combustor" }, C: { text: "Compressor", text_en: "Compressor" }, D: { text: "Nozzle", text_en: "Nozzle" } }, answer: "C", topic: "Marine Engines" },
+
+  // Marine Boiler (20 questions)
   {
-    id: 6,
+    id: 21,
     question: "Apa perbedaan mendasar antara ketel uap pipa api (fire-tube) dan pipa air (water-tube)?",
     question_en: "What is the fundamental difference between a fire-tube and a water-tube boiler?",
     options: {
@@ -94,7 +110,7 @@ export const summativeQuestions: Question[] = [
     topic: "Marine Boiler",
   },
   {
-    id: 7,
+    id: 22,
     question: "Fungsi utama dari katup keselamatan (safety valve) pada boiler adalah...",
     question_en: "The main function of a safety valve on a boiler is to...",
     options: {
@@ -107,7 +123,7 @@ export const summativeQuestions: Question[] = [
     topic: "Marine Boiler",
   },
   {
-    id: 8,
+    id: 23,
     question: "Mengapa ketel uap pipa air (water-tube boiler) lebih disukai untuk aplikasi tekanan tinggi?",
     question_en: "Why is a water-tube boiler preferred for high-pressure applications?",
     options: {
@@ -120,7 +136,7 @@ export const summativeQuestions: Question[] = [
     topic: "Marine Boiler",
   },
   {
-    id: 9,
+    id: 24,
     question: "Prosedur 'blowdown' pada boiler bertujuan untuk...",
     question_en: "The 'blowdown' procedure on a boiler is intended to...",
     options: {
@@ -133,7 +149,7 @@ export const summativeQuestions: Question[] = [
     topic: "Marine Boiler",
   },
   {
-    id: 10,
+    id: 25,
     question: "Apa bahaya utama dari kondisi level air yang terlalu rendah (low water level) pada boiler yang sedang beroperasi?",
     question_en: "What is the main danger of a low water level condition in an operating boiler?",
     options: {
@@ -145,9 +161,25 @@ export const summativeQuestions: Question[] = [
     answer: "C",
     topic: "Marine Boiler",
   },
-  // Shafting & Propeller
+  { id: 26, question: "Apa fungsi dari 'steam drum' pada water-tube boiler?", question_en: "What is the function of a 'steam drum' in a water-tube boiler?", options: { A: { text: "Menyimpan air umpan", text_en: "To store feedwater" }, B: { text: "Memisahkan uap dari air", text_en: "To separate steam from water" }, C: { text: "Tempat pembakaran terjadi", text_en: "Where combustion occurs" }, D: { text: "Mendinginkan uap", text_en: "To cool the steam" } }, answer: "B", topic: "Marine Boiler" },
+  { id: 27, question: "Perlengkapan apa yang digunakan untuk memantau level air di dalam boiler secara visual?", question_en: "Which fitting is used to visually monitor the water level in a boiler?", options: { A: { text: "Pressure Gauge", text_en: "Pressure Gauge" }, B: { text: "Safety Valve", text_en: "Safety Valve" }, C: { text: "Gauge Glass", text_en: "Gauge Glass" }, D: { text: "Feed Check Valve", text_en: "Feed Check Valve" } }, answer: "C", topic: "Marine Boiler" },
+  { id: 28, question: "Apa itu 'soot blowing'?", question_en: "What is 'soot blowing'?", options: { A: { text: "Proses membersihkan jelaga dari permukaan pipa untuk meningkatkan perpindahan panas", text_en: "The process of cleaning soot from tube surfaces to improve heat transfer" }, B: { text: "Proses membuang air dari boiler", text_en: "The process of draining water from the boiler" }, C: { text: "Proses menyalakan burner", text_en: "The process of lighting the burner" }, D: { text: "Proses menguji katup keselamatan", text_en: "The process of testing the safety valves" } }, answer: "A", topic: "Marine Boiler" },
+  { id: 29, question: "Apa bahaya dari 'carryover' uap?", question_en: "What is the danger of steam 'carryover'?", options: { A: { text: "Menyebabkan boiler kehilangan tekanan", text_en: "It causes the boiler to lose pressure" }, B: { text: "Dapat merusak bilah turbin dan perpipaan", text_en: "It can damage turbine blades and piping" }, C: { text: "Menyebabkan overheating pada boiler", text_en: "It causes the boiler to overheat" }, D: { text: "Meningkatkan konsumsi bahan bakar", text_en: "It increases fuel consumption" } }, answer: "B", topic: "Marine Boiler" },
+  { id: 30, question: "Apa fungsi dari 'feed check valve'?", question_en: "What is the function of a 'feed check valve'?", options: { A: { text: "Mengontrol aliran uap keluar dari boiler", text_en: "To control the steam flow out of the boiler" }, B: { text: "Mengizinkan air masuk ke boiler dan mencegahnya keluar kembali", text_en: "To allow water into the boiler and prevent it from flowing back out" }, C: { text: "Melepaskan tekanan berlebih", text_en: "To release excess pressure" }, D: { text: "Menunjukkan level air", text_en: "To indicate the water level" } }, answer: "B", topic: "Marine Boiler" },
+  { id: 31, question: "Di mana 'furnace' berada pada water-tube boiler?", question_en: "Where is the 'furnace' located in a water-tube boiler?", options: { A: { text: "Di dalam steam drum", text_en: "Inside the steam drum" }, B: { text: "Di sekitar pipa-pipa yang berisi air", text_en: "Surrounding the tubes that contain water" }, C: { text: "Di dalam pipa-pipa", text_en: "Inside the tubes" }, D: { text: "Di atas boiler", text_en: "On top of the boiler" } }, answer: "B", topic: "Marine Boiler" },
+  { id: 32, question: "Apa tujuan dari 'refractory' di dalam furnace?", question_en: "What is the purpose of 'refractory' inside a furnace?", options: { A: { text: "Meningkatkan perpindahan panas", text_en: "To increase heat transfer" }, B: { text: "Melindungi casing boiler dari panas tinggi dan membantu pembakaran", text_en: "To protect the boiler casing from high heat and aid combustion" }, C: { text: "Membersihkan jelaga", text_en: "To clean soot" }, D: { text: "Mendinginkan furnace", text_en: "To cool the furnace" } }, answer: "B", topic: "Marine Boiler" },
+  { id: 33, question: "Apa yang dimaksud dengan 'TDS' dalam konteks air boiler?", question_en: "What does 'TDS' mean in the context of boiler water?", options: { A: { text: "Total Dissolved Solids", text_en: "Total Dissolved Solids" }, B: { text: "Total Drum Steam", text_en: "Total Drum Steam" }, C: { text: "Temperature Differential System", text_en: "Temperature Differential System" }, D: { text: "Tube Damage Sensor", text_en: "Tube Damage Sensor" } }, answer: "A", topic: "Marine Boiler" },
+  { id: 34, question: "Mengapa sirkulasi air yang baik penting di dalam boiler?", question_en: "Why is good water circulation important inside a boiler?", options: { A: { text: "Untuk menjaga air tetap bersih", text_en: "To keep the water clean" }, B: { text: "Untuk mencegah overheating pada permukaan pemanas", text_en: "To prevent overheating of the heating surfaces" }, C: { text: "Untuk mengurangi tekanan", text_en: "To reduce pressure" }, D: { text: "Untuk menghasilkan uap lebih cepat", text_en: "To generate steam faster" } }, answer: "B", topic: "Marine Boiler" },
+  { id: 35, question: "Apa fungsi dari 'superheater'?", question_en: "What is the function of a 'superheater'?", options: { A: { text: "Memanaskan air umpan", text_en: "To heat the feedwater" }, B: { text: "Memanaskan uap jenuh (saturated steam) di atas suhu didihnya", text_en: "To heat saturated steam above its boiling temperature" }, C: { text: "Mendinginkan gas buang", text_en: "To cool the exhaust gas" }, D: { text: "Mengontrol pembakaran", text_en: "To control combustion" } }, answer: "B", topic: "Marine Boiler" },
+  { id: 36, question: "Apa tindakan pertama yang harus diambil jika level air tidak terlihat di gauge glass?", question_en: "What is the first action to take if the water level is not visible in the gauge glass?", options: { A: { text: "Menambahkan lebih banyak air", text_en: "Add more water" }, B: { text: "Mematikan burner", text_en: "Shut off the burner" }, C: { text: "Menaikkan tekanan", text_en: "Increase the pressure" }, D: { text: "Melakukan blowdown", text_en: "Perform a blowdown" } }, answer: "B", topic: "Marine Boiler" },
+  { id: 37, question: "Boiler jenis apa yang lebih umum digunakan sebagai 'auxiliary boiler' di kapal motor?", question_en: "Which type of boiler is more common as an 'auxiliary boiler' on a motor vessel?", options: { A: { text: "Water-tube boiler", text_en: "Water-tube boiler" }, B: { text: "Fire-tube boiler", text_en: "Fire-tube boiler" }, C: { text: "Nuclear boiler", text_en: "Nuclear boiler" }, D: { text: "Gas turbine boiler", text_en: "Gas turbine boiler" } }, answer: "B", topic: "Marine Boiler" },
+  { id: 38, question: "Apa itu 'economizer'?", question_en: "What is an 'economizer'?", options: { A: { text: "Perangkat untuk menghemat bahan bakar dengan memanaskan air umpan menggunakan gas buang", text_en: "A device to save fuel by heating feedwater using exhaust gases" }, B: { text: "Perangkat untuk menghemat air", text_en: "A device to save water" }, C: { text: "Jenis burner yang efisien", text_en: "An efficient type of burner" }, D: { text: "Sistem kontrol otomatis", text_en: "An automatic control system" } }, answer: "A", topic: "Marine Boiler" },
+  { id: 39, question: "Apa yang menyebabkan pembentukan kerak (scale) di dalam boiler?", question_en: "What causes scale formation inside a boiler?", options: { A: { text: "Terlalu banyak bahan bakar", text_en: "Too much fuel" }, B: { text: "Tekanan terlalu tinggi", text_en: "Pressure is too high" }, C: { text: "Endapan mineral dari air umpan yang berkualitas buruk", text_en: "Mineral deposits from poor quality feedwater" }, D: { text: "Terlalu banyak blowdown", text_en: "Too much blowdown" } }, answer: "C", topic: "Marine Boiler" },
+  { id: 40, question: "Apa fungsi dari 'burner'?", question_en: "What is the function of a 'burner'?", options: { A: { text: "Menyemprotkan bahan bakar dalam bentuk kabut halus untuk pembakaran yang efisien", text_en: "To spray fuel in a fine mist for efficient combustion" }, B: { text: "Mengontrol level air", text_en: "To control the water level" }, C: { text: "Membersihkan pipa", text_en: "To clean the tubes" }, D: { text: "Mengukur suhu", text_en: "To measure temperature" } }, answer: "A", topic: "Marine Boiler" },
+
+  // Shafting & Propeller (20 questions)
   {
-    id: 11,
+    id: 41,
     question: "Komponen yang mentransfer daya dorong (thrust) dari poros baling-baling ke badan kapal adalah...",
     question_en: "The component that transfers the thrust from the propeller shaft to the ship's hull is the...",
     options: {
@@ -160,7 +192,7 @@ export const summativeQuestions: Question[] = [
     topic: "Shafting & Propeller",
   },
   {
-    id: 12,
+    id: 42,
     question: "Keuntungan utama dari Controllable Pitch Propeller (CPP) adalah...",
     question_en: "The main advantage of a Controllable Pitch Propeller (CPP) is...",
     options: {
@@ -173,7 +205,7 @@ export const summativeQuestions: Question[] = [
     topic: "Shafting & Propeller",
   },
   {
-    id: 13,
+    id: 43,
     question: "Fungsi utama dari tabung buritan (stern tube) adalah...",
     question_en: "The main function of the stern tube is to...",
     options: {
@@ -186,7 +218,7 @@ export const summativeQuestions: Question[] = [
     topic: "Shafting & Propeller",
   },
   {
-    id: 14,
+    id: 44,
     question: "Getaran berlebih di area buritan kapal seringkali merupakan gejala dari...",
     question_en: "Excessive vibration in the aft area of a ship is often a symptom of...",
     options: {
@@ -199,7 +231,7 @@ export const summativeQuestions: Question[] = [
     topic: "Shafting & Propeller",
   },
   {
-    id: 15,
+    id: 45,
     question: "Bantalan yang digunakan untuk menopang poros antara (intermediate shaft) di sepanjang terowongan poros disebut...",
     question_en: "The bearings used to support the intermediate shaft along the shaft tunnel are called...",
     options: {
@@ -211,9 +243,25 @@ export const summativeQuestions: Question[] = [
     answer: "D",
     topic: "Shafting & Propeller",
   },
-  // Other Auxiliaries
+  { id: 46, question: "Apa itu 'propeller slip'?", question_en: "What is 'propeller slip'?", options: { A: { text: "Ketika baling-baling terlepas dari poros", text_en: "When the propeller detaches from the shaft" }, B: { text: "Perbedaan antara kecepatan teoretis dan kecepatan aktual kapal", text_en: "The difference between the theoretical and actual speed of the ship" }, C: { text: "Ketika baling-baling berputar mundur", text_en: "When the propeller spins backwards" }, D: { text: "Jenis pelumasan untuk baling-baling", text_en: "A type of lubrication for the propeller" } }, answer: "B", topic: "Shafting & Propeller" },
+  { id: 47, question: "Poros terakhir dalam sistem, yang menembus lambung kapal, disebut...", question_en: "The final shaft in the system, which penetrates the hull, is called the...", options: { A: { text: "Intermediate shaft", text_en: "Intermediate shaft" }, B: { text: "Thrust shaft", text_en: "Thrust shaft" }, C: { text: "Tail shaft / Propeller shaft", text_en: "Tail shaft / Propeller shaft" }, D: { text: "Crankshaft", text_en: "Crankshaft" } }, answer: "C", topic: "Shafting & Propeller" },
+  { id: 48, question: "Apa fungsi dari 'stern tube seals'?", question_en: "What is the function of 'stern tube seals'?", options: { A: { text: "Mengurangi getaran", text_en: "To reduce vibration" }, B: { text: "Mencegah air laut masuk ke kamar mesin dan oli keluar", text_en: "To prevent seawater from entering the engine room and oil from escaping" }, C: { text: "Menopang berat poros", text_en: "To support the weight of the shaft" }, D: { text: "Mendinginkan poros", text_en: "To cool the shaft" } }, answer: "B", topic: "Shafting & Propeller" },
+  { id: 49, question: "Apa kelemahan dari CPP dibandingkan FPP?", question_en: "What is a disadvantage of a CPP compared to an FPP?", options: { A: { text: "Kurang efisien", text_en: "Less efficient" }, B: { text: "Lebih kompleks, mahal, dan memerlukan perawatan lebih", text_en: "More complex, expensive, and requires more maintenance" }, C: { text: "Tidak dapat digunakan pada kapal besar", text_en: "Cannot be used on large ships" }, D: { text: "Menghasilkan lebih banyak getaran", text_en: "Produces more vibration" } }, answer: "B", topic: "Shafting & Propeller" },
+  { id: 50, question: "Apa itu 'cavitation' pada baling-baling?", question_en: "What is 'cavitation' on a propeller?", options: { A: { text: "Pertumbuhan biota laut pada baling-baling", text_en: "Marine growth on the propeller" }, B: { text: "Pembentukan dan pecahnya gelembung uap karena tekanan rendah, yang dapat merusak bilah", text_en: "The formation and collapse of vapor bubbles due to low pressure, which can damage the blades" }, C: { text: "Proses pemasangan baling-baling", text_en: "The process of installing a propeller" }, D: { text: "Jenis korosi", text_en: "A type of corrosion" } }, answer: "B", topic: "Shafting & Propeller" },
+  { id: 51, question: "Bagaimana cara memasang baling-baling ke poros ekor?", question_en: "How is a propeller fitted to the tail shaft?", options: { A: { text: "Dengan dilas", text_en: "By welding" }, B: { text: "Dengan dilem", text_en: "By gluing" }, C: { text: "Dengan pemasangan tirus (taper fit) dan mur besar", text_en: "With a taper fit and a large nut" }, D: { text: "Dengan baut", text_en: "With bolts" } }, answer: "C", topic: "Shafting & Propeller" },
+  { id: 52, question: "Apa tujuan dari 'rope guard'?", question_en: "What is the purpose of a 'rope guard'?", options: { A: { text: "Melindungi tali tambat agar tidak putus", text_en: "To protect mooring ropes from breaking" }, B: { text: "Mencegah tali atau jaring melilit di sekitar poros dan perapat", text_en: "To prevent ropes or nets from wrapping around the shaft and seals" }, C: { text: "Menyimpan tali", text_en: "To store ropes" }, D: { text: "Mengukur ketegangan tali", text_en: "To measure rope tension" } }, answer: "B", topic: "Shafting & Propeller" },
+  { id: 53, question: "Apa yang dimaksud dengan 'pitch' baling-baling?", question_en: "What does the 'pitch' of a propeller refer to?", options: { A: { text: "Diameter baling-baling", text_en: "The diameter of the propeller" }, B: { text: "Jumlah bilah", text_en: "The number of blades" }, C: { text: "Jarak maju teoretis per satu putaran", text_en: "The theoretical forward distance per one revolution" }, D: { text: "Berat baling-baling", text_en: "The weight of the propeller" } }, answer: "C", topic: "Shafting & Propeller" },
+  { id: 54, question: "Pemeriksaan apa yang dilakukan untuk memastikan kelurusan poros?", question_en: "What check is performed to ensure shaft alignment?", options: { A: { text: "Pemeriksaan suhu", text_en: "Temperature check" }, B: { text: "Pemeriksaan getaran", text_en: "Vibration check" }, C: { text: "Pengukuran 'poker gauge' atau 'deflection gauge'", text_en: "Poker gauge or deflection gauge measurement" }, D: { text: "Pemeriksaan visual", text_en: "Visual inspection" } }, answer: "C", topic: "Shafting & Propeller" },
+  { id: 55, question: "Apa fungsi dari 'fairwater cone' atau 'propeller boss cap'?", question_en: "What is the function of a 'fairwater cone' or 'propeller boss cap'?", options: { A: { text: "Mengurangi hambatan dan turbulensi di belakang baling-baling", text_en: "To reduce drag and turbulence behind the propeller" }, B: { text: "Menahan baling-baling di tempatnya", text_en: "To hold the propeller in place" }, C: { text: "Melumasi baling-baling", text_en: "To lubricate the propeller" }, D: { text: "Mendinginkan baling-baling", text_en: "To cool the propeller" } }, answer: "A", topic: "Shafting & Propeller" },
+  { id: 56, question: "Bahan apa yang paling umum digunakan untuk membuat baling-baling kapal besar?", question_en: "What is the most common material for large ship propellers?", options: { A: { text: "Baja tahan karat (Stainless Steel)", text_en: "Stainless Steel" }, B: { text: "Paduan nikel-aluminium-perunggu (Nickel-Aluminium-Bronze alloy)", text_en: "Nickel-Aluminium-Bronze alloy" }, C: { text: "Titanium", text_en: "Titanium" }, D: { text: "Besi cor (Cast Iron)", text_en: "Cast Iron" } }, answer: "B", topic: "Shafting & Propeller" },
+  { id: 57, question: "Apa itu 'shaft generator'?", question_en: "What is a 'shaft generator'?", options: { A: { text: "Generator yang digerakkan oleh poros utama untuk menghasilkan listrik saat berlayar", text_en: "A generator driven by the main shaft to produce electricity while sailing" }, B: { text: "Generator kecil untuk poros", text_en: "A small generator for the shaft" }, C: { text: "Motor untuk memutar poros", text_en: "A motor to turn the shaft" }, D: { text: "Alat ukur pada poros", text_en: "A measuring device on the shaft" } }, answer: "A", topic: "Shafting & Propeller" },
+  { id: 58, question: "Apa yang menopang berat poros di dalam stern tube?", question_en: "What supports the weight of the shaft inside the stern tube?", options: { A: { text: "Air laut", text_en: "Sea water" }, B: { text: "Perapat (seals)", text_en: "The seals" }, C: { text: "Bantalan (bearings)", text_en: "The bearings" }, D: { text: "Tekanan oli", text_en: "Oil pressure" } }, answer: "C", topic: "Shafting & Propeller" },
+  { id: 59, question: "Untuk kapal yang membutuhkan kemampuan manuver sangat tinggi, jenis baling-baling apa yang lebih disukai?", question_en: "For a ship requiring very high maneuverability, which propeller type is preferred?", options: { A: { text: "Fixed Pitch Propeller (FPP)", text_en: "Fixed Pitch Propeller (FPP)" }, B: { text: "Controllable Pitch Propeller (CPP)", text_en: "Controllable Pitch Propeller (CPP)" }, C: { text: "Keduanya sama baiknya", text_en: "Both are equally good" }, D: { text: "Tidak ada baling-baling yang digunakan", text_en: "No propeller is used" } }, answer: "B", topic: "Shafting & Propeller" },
+  { id: 60, question: "Apa yang menghubungkan bagian-bagian dari poros antara (intermediate shafts)?", question_en: "What connects the sections of the intermediate shafts together?", options: { A: { text: "Las", text_en: "Welds" }, B: { text: "Kopling flensa baut (bolted flange couplings)", text_en: "Bolted flange couplings" }, C: { text: "Lem", text_en: "Glue" }, D: { text: "Rantai", text_en: "Chains" } }, answer: "B", topic: "Shafting & Propeller" },
+
+  // Other Auxiliaries (20 questions)
   {
-    id: 16,
+    id: 61,
     question: "Tujuan utama dari pemisah sentrifugal (centrifugal separator/purifier) untuk bahan bakar adalah...",
     question_en: "The main purpose of a centrifugal separator/purifier for fuel oil is to...",
     options: {
@@ -226,7 +274,7 @@ export const summativeQuestions: Question[] = [
     topic: "Other Auxiliaries",
   },
   {
-    id: 17,
+    id: 62,
     question: "Bagaimana Fresh Water Generator (FWG) tipe distilasi vakum menghasilkan air tawar?",
     question_en: "How does a vacuum distillation type Fresh Water Generator (FWG) produce fresh water?",
     options: {
@@ -239,7 +287,7 @@ export const summativeQuestions: Question[] = [
     topic: "Other Auxiliaries",
   },
   {
-    id: 18,
+    id: 63,
     question: "Manakah dari berikut ini yang BUKAN merupakan syarat untuk sinkronisasi generator?",
     question_en: "Which of the following is NOT a condition for synchronizing a generator?",
     options: {
@@ -252,7 +300,7 @@ export const summativeQuestions: Question[] = [
     topic: "Other Auxiliaries",
   },
   {
-    id: 19,
+    id: 64,
     question: "Pompa jenis apa yang paling cocok untuk memindahkan cairan kental (viscous) seperti oli pelumas pada tekanan tinggi?",
     question_en: "Which type of pump is most suitable for moving viscous fluids like lube oil at high pressure?",
     options: {
@@ -265,7 +313,7 @@ export const summativeQuestions: Question[] = [
     topic: "Other Auxiliaries",
   },
   {
-    id: 20,
+    id: 65,
     question: "Dalam siklus refrigerasi, komponen apa yang menyerap panas dari ruangan yang didinginkan?",
     question_en: "In a refrigeration cycle, which component absorbs heat from the space being cooled?",
     options: {
@@ -277,4 +325,19 @@ export const summativeQuestions: Question[] = [
     answer: "D",
     topic: "Other Auxiliaries",
   },
+  { id: 66, question: "Apa fungsi utama dari kompresor udara di kapal?", question_en: "What is the main function of an air compressor on a ship?", options: { A: { text: "Menyediakan udara untuk pernapasan", text_en: "To provide breathing air" }, B: { text: "Menyediakan udara bertekanan untuk menyalakan mesin dan sistem kontrol", text_en: "To provide compressed air for engine starting and control systems" }, C: { text: "Mendinginkan kamar mesin", text_en: "To cool the engine room" }, D: { text: "Memompa air", text_en: "To pump water" } }, answer: "B", topic: "Other Auxiliaries" },
+  { id: 67, question: "Apa perbedaan antara pompa sentrifugal dan pompa perpindahan positif?", question_en: "What is the difference between a centrifugal pump and a positive displacement pump?", options: { A: { text: "Pompa sentrifugal untuk tekanan tinggi, pompa perpindahan positif untuk aliran tinggi", text_en: "Centrifugal is for high pressure, positive displacement is for high flow" }, B: { text: "Pompa sentrifugal untuk aliran tinggi, pompa perpindahan positif untuk tekanan tinggi", text_en: "Centrifugal is for high flow, positive displacement is for high pressure" }, C: { text: "Tidak ada perbedaan", text_en: "There is no difference" }, D: { text: "Pompa sentrifugal menggunakan piston", text_en: "Centrifugal pumps use pistons" } }, answer: "B", topic: "Other Auxiliaries" },
+  { id: 68, question: "Dalam sistem refrigerasi, di mana refrigeran berubah dari gas menjadi cair?", question_en: "In a refrigeration system, where does the refrigerant change from a gas to a liquid?", options: { A: { text: "Evaporator", text_en: "Evaporator" }, B: { text: "Compressor", text_en: "Compressor" }, C: { text: "Condenser", text_en: "Condenser" }, D: { text: "Expansion Valve", text_en: "Expansion Valve" } }, answer: "C", topic: "Other Auxiliaries" },
+  { id: 69, question: "Apa itu 'oily water separator' (OWS)?", question_en: "What is an 'oily water separator' (OWS)?", options: { A: { text: "Peralatan untuk memisahkan oli dari air got (bilge water) sebelum dibuang ke laut", text_en: "Equipment to separate oil from bilge water before discharging overboard" }, B: { text: "Peralatan untuk mencampur oli dan air", text_en: "Equipment to mix oil and water" }, C: { text: "Peralatan untuk memurnikan oli pelumas", text_en: "Equipment to purify lube oil" }, D: { text: "Peralatan untuk memanaskan air", text_en: "Equipment to heat water" } }, answer: "A", topic: "Other Auxiliaries" },
+  { id: 70, question: "Apa fungsi dari 'gravity disc' pada purifier?", question_en: "What is the function of a 'gravity disc' in a purifier?", options: { A: { text: "Mengatur kecepatan putaran", text_en: "To regulate the rotational speed" }, B: { text: "Menentukan antarmuka (interface) antara oli dan air untuk pemisahan yang efektif", text_en: "To establish the interface between oil and water for effective separation" }, C: { text: "Membuang lumpur", text_en: "To discharge sludge" }, D: { text: "Mendinginkan oli", text_en: "To cool the oil" } }, answer: "B", topic: "Other Auxiliaries" },
+  { id: 71, question: "Apa sumber panas yang paling umum digunakan untuk FWG tipe distilasi?", question_en: "What is the most common heat source for a distillation type FWG?", options: { A: { text: "Burner khusus", text_en: "A dedicated burner" }, B: { text: "Panas dari gas buang boiler", text_en: "Heat from boiler exhaust gas" }, C: { text: "Panas dari air pendingin jaket mesin utama", text_en: "Heat from the main engine jacket cooling water" }, D: { text: "Listrik", text_en: "Electricity" } }, answer: "C", topic: "Other Auxiliaries" },
+  { id: 72, question: "Apa fungsi dari 'steering gear'?", question_en: "What is the function of the 'steering gear'?", options: { A: { text: "Menggerakkan kapal maju", text_en: "To move the ship forward" }, B: { text: "Menghasilkan listrik", text_en: "To generate electricity" }, C: { text: "Mesin hidrolik atau elektrik yang menggerakkan daun kemudi", text_en: "The hydraulic or electric machinery that moves the rudder" }, D: { text: "Mengontrol mesin utama", text_en: "To control the main engine" } }, answer: "C", topic: "Other Auxiliaries" },
+  { id: 73, question: "Apa itu 'incinerator'?", question_en: "What is an 'incinerator'?", options: { A: { text: "Tungku untuk membakar sampah padat dan lumpur oli", text_en: "A furnace for burning solid waste and oil sludge" }, B: { text: "Jenis pompa", text_en: "A type of pump" }, C: { text: "Sistem pendingin", text_en: "A cooling system" }, D: { text: "Generator darurat", text_en: "An emergency generator" } }, answer: "A", topic: "Other Auxiliaries" },
+  { id: 74, question: "Mengapa udara kontrol harus sangat kering?", question_en: "Why must control air be very dry?", options: { A: { text: "Agar lebih ringan", text_en: "To make it lighter" }, B: { text: "Untuk mencegah korosi dan pembekuan pada komponen kontrol pneumatik yang sensitif", text_en: "To prevent corrosion and freezing in sensitive pneumatic control components" }, C: { text: "Agar lebih mudah dikompresi", text_en: "To make it easier to compress" }, D: { text: "Untuk mengurangi kebisingan", text_en: "To reduce noise" } }, answer: "B", topic: "Other Auxiliaries" },
+  { id: 75, question: "Apa fungsi dari 'plate cooler'?", question_en: "What is the function of a 'plate cooler'?", options: { A: { text: "Mendinginkan piring di dapur", text_en: "To cool plates in the galley" }, B: { text: "Jenis penukar panas yang menggunakan pelat untuk mentransfer panas", text_en: "A type of heat exchanger that uses plates to transfer heat" }, C: { text: "Melindungi lambung kapal", text_en: "To protect the ship's hull" }, D: { text: "Memanaskan ruangan", text_en: "To heat a room" } }, answer: "B", topic: "Other Auxiliaries" },
+  { id: 76, question: "Apa yang terjadi pada refrigeran saat melewati 'expansion valve'?", question_en: "What happens to the refrigerant as it passes through the 'expansion valve'?", options: { A: { text: "Tekanan dan suhunya naik", text_en: "Its pressure and temperature increase" }, B: { text: "Tekanan dan suhunya turun drastis", text_en: "Its pressure and temperature drop drastically" }, C: { text: "Itu menjadi gas super panas", text_en: "It becomes a superheated gas" }, D: { text: "Itu disaring", text_en: "It gets filtered" } }, answer: "B", topic: "Other Auxiliaries" },
+  { id: 77, question: "Apa itu 'sewage treatment plant'?", question_en: "What is a 'sewage treatment plant'?", options: { A: { text: "Pabrik pengolahan air minum", text_en: "A drinking water treatment plant" }, B: { text: "Sistem untuk mengolah air limbah dari toilet sebelum dibuang", text_en: "A system to treat wastewater from toilets before discharge" }, C: { text: "Sistem untuk membersihkan air got", text_en: "A system for cleaning bilge water" }, D: { text: "Sistem pendingin", text_en: "A cooling system" } }, answer: "B", topic: "Other Auxiliaries" },
+  { id: 78, question: "Apa penggerak utama (prime mover) yang paling umum untuk generator di kapal?", question_en: "What is the most common prime mover for a generator on a ship?", options: { A: { text: "Turbin uap", text_en: "A steam turbine" }, B: { text: "Mesin diesel 4-tak", text_en: "A 4-stroke diesel engine" }, C: { text: "Turbin gas", text_en: "A gas turbine" }, D: { text: "Motor listrik", text_en: "An electric motor" } }, answer: "B", topic: "Other Auxiliaries" },
+  { id: 79, question: "Apa fungsi dari 'governor' pada mesin generator?", question_en: "What is the function of a 'governor' on a generator engine?", options: { A: { text: "Mengatur tegangan", text_en: "To regulate the voltage" }, B: { text: "Menjaga kecepatan mesin (dan frekuensi) tetap konstan meskipun beban berubah", text_en: "To keep the engine speed (and thus frequency) constant despite load changes" }, C: { text: "Menghentikan mesin dalam keadaan darurat", text_en: "To stop the engine in an emergency" }, D: { text: "Melumasi mesin", text_en: "To lubricate the engine" } }, answer: "B", topic: "Other Auxiliaries" },
+  { id: 80, question: "Apa itu 'bow thruster'?", question_en: "What is a 'bow thruster'?", options: { A: { text: "Baling-baling tambahan di haluan untuk membantu manuver", text_en: "An extra propeller at the bow to assist with maneuvering" }, B: { text: "Jangkar darurat", text_en: "An emergency anchor" }, C: { text: "Sistem pemadam kebakaran", text_en: "A fire-fighting system" }, D: { text: "Lampu navigasi di haluan", text_en: "A navigation light at the bow" } }, answer: "A", topic: "Other Auxiliaries" },
 ];
