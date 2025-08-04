@@ -9,18 +9,30 @@ export interface TeachingModule {
 export const teachingModules: TeachingModule[] = [
   {
     id: 'marine-engines',
-    title: 'Mesin Kapal',
-    englishTitle: 'Marine Engines',
+    title: '1.1 Mesin Kapal (Diesel, Uap, Gas)',
+    englishTitle: 'Marine Engines (Diesel, Steam, Gas)',
     entryPath: '/lesson-plan-marine-engines',
     status: 'available',
   },
   {
-    id: 'navigation',
-    title: 'Navigasi',
-    englishTitle: 'Navigation',
-    entryPath: '/lesson-plan-navigation',
-    status: 'available',
+    id: 'marine-boiler',
+    title: '1.2 Ketel Uap Kapal',
+    englishTitle: 'Marine Boiler',
+    entryPath: '/lesson-plan-marine-boiler',
+    status: 'coming-soon',
   },
-  // Anda bisa menambahkan modul baru di sini di masa depan
-  // You can add new modules here in the future
+  {
+    id: 'shafting-installations',
+    title: '1.3 Instalasi Poros & Baling-baling',
+    englishTitle: 'Shafting Installations & Propeller',
+    entryPath: '#',
+    status: 'coming-soon',
+  },
+  {
+    id: 'other-auxiliaries',
+    title: '1.4 Mesin Bantu Lainnya',
+    englishTitle: 'Other Auxiliaries',
+    entryPath: '#',
+    status: 'coming-soon',
+  },
 ];

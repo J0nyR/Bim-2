@@ -7,13 +7,13 @@ const Sidebar = () => {
   const { pathname } = location;
 
   const isMarineEngineModule = pathname.includes("-marine-engines");
-  const isNavigationModule = pathname.includes("-navigation");
+  const isMarineBoilerModule = pathname.includes("-marine-boiler");
 
   let navItems: { href: string; label: string; icon: React.ElementType }[] = [];
   let moduleTitle = "Module";
 
   if (isMarineEngineModule) {
-    moduleTitle = "Marine Engines Module";
+    moduleTitle = "1.1 Marine Engines";
     navItems = [
       { href: "/lesson-plan-marine-engines", label: "Lesson Plan", icon: GanttChartSquare },
       { href: "/teaching-material-marine-engines", label: "Teaching Material", icon: BookOpen },
@@ -21,14 +21,14 @@ const Sidebar = () => {
       { href: "/answer-key-marine-engines", label: "Answer Key", icon: Key },
       { href: "/rubric-marine-engines", label: "Assessment Rubric", icon: FileText },
     ];
-  } else if (isNavigationModule) {
-    moduleTitle = "Navigation Module";
+  } else if (isMarineBoilerModule) {
+    moduleTitle = "1.2 Marine Boiler";
     navItems = [
-      { href: "/lesson-plan-navigation", label: "Lesson Plan", icon: GanttChartSquare },
-      { href: "/teaching-material-navigation", label: "Teaching Material", icon: BookOpen },
-      { href: "/worksheet-navigation", label: "Worksheet", icon: ClipboardList },
-      { href: "/answer-key-navigation", label: "Answer Key", icon: Key },
-      { href: "/rubric-navigation", label: "Assessment Rubric", icon: FileText },
+      { href: "/lesson-plan-marine-boiler", label: "Lesson Plan", icon: GanttChartSquare },
+      { href: "/teaching-material-marine-boiler", label: "Teaching Material", icon: BookOpen },
+      { href: "/worksheet-marine-boiler", label: "Worksheet", icon: ClipboardList },
+      { href: "/answer-key-marine-boiler", label: "Answer Key", icon: Key },
+      { href: "/rubric-marine-boiler", label: "Assessment Rubric", icon: FileText },
     ];
   }
 
