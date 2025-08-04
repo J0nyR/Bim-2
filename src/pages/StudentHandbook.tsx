@@ -11,24 +11,18 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 
 type ChapterId = 'marine-engines' | 'marine-boiler' | 'shafting-installations' | 'other-auxiliaries';
 
+// Map chapter IDs to their corresponding components for cleaner rendering logic
+const chapterComponents: Record<ChapterId, React.ComponentType> = {
+  'marine-engines': ChapterMarineEngines,
+  'marine-boiler': ChapterMarineBoiler,
+  'shafting-installations': ChapterShaftingInstallations,
+  'other-auxiliaries': ChapterOtherAuxiliaries,
+};
+
 const StudentHandbook = () => {
   const [activeChapter, setActiveChapter] = useState<ChapterId>('marine-engines');
 
-  const renderChapter = () => {
-    switch (activeChapter) {
-      case 'marine-engines':
-        return <ChapterMarineEngines />;
-      case 'marine-boiler':
-        return <ChapterMarineBoiler />;
-      case 'shafting-installations':
-        return <ChapterShaftingInstallations />;
-      case 'other-auxiliaries':
-        return <ChapterOtherAuxiliaries />;
-      default:
-        return <ChapterMarineEngines />;
-    }
-  };
-
+  const ActiveChapterComponent = chapterComponents[activeChapter] || ChapterMarineEngines;
   const activeModule = teachingModules.find(m => m.id === activeChapter);
 
   return (
@@ -76,7 +70,7 @@ const StudentHandbook = () => {
             <h1 className="text-4xl font-bold text-primary">{activeModule?.title}</h1>
             <p className="text-xl text-muted-foreground">{activeModule?.englishTitle}</p>
           </div>
-          {renderChapter()}
+          <ActiveChapterComponent />
         </div>
       </main>
     </div>
