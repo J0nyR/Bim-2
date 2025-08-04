@@ -124,10 +124,16 @@ const TeachingMaterialOtherAuxiliaries = () => {
 
           <div>
             <h3 className="text-xl font-medium mb-2">4. Generator Air Tawar / Fresh Water Generator (FWG)</h3>
-            <p>Membuat air tawar dari air laut. Sebagian besar FWG di kapal menggunakan metode distilasi vakum suhu rendah.</p>
-            <p className="text-muted-foreground mb-2"><em>Produces fresh water from sea water. Most shipboard FWGs use low-temperature vacuum distillation.</em></p>
-            <p>Panas dari air pendingin jaket mesin utama (sekitar 70-80°C) digunakan untuk menguapkan air laut di dalam ruang vakum (di mana air mendidih pada suhu rendah). Uapnya kemudian didinginkan oleh air laut dingin untuk mengembun menjadi air tawar murni.</p>
-            <p className="text-muted-foreground"><em>Heat from the main engine's jacket cooling water (around 70-80°C) is used to boil sea water in a vacuum chamber (where water boils at a low temperature). The vapor is then cooled by cold sea water to condense into pure fresh water.</em></p>
+            <p>Membuat air tawar dari air laut, biasanya menggunakan metode distilasi vakum suhu rendah untuk efisiensi energi.</p>
+            <p className="text-muted-foreground mb-2"><em>Produces fresh water from sea water, typically using low-temperature vacuum distillation for energy efficiency.</em></p>
+            <h4 className="font-semibold text-lg mt-4">Proses Distilasi Vakum / Vacuum Distillation Process</h4>
+            <ol className="list-decimal list-inside space-y-1 ml-4 mt-2">
+              <li><strong>Pemanasan:</strong> Panas buangan dari air pendingin jaket mesin utama (sekitar 70-80°C) dialirkan ke evaporator.</li>
+              <li><strong>Penguapan Vakum:</strong> Air laut diumpankan ke evaporator yang dijaga dalam kondisi vakum tinggi. Dalam vakum, air mendidih pada suhu rendah (misalnya 40-60°C), bukan 100°C.</li>
+              <li><strong>Pemisahan Uap:</strong> Uap air murni naik, melewati demister (pemisah tetesan) untuk menghilangkan tetesan air garam.</li>
+              <li><strong>Kondensasi:</strong> Uap murni kemudian mengalir ke kondensor, yang didinginkan oleh air laut dingin. Uap mengembun menjadi air tawar murni (distilat).</li>
+              <li><strong>Ekstraksi:</strong> Air tawar yang dihasilkan dipompa ke tangki penyimpanan. Air garam pekat (brine) yang tersisa di evaporator dibuang ke laut.</li>
+            </ol>
           </div>
           <Separator />
 
@@ -167,18 +173,49 @@ const TeachingMaterialOtherAuxiliaries = () => {
           <Separator />
 
           <div>
-            <h3 className="text-xl font-medium mb-2">6. Sistem Pendingin (Refrigerasi) / Refrigeration System</h3>
-            <p>Digunakan untuk mendinginkan ruang penyimpanan makanan (provision rooms) untuk menjaga kesegaran makanan. Sistem ini bekerja dengan siklus kompresi uap menggunakan zat pendingin (refrigerant).</p>
-            <p className="text-muted-foreground mb-2"><em>Used to cool provision rooms to preserve food. The system works on a vapor compression cycle using a refrigerant.</em></p>
+            <h3 className="text-xl font-medium mb-2">6. Sistem Refrigerasi & Pendingin Provisi / Refrigeration & Provision Cooling Systems</h3>
+            <p>Sistem ini penting untuk mengawetkan makanan bagi kru selama pelayaran. Sistem ini menggunakan siklus kompresi uap untuk memindahkan panas dari dalam ruang penyimpanan ke luar.</p>
+            <p className="text-muted-foreground mb-2"><em>This system is essential for preserving food for the crew during voyages. It uses a vapor compression cycle to move heat from inside the storage rooms to the outside.</em></p>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-lg">Ruang Chiller vs. Freezer</h4>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Chiller (Ruang Pendingin):</strong> Untuk menyimpan sayuran, buah, dan produk susu. Suhu dijaga sekitar <strong>+2°C hingga +4°C</strong>.</li>
+                  <li><strong>Freezer (Ruang Pembeku):</strong> Untuk menyimpan daging dan ikan. Suhu dijaga sangat rendah, sekitar <strong>-18°C hingga -25°C</strong>.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-lg">Siklus Kompresi Uap / Vapor Compression Cycle</h4>
+                <ol className="list-decimal list-inside space-y-1 ml-4">
+                  <li><strong>Kompresor:</strong> Menghisap refrigerant gas bertekanan rendah dan memampatkannya menjadi gas bertekanan & bersuhu tinggi.</li>
+                  <li><strong>Kondensor:</strong> Gas panas dari kompresor didinginkan (biasanya oleh air laut) dan berubah menjadi cairan bertekanan tinggi.</li>
+                  <li><strong>Katup Ekspansi:</strong> Cairan bertekanan tinggi melewati katup ini, tekanannya turun drastis, membuatnya menjadi campuran cairan-gas yang sangat dingin.</li>
+                  <li><strong>Evaporator:</strong> Campuran dingin ini mengalir melalui pipa-pipa di dalam ruang Chiller/Freezer. Ia menyerap panas dari ruangan, menyebabkan cairan refrigerant mendidih menjadi gas dan mendinginkan ruangan. Gas ini kemudian kembali ke kompresor.</li>
+                </ol>
+              </div>
+            </div>
           </div>
           <Separator />
 
           <div>
             <h3 className="text-xl font-medium mb-2">7. Sistem AC & Ventilasi / Air-Conditioning & Ventilation Systems</h3>
-            <p><strong>Ventilasi (Ventilation):</strong> Penting untuk memasok udara segar ke kamar mesin untuk pembakaran mesin dan untuk menghilangkan panas. Juga untuk ruang akomodasi dan kargo.</p>
-            <p className="text-muted-foreground mb-2"><em><strong>Ventilation:</strong> Crucial for supplying fresh air to the engine room for engine combustion and for removing heat. Also for accommodation and cargo spaces.</em></p>
-            <p><strong>AC (Air-Conditioning):</strong> Mendinginkan, mengeringkan (dehumidify), dan menyaring udara untuk kenyamanan kru di ruang akomodasi dan ruang kontrol.</p>
-            <p className="text-muted-foreground"><em><strong>AC (Air-Conditioning):</strong> Cools, dehumidifies, and filters air for crew comfort in accommodation and control rooms.</em></p>
+            <p>Sistem ini memastikan lingkungan kerja dan hidup yang aman dan nyaman di atas kapal.</p>
+            <p className="text-muted-foreground mb-2"><em>These systems ensure a safe and comfortable working and living environment on board.</em></p>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Ventilasi (Ventilation):</strong> Tujuannya adalah pertukaran udara.
+                <ul className="list-circle list-inside ml-6">
+                  <li><strong>Kamar Mesin:</strong> Memasok udara segar untuk pembakaran mesin dan membuang udara panas untuk mendinginkan ruangan.</li>
+                  <li><strong>Akomodasi & Palka:</strong> Menghilangkan udara pengap, bau, dan gas berbahaya, serta memasok oksigen.</li>
+                </ul>
+              </li>
+              <li><strong>Pendingin Udara (Air-Conditioning - AC):</strong> Ini adalah sistem kontrol iklim total.
+                <ul className="list-circle list-inside ml-6">
+                  <li><strong>Fungsi:</strong> Tidak hanya mendinginkan, tetapi juga mengontrol <strong>kelembaban (dehumidify)</strong>, <strong>membersihkan (filter)</strong>, dan <strong>mensirkulasikan</strong> udara.</li>
+                  <li><strong>Aplikasi:</strong> Ruang akomodasi, anjungan, dan ruang kontrol mesin untuk kenyamanan kru dan melindungi peralatan elektronik.</li>
+                  <li><strong>Prinsip Kerja:</strong> Menggunakan siklus refrigerasi yang sama dengan pendingin provisi untuk mendinginkan udara.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
 
         </CardContent>
