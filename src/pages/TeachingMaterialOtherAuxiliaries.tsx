@@ -217,6 +217,37 @@ const TeachingMaterialOtherAuxiliaries = () => {
               </li>
             </ul>
           </div>
+          <Separator />
+
+          <div>
+            <h3 className="text-xl font-medium mb-2">8. Pembangkit Listrik (Generator) / Electrical Power Generation (Generators)</h3>
+            <p>Generator di kapal, sering disebut genset (generator set), menghasilkan semua tenaga listrik yang dibutuhkan untuk mengoperasikan seluruh mesin, sistem navigasi, pencahayaan, dan akomodasi.</p>
+            <p className="text-muted-foreground mb-2"><em>Shipboard generators, often called gensets, produce all the electrical power required to operate all machinery, navigation systems, lighting, and accommodation.</em></p>
+            <div className="mt-4 space-y-4">
+              <div>
+                <h4 className="font-semibold text-lg">Komponen Utama / Main Components</h4>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Prime Mover:</strong> Penggerak utama, hampir selalu berupa mesin diesel 4-tak (four-stroke diesel engine) yang andal.</li>
+                  <li><strong>Alternator:</strong> Bagian yang mengubah energi mekanik (putaran) dari mesin diesel menjadi energi listrik AC (arus bolak-balik).</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-lg">Sinkronisasi (Paralleling Generators)</h4>
+                <p className="text-muted-foreground mb-2">Kapal memiliki beberapa genset. Menjalankannya secara paralel (bersama-sama) sangat penting untuk:</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Pembagian Beban (Load Sharing):</strong> Ketika kebutuhan listrik melebihi kapasitas satu generator (misalnya saat manuver menggunakan bow thruster), generator lain dapat dijalankan secara paralel untuk berbagi beban.</li>
+                  <li><strong>Redundansi & Keamanan (Redundancy & Safety):</strong> Jika satu generator gagal, generator lain dapat mengambil alih beban, mencegah pemadaman total (blackout).</li>
+                </ul>
+                <p className="mt-2">Untuk menyinkronkan generator ke switchboard utama (busbar), <strong>empat kondisi</strong> harus terpenuhi secara tepat:</p>
+                <ol className="list-decimal list-inside space-y-1 ml-4 mt-2">
+                  <li><strong>Tegangan Sama (Same Voltage):</strong> Tegangan generator yang akan masuk harus sama dengan tegangan busbar.</li>
+                  <li><strong>Frekuensi Sama (Same Frequency):</strong> Frekuensi generator (diatur oleh kecepatan mesin) harus sama persis dengan frekuensi busbar.</li>
+                  <li><strong>Urutan Fasa Sama (Same Phase Sequence):</strong> Urutan fasa (misalnya, R-Y-B) harus cocok. Ini sudah diatur saat instalasi.</li>
+                  <li><strong>Sudut Fasa Sama (Same Phase Angle):</strong> Gelombang sinus dari tegangan generator harus sejajar (in-phase) dengan gelombang sinus busbar. Ini diperiksa menggunakan alat yang disebut synchroscope.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
 
         </CardContent>
       </Card>
@@ -242,16 +273,14 @@ const TeachingMaterialOtherAuxiliaries = () => {
             <p className="text-muted-foreground"><em>"Bagus sekali. Mari kita periksa Generator Air Tawar. Berapa pembacaan vakumnya dan berapa banyak air tawar yang kita produksi per jam?"</em></p>
             <p><strong>Oiler:</strong> "The vacuum is holding strong at about 92% on the gauge. Production is good, around 1.2 tons per hour, sir."</p>
             <p className="text-muted-foreground"><em>"Vakumnya kuat, sekitar 92% pada alat ukur. Produksi bagus, sekitar 1,2 ton per jam, Pak."</em></p>
-            <p><strong>Second Engineer:</strong> "Perfect, that's what we want to see. Now, what about the air compressors? Which one is on standby?"</p>
-            <p className="text-muted-foreground"><em>"Sempurna, itu yang ingin kita lihat. Sekarang, bagaimana dengan kompresor udara? Kompresor mana yang siaga?"</em></p>
-            <p><strong>Oiler:</strong> "Number one compressor is running, it just cut out as the main air receiver pressure reached 30 bar. Number two is on standby, ready to cut in."</p>
-            <p className="text-muted-foreground"><em>"Kompresor nomor satu sedang jalan, baru saja berhenti otomatis karena tekanan di tabung udara utama mencapai 30 bar. Nomor dua dalam posisi siaga, siap untuk menyala."</em></p>
-            <p><strong>Second Engineer:</strong> "Very good. One last thing for this area. Check the log book for the provision refrigeration system. What were the last recorded temperatures for the freezer and chiller rooms?"</p>
-            <p className="text-muted-foreground"><em>"Sangat bagus. Satu hal terakhir di area ini. Periksa buku catatan untuk sistem pendingin provisi. Berapa suhu terakhir yang tercatat untuk ruang freezer dan chiller?"</em></p>
-            <p><strong>Oiler:</strong> "Let me see... The freezer room is at minus 20 degrees Celsius, and the chiller room is at plus 4 degrees Celsius. Both are within the required range, sir."</p>
-            <p className="text-muted-foreground"><em>"Sebentar saya lihat... Ruang freezer di minus 20 derajat Celsius, dan ruang chiller di plus 4 derajat Celsius. Keduanya dalam rentang yang disyaratkan, Pak."</em></p>
-            <p><strong>Second Engineer:</strong> "Excellent work, Oiler. Keep a sharp eye on everything. A smooth running engine room depends on these auxiliaries working perfectly."</p>
-            <p className="text-muted-foreground"><em>"Kerja bagus, Oiler. Awasi semuanya dengan cermat. Kamar mesin yang berjalan lancar bergantung pada mesin-mesin bantu ini yang bekerja dengan sempurna."</em></p>
+            <p><strong>Second Engineer:</strong> "Perfect. Now, let's check the power situation. How's number two generator running? What's the load in kilowatts?"</p>
+            <p className="text-muted-foreground"><em>"Sempurna. Sekarang, mari kita periksa situasi kelistrikan. Bagaimana kondisi generator nomor dua? Berapa bebannya dalam kilowatt?"</em></p>
+            <p><strong>Oiler:</strong> "Number two generator is running smoothly, sir. The load is about 250 kW. All parameters are normal."</p>
+            <p className="text-muted-foreground"><em>"Generator nomor dua berjalan lancar, Pak. Bebannya sekitar 250 kW. Semua parameter normal."</em></p>
+            <p><strong>Second Engineer:</strong> "Okay. The bridge just called, they will start cargo operations in about an hour. That means the cranes will be running. We'll need more power. Go and prepare number one generator for start-up. We will need to synchronize it."</p>
+            <p className="text-muted-foreground"><em>"Oke. Anjungan baru saja menelepon, mereka akan memulai operasi kargo sekitar satu jam lagi. Itu artinya crane akan beroperasi. Kita akan butuh daya lebih. Pergi dan siapkan generator nomor satu untuk dinyalakan. Kita perlu menyinkronkannya."</em></p>
+            <p><strong>Oiler:</strong> "Understood, sir. I will perform the pre-start checks on number one generator and have it ready for synchronization."</p>
+            <p className="text-muted-foreground"><em>"Dimengerti, Pak. Saya akan melakukan pemeriksaan pra-start pada generator nomor satu dan menyiapkannya untuk sinkronisasi."</em></p>
           </div>
         </CardContent>
       </Card>
