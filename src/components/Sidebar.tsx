@@ -9,6 +9,7 @@ const Sidebar = () => {
   const isMarineEngineModule = pathname.includes("-marine-engines");
   const isMarineBoilerModule = pathname.includes("-marine-boiler");
   const isShaftingModule = pathname.includes("-shafting-installations");
+  const isOtherAuxiliariesModule = pathname.includes("-other-auxiliaries");
 
   let navItems: { href: string; label: string; icon: React.ElementType }[] = [];
   let moduleTitle = "Module";
@@ -39,6 +40,15 @@ const Sidebar = () => {
       { href: "/worksheet-shafting-installations", label: "Worksheet", icon: ClipboardList },
       { href: "/answer-key-shafting-installations", label: "Answer Key", icon: Key },
       { href: "/rubric-shafting-installations", label: "Assessment Rubric", icon: FileText },
+    ];
+  } else if (isOtherAuxiliariesModule) {
+    moduleTitle = "1.4 Other Auxiliaries";
+    navItems = [
+      { href: "/lesson-plan-other-auxiliaries", label: "Lesson Plan", icon: GanttChartSquare },
+      { href: "/teaching-material-other-auxiliaries", label: "Teaching Material", icon: BookOpen },
+      { href: "/worksheet-other-auxiliaries", label: "Worksheet", icon: ClipboardList },
+      { href: "/answer-key-other-auxiliaries", label: "Answer Key", icon: Key },
+      { href: "/rubric-other-auxiliaries", label: "Assessment Rubric", icon: FileText },
     ];
   }
 

@@ -32,7 +32,7 @@ export const teachingModules: TeachingModule[] = [
     id: 'other-auxiliaries',
     title: '1.4 Mesin Bantu Lainnya',
     englishTitle: 'Other Auxiliaries',
-    entryPath: '#',
-    status: 'coming-soon',
+    entryPath: '/lesson-plan-other-auxiliaries',
+    status: 'available',
   },
 ];

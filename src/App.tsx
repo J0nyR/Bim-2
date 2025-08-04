@@ -21,6 +21,11 @@ import TeachingMaterialShaftingInstallations from "./pages/TeachingMaterialShaft
 import WorksheetShaftingInstallations from "./pages/WorksheetShaftingInstallations";
 import AnswerKeyShaftingInstallations from "./pages/AnswerKeyShaftingInstallations";
 import RubricShaftingInstallations from "./pages/RubricShaftingInstallations";
+import LessonPlanOtherAuxiliaries from "./pages/LessonPlanOtherAuxiliaries";
+import TeachingMaterialOtherAuxiliaries from "./pages/TeachingMaterialOtherAuxiliaries";
+import WorksheetOtherAuxiliaries from "./pages/WorksheetOtherAuxiliaries";
+import AnswerKeyOtherAuxiliaries from "./pages/AnswerKeyOtherAuxiliaries";
+import RubricOtherAuxiliaries from "./pages/RubricOtherAuxiliaries";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +59,13 @@ const App = () => (
             <Route path="/worksheet-shafting-installations" element={<WorksheetShaftingInstallations />} />
             <Route path="/answer-key-shafting-installations" element={<AnswerKeyShaftingInstallations />} />
             <Route path="/rubric-shafting-installations" element={<RubricShaftingInstallations />} />
+
+            {/* Other Auxiliaries Module Routes */}
+            <Route path="/lesson-plan-other-auxiliaries" element={<LessonPlanOtherAuxiliaries />} />
+            <Route path="/teaching-material-other-auxiliaries" element={<TeachingMaterialOtherAuxiliaries />} />
+            <Route path="/worksheet-other-auxiliaries" element={<WorksheetOtherAuxiliaries />} />
+            <Route path="/answer-key-other-auxiliaries" element={<AnswerKeyOtherAuxiliaries />} />
+            <Route path="/rubric-other-auxiliaries" element={<RubricOtherAuxiliaries />} />
           </Route>
 
           <Route path="*" element={<NotFound />} />
