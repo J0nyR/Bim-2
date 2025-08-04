@@ -7,6 +7,7 @@ import ChapterMarineEngines from '@/components/chapters/ChapterMarineEngines';
 import ChapterMarineBoiler from '@/components/chapters/ChapterMarineBoiler';
 import ChapterShaftingInstallations from '@/components/chapters/ChapterShaftingInstallations';
 import ChapterOtherAuxiliaries from '@/components/chapters/ChapterOtherAuxiliaries';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 type ChapterId = 'marine-engines' | 'marine-boiler' | 'shafting-installations' | 'other-auxiliaries';
 
@@ -66,7 +67,10 @@ const StudentHandbook = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-6 md:p-8 overflow-y-auto">
+      <main className="flex-1 p-6 md:p-8 overflow-y-auto relative">
+        <div className="absolute top-6 right-8 z-50">
+            <ThemeToggle />
+        </div>
         <div className="container mx-auto">
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-primary">{activeModule?.title}</h1>

@@ -4,10 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { teachingModules } from "@/data/modules";
 import { Book, ClipboardCheck, Ship, BookOpen } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Index = () => {
   return (
     <div className="relative min-h-screen w-full">
+      <div className="absolute top-4 right-4 z-30">
+        <ThemeToggle />
+      </div>
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center"
