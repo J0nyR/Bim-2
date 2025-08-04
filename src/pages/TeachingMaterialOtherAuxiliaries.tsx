@@ -31,12 +31,12 @@ const TeachingMaterialOtherAuxiliaries = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div><p><strong>Pump:</strong> Pompa, alat untuk memindahkan fluida.</p><p className="text-muted-foreground"><em>A device used to move fluids.</em></p></div>
             <div><p><strong>Impeller:</strong> Roda berputar di dalam pompa sentrifugal yang mendorong fluida.</p><p className="text-muted-foreground"><em>The rotating part of a centrifugal pump that moves the fluid.</em></p></div>
-            <div><p><strong>Purifier:</strong> Alat untuk memisahkan kotoran dari cairan (mis. oli) menggunakan gaya sentrifugal.</p><p className="text-muted-foreground"><em>A device that separates impurities from liquids (e.g., oil) using centrifugal force.</em></p></div>
+            <div><p><strong>Separator:</strong> Mesin yang memisahkan zat berdasarkan massa jenis menggunakan gaya sentrifugal.</p><p className="text-muted-foreground"><em>A machine that separates substances of different densities using centrifugal force.</em></p></div>
             <div><p><strong>Compressor:</strong> Mesin yang menaikkan tekanan udara atau gas.</p><p className="text-muted-foreground"><em>A machine that increases the pressure of air or gas.</em></p></div>
             <div><p><strong>Heat Exchanger:</strong> Alat untuk mentransfer panas antara dua fluida tanpa mencampurnya.</p><p className="text-muted-foreground"><em>A device to transfer heat between two fluids without mixing them.</em></p></div>
             <div><p><strong>Distillation:</strong> Proses pemurnian cairan dengan pemanasan dan pendinginan (penyulingan).</p><p className="text-muted-foreground"><em>The process of purifying a liquid by heating and cooling.</em></p></div>
             <div><p><strong>Refrigerant:</strong> Zat yang digunakan dalam siklus pendinginan untuk menyerap dan melepaskan panas.</p><p className="text-muted-foreground"><em>A substance used in a refrigeration cycle to absorb and release heat.</em></p></div>
-            <div><p><strong>Ventilation:</strong> Proses memasok udara segar ke suatu ruangan.</p><p className="text-muted-foreground"><em>The process of supplying fresh air to a space.</em></p></div>
+            <div><p><strong>Gravity Disc:</strong> Cincin di dalam purifier yang menentukan posisi antarmuka air-oli.</p><p className="text-muted-foreground"><em>A ring inside a purifier that determines the position of the water-oil interface.</em></p></div>
           </div>
         </CardContent>
       </Card>
@@ -91,9 +91,34 @@ const TeachingMaterialOtherAuxiliaries = () => {
           <Separator />
 
           <div>
-            <h3 className="text-xl font-medium mb-2">3. Pemurni / Purifier</h3>
-            <p>Menggunakan gaya sentrifugal untuk memisahkan kotoran (air, lumpur/sludge, partikel padat) dari bahan bakar dan oli pelumas. Ini sangat penting untuk melindungi mesin dari kerusakan.</p>
-            <p className="text-muted-foreground mb-2"><em>Uses centrifugal force to separate impurities (water, sludge, solid particles) from fuel and lubricating oil. This is critical to protect the engine from damage.</em></p>
+            <h3 className="text-xl font-medium mb-2">3. Pemisah Sentrifugal (Purifier & Clarifier) / Centrifugal Separator</h3>
+            <p>Mesin ini menggunakan gaya sentrifugal (ribuan kali gaya gravitasi) untuk memisahkan zat dengan massa jenis berbeda. Tujuan utamanya adalah membersihkan bahan bakar dan oli pelumas dari kontaminan berbahaya seperti air dan lumpur (sludge).</p>
+            <p className="text-muted-foreground mb-2"><em>This machine uses centrifugal force (thousands of times gravity) to separate substances of different densities. Its main purpose is to clean fuel and lubricating oil from harmful contaminants like water and sludge.</em></p>
+            
+            <div className="mt-4 space-y-4">
+              <div>
+                <h4 className="font-semibold text-lg">Komponen Utama / Main Components</h4>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Bowl:</strong> Komponen berputar berkecepatan tinggi tempat pemisahan terjadi.</li>
+                  <li><strong>Disc Stack:</strong> Tumpukan piringan berbentuk kerucut di dalam bowl untuk memperluas area permukaan dan meningkatkan efisiensi pemisahan.</li>
+                  <li><strong>Motor & Gear:</strong> Menggerakkan bowl pada kecepatan tinggi (misalnya 6.000 - 10.000 RPM).</li>
+                  <li><strong>Gravity Disc (atau Dam Ring):</strong> Komponen kunci yang digunakan dalam mode purifier untuk mengatur posisi antarmuka (interface) antara oli dan air.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-lg">Persamaan & Perbedaan / Similarities & Differences</h4>
+                <p className="text-muted-foreground mb-2">Mesin yang sama dapat diatur sebagai Purifier atau Clarifier.</p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Persamaan:</strong> Keduanya menggunakan prinsip sentrifugal, memiliki konstruksi dasar yang sama, dan bertujuan untuk membersihkan cairan.</li>
+                  <li><strong>Perbedaan (Mode Operasi):</strong>
+                    <ul className="list-circle list-inside ml-6">
+                      <li><strong>Mode Purifier:</strong> Dikonfigurasi untuk memisahkan <strong>dua cairan</strong> yang tidak dapat bercampur (misalnya, oli dan air) dan sejumlah kecil padatan. Memiliki <strong>dua saluran keluar cairan</strong> (satu untuk oli bersih, satu untuk air) dan satu saluran keluar padatan. Menggunakan <strong>gravity disc</strong>.</li>
+                      <li><strong>Mode Clarifier:</strong> Dikonfigurasi untuk memisahkan sejumlah kecil <strong>padatan</strong> dari <strong>satu cairan</strong>. Hanya memiliki <strong>satu saluran keluar cairan</strong> dan satu saluran keluar padatan. Tidak menggunakan gravity disc.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <Separator />
 
