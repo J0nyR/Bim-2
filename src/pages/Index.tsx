@@ -26,7 +26,7 @@ const Index = () => {
             <Ship className="h-16 w-16 text-primary" />
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-foreground">
-            Perangkat Ajar Bahasa Inggris Maritim
+            Perangkat Ajar Bahasa Inggris Maritim Teknika 1
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground">
             Teknika Kapal Niaga - Tingkat Operasional
