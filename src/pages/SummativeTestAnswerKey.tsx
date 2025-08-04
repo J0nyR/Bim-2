@@ -11,7 +11,7 @@ const SummativeTestAnswerKey = () => {
 
   return (
     <div className="relative">
-        <div className="absolute top-6 right-6 z-50">
+        <div className="absolute top-6 right-6 z-50 hide-on-print">
             <ThemeToggle />
         </div>
         <div className="container mx-auto p-6 space-y-8">

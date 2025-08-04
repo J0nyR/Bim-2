@@ -9,7 +9,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 const Index = () => {
   return (
     <div className="relative min-h-screen w-full">
-      <div className="absolute top-4 right-4 z-30">
+      <div className="absolute top-4 right-4 z-30 hide-on-print">
         <ThemeToggle />
       </div>
       {/* Background Image */}
@@ -107,7 +107,7 @@ const Index = () => {
           </Card>
         </div>
 
-        <div className="absolute bottom-0">
+        <div className="absolute bottom-0 hide-on-print">
           <MadeWithDyad />
         </div>
       </div>

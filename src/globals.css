@@ -100,3 +100,80 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 2cm 1cm 1cm 2cm;
+  }
+
+  body {
+    background-color: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide non-printable elements */
+  aside, nav, button, .hide-on-print {
+    display: none !important;
+  }
+
+  /* Make the main content area take up the full page */
+  main, .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Reset card styling for a clean document look */
+  .card, .card-header, .card-content {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    color: black !important;
+    margin-bottom: 1rem;
+  }
+
+  /* Ensure text is readable */
+  h1, h2, h3, h4, h5, h6, p, li, span, strong, em, label {
+    color: black !important;
+  }
+
+  /* Style links to be visible but not overly distracting */
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+  a[href]::after {
+    content: "" !important; /* Prevent URLs from showing */
+  }
+
+  /* Improve table printing */
+  table {
+    page-break-inside: avoid;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead {
+    display: table-header-group; /* Repeat table headers on each page */
+  }
+  th, td {
+    border: 1px solid #666 !important;
+    padding: 0.5rem;
+  }
+
+  /* Avoid breaking elements across pages */
+  .card, .space-y-8 > div {
+    page-break-inside: avoid;
+  }
+
+  /* Remove background image from index */
+  .bg-cover {
+    background-image: none !important;
+  }
+  .bg-background\/80 {
+    background-color: transparent !important;
+  }
+}

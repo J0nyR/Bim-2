@@ -7,7 +7,7 @@ const Layout = () => {
     <div className="flex min-h-screen bg-background text-foreground">
       <Sidebar />
       <main className="flex-1 relative">
-        <div className="absolute top-4 right-4 z-50">
+        <div className="absolute top-4 right-4 z-50 hide-on-print">
           <ThemeToggle />
         </div>
         <Outlet />

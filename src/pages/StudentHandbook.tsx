@@ -28,7 +28,7 @@ const StudentHandbook = () => {
   return (
     <div className="flex min-h-screen">
       {/* Sidebar / Table of Contents */}
-      <aside className="hidden md:flex flex-col w-72 flex-shrink-0 border-r bg-card p-4">
+      <aside className="hidden md:flex flex-col w-72 flex-shrink-0 border-r bg-card p-4 hide-on-print">
         <div className="flex flex-col space-y-4">
           <h2 className="text-2xl font-bold tracking-tight px-4 flex items-center">
             <BookOpen className="mr-3 h-6 w-6" />
@@ -62,7 +62,7 @@ const StudentHandbook = () => {
 
       {/* Main Content */}
       <main className="flex-1 p-6 md:p-8 overflow-y-auto relative">
-        <div className="absolute top-6 right-8 z-50">
+        <div className="absolute top-6 right-8 z-50 hide-on-print">
             <ThemeToggle />
         </div>
         <div className="container mx-auto">
