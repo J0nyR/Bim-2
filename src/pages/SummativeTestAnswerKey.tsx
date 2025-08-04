@@ -27,7 +27,7 @@ const SummativeTestAnswerKey = () => {
         return (
           <Card key={topic} className="bg-card text-card-foreground shadow-lg">
             <CardHeader>
-              <CardTitle className="text-2xl font-semibold">{topic}</CardTitle>
+              <CardTitle className="text-2xl font-semibold">{topic} ({topicQuestions.length} questions)</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {topicQuestions.map((q) => (
