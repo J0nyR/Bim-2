@@ -3,69 +3,95 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { teachingModules } from "@/data/modules";
-import { Book, ClipboardCheck } from "lucide-react";
+import { Book, ClipboardCheck, Ship } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground p-4">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-primary">
-          Selamat Datang di Aplikasi Perangkat Ajar Anda
-        </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground">
-          Welcome to Your Teaching Material Application
-        </p>
-      </div>
+    <div className="relative min-h-screen w-full">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/engine-room-bg.svg')" }}
+      />
+      {/* Overlay */}
+      <div className="absolute inset-0 z-10 bg-background/80" />
 
-      <div className="w-full max-w-2xl space-y-8">
-        <Card className="bg-card text-card-foreground shadow-lg">
-          <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-semibold">Pilih Modul Pembelajaran / Select Learning Module</CardTitle>
-          </CardHeader>
-          <CardContent className="flex flex-col space-y-4">
-            {teachingModules.map((module) => (
-              <Button
-                key={module.id}
-                asChild
-                className="w-full py-3 text-lg h-auto"
-                variant={module.status === 'coming-soon' ? 'secondary' : 'default'}
-                disabled={module.status === 'coming-soon'}
-              >
-                <Link to={module.entryPath}>
-                  <div className="flex flex-col items-center text-center">
-                    <span>{module.title}</span>
-                    <span className="text-sm font-normal text-primary-foreground/80 dark:text-secondary-foreground/80">
-                      {module.englishTitle} {module.status === 'coming-soon' && '(Segera Hadir / Coming Soon)'}
-                    </span>
-                  </div>
+      <div className="relative z-20 flex flex-col items-center justify-center min-h-screen p-4">
+        <div className="text-center mb-10">
+          <div className="flex justify-center items-center mb-4">
+            <Ship className="h-16 w-16 text-primary" />
+          </div>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-foreground">
+            Perangkat Ajar Bahasa Inggris Maritim
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground">
+            Teknika Kapal Niaga - Tingkat Operasional
+          </p>
+        </div>
+
+        <div className="w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Learning Modules Card */}
+          <Card className="md:col-span-2 bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl font-semibold">Modul Pembelajaran / Learning Modules</CardTitle>
+            </CardHeader>
+            <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {teachingModules.map((module) => (
+                <Button
+                  key={module.id}
+                  asChild
+                  className="w-full py-3 text-base h-auto"
+                  variant={module.status === 'coming-soon' ? 'secondary' : 'default'}
+                  disabled={module.status === 'coming-soon'}
+                >
+                  <Link to={module.entryPath}>
+                    <div className="flex flex-col items-center text-center">
+                      <span>{module.title}</span>
+                      <span className="text-xs font-normal opacity-80">
+                        {module.englishTitle} {module.status === 'coming-soon' && '(Coming Soon)'}
+                      </span>
+                    </div>
+                  </Link>
+                </Button>
+              ))}
+            </CardContent>
+          </Card>
+
+          {/* Syllabus Card */}
+          <Card className="bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+            <CardHeader className="text-center pb-4">
+              <CardTitle className="text-xl font-semibold">Silabus</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild variant="outline" className="w-full py-3 text-base h-auto">
+                <Link to="/syllabus">
+                  <Book className="mr-2 h-5 w-5" />
+                  Lihat Silabus
                 </Link>
               </Button>
-            ))}
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
 
-        <Card className="bg-card text-card-foreground shadow-lg">
-          <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-semibold">Tinjauan & Penilaian Akhir / Overview & Final Assessment</CardTitle>
-          </CardHeader>
-          <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Button asChild variant="outline" className="py-3 text-lg h-auto">
-              <Link to="/syllabus">
-                <Book className="mr-2 h-5 w-5" />
-                Lihat Silabus
-              </Link>
-            </Button>
-            <Button asChild className="py-3 text-lg h-auto">
-              <Link to="/summative-test">
-                <ClipboardCheck className="mr-2 h-5 w-5" />
-                Mulai Ujian Sumatif
-              </Link>
-            </Button>
-          </CardContent>
-        </Card>
+          {/* Assessment Card */}
+          <Card className="bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+            <CardHeader className="text-center pb-4">
+              <CardTitle className="text-xl font-semibold">Ujian Akhir</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild className="w-full py-3 text-base h-auto">
+                <Link to="/summative-test">
+                  <ClipboardCheck className="mr-2 h-5 w-5" />
+                  Mulai Ujian Sumatif
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="absolute bottom-0">
+          <MadeWithDyad />
+        </div>
       </div>
-
-      <MadeWithDyad />
     </div>
   );
 };
