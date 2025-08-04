@@ -19,7 +19,7 @@ export const teachingModules: TeachingModule[] = [
     title: 'Navigasi',
     englishTitle: 'Navigation',
     entryPath: '/lesson-plan-navigation',
-    status: 'coming-soon',
+    status: 'available',
   },
   // Anda bisa menambahkan modul baru di sini di masa depan
   // You can add new modules here in the future
