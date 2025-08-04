@@ -8,6 +8,7 @@ const Sidebar = () => {
 
   const isMarineEngineModule = pathname.includes("-marine-engines");
   const isMarineBoilerModule = pathname.includes("-marine-boiler");
+  const isShaftingModule = pathname.includes("-shafting-installations");
 
   let navItems: { href: string; label: string; icon: React.ElementType }[] = [];
   let moduleTitle = "Module";
@@ -29,6 +30,15 @@ const Sidebar = () => {
       { href: "/worksheet-marine-boiler", label: "Worksheet", icon: ClipboardList },
       { href: "/answer-key-marine-boiler", label: "Answer Key", icon: Key },
       { href: "/rubric-marine-boiler", label: "Assessment Rubric", icon: FileText },
+    ];
+  } else if (isShaftingModule) {
+    moduleTitle = "1.3 Shafting & Propeller";
+    navItems = [
+      { href: "/lesson-plan-shafting-installations", label: "Lesson Plan", icon: GanttChartSquare },
+      { href: "/teaching-material-shafting-installations", label: "Teaching Material", icon: BookOpen },
+      { href: "/worksheet-shafting-installations", label: "Worksheet", icon: ClipboardList },
+      { href: "/answer-key-shafting-installations", label: "Answer Key", icon: Key },
+      { href: "/rubric-shafting-installations", label: "Assessment Rubric", icon: FileText },
     ];
   }
 

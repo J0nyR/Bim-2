@@ -25,8 +25,8 @@ export const teachingModules: TeachingModule[] = [
     id: 'shafting-installations',
     title: '1.3 Instalasi Poros & Baling-baling',
     englishTitle: 'Shafting Installations & Propeller',
-    entryPath: '#',
-    status: 'coming-soon',
+    entryPath: '/lesson-plan-shafting-installations',
+    status: 'available',
   },
   {
     id: 'other-auxiliaries',

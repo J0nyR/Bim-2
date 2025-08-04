@@ -16,6 +16,11 @@ import TeachingMaterialMarineBoiler from "./pages/TeachingMaterialMarineBoiler";
 import WorksheetMarineBoiler from "./pages/WorksheetMarineBoiler";
 import AnswerKeyMarineBoiler from "./pages/AnswerKeyMarineBoiler";
 import RubricMarineBoiler from "./pages/RubricMarineBoiler";
+import LessonPlanShaftingInstallations from "./pages/LessonPlanShaftingInstallations";
+import TeachingMaterialShaftingInstallations from "./pages/TeachingMaterialShaftingInstallations";
+import WorksheetShaftingInstallations from "./pages/WorksheetShaftingInstallations";
+import AnswerKeyShaftingInstallations from "./pages/AnswerKeyShaftingInstallations";
+import RubricShaftingInstallations from "./pages/RubricShaftingInstallations";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +47,13 @@ const App = () => (
             <Route path="/worksheet-marine-boiler" element={<WorksheetMarineBoiler />} />
             <Route path="/answer-key-marine-boiler" element={<AnswerKeyMarineBoiler />} />
             <Route path="/rubric-marine-boiler" element={<RubricMarineBoiler />} />
+
+            {/* Shafting Installations Module Routes */}
+            <Route path="/lesson-plan-shafting-installations" element={<LessonPlanShaftingInstallations />} />
+            <Route path="/teaching-material-shafting-installations" element={<TeachingMaterialShaftingInstallations />} />
+            <Route path="/worksheet-shafting-installations" element={<WorksheetShaftingInstallations />} />
+            <Route path="/answer-key-shafting-installations" element={<AnswerKeyShaftingInstallations />} />
+            <Route path="/rubric-shafting-installations" element={<RubricShaftingInstallations />} />
           </Route>
 
           <Route path="*" element={<NotFound />} />
