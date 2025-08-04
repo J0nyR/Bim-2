@@ -230,16 +230,28 @@ const TeachingMaterialOtherAuxiliaries = () => {
           <p className="font-semibold text-muted-foreground"><em>Scenario: The Second Engineer and an Oiler are on a routine check in the engine room.</em></p>
 
           <div className="space-y-2">
-            <p><strong>Second Engineer:</strong> "Oiler, how's the main sea water pump running? Check the pressure and for any leaks."</p>
-            <p className="text-muted-foreground"><em>"Oiler, bagaimana kondisi pompa air laut utama? Periksa tekanan dan apakah ada kebocoran."</em></p>
-            <p><strong>Oiler:</strong> "The pump pressure is steady at 2.5 bar, sir. No leaks from the casing or seal."</p>
-            <p className="text-muted-foreground"><em>"Tekanan pompa stabil di 2,5 bar, Pak. Tidak ada kebocoran dari casing atau perapat."</em></p>
-            <p><strong>Second Engineer:</strong> "Good. Now let's check the lube oil purifier. Is it discharging sludge correctly?"</p>
-            <p className="text-muted-foreground"><em>"Bagus. Sekarang kita periksa pemurni oli lumas. Apakah pembuangan lumpurnya benar?"</em></p>
-            <p><strong>Oiler:</strong> "Yes, sir. It de-sludged about 10 minutes ago, everything looks normal. The temperature from the lube oil cooler is also stable."</p>
-            <p className="text-muted-foreground"><em>"Ya, Pak. Proses de-sludge berjalan 10 menit yang lalu, semua terlihat normal. Suhu dari pendingin oli lumas juga stabil."</em></p>
-            <p><strong>Second Engineer:</strong> "Excellent. Lastly, check the pressure on the main air receiver. We need to ensure we have enough pressure to start the main engine if needed."</p>
-            <p className="text-muted-foreground"><em>"Bagus sekali. Terakhir, periksa tekanan di tabung udara utama. Kita harus pastikan tekanannya cukup untuk menyalakan mesin utama jika diperlukan."</em></p>
+            <p><strong>Second Engineer:</strong> "Oiler, let's start our rounds. First, check the main sea water pump. What's the discharge pressure and are there any leaks from the mechanical seal?"</p>
+            <p className="text-muted-foreground"><em>"Oiler, mari kita mulai keliling. Pertama, periksa pompa air laut utama. Berapa tekanan keluarnya dan apakah ada kebocoran dari perapat mekanisnya?"</em></p>
+            <p><strong>Oiler:</strong> "The pump pressure is steady at 2.5 bar, sir. The seal is dry, no leaks detected. The motor temperature feels normal."</p>
+            <p className="text-muted-foreground"><em>"Tekanan pompa stabil di 2,5 bar, Pak. Perapatnya kering, tidak ada kebocoran. Suhu motor terasa normal."</em></p>
+            <p><strong>Second Engineer:</strong> "Good. Now, over to the purifiers. How is the fuel oil purifier running? Did it complete its last de-sludge cycle correctly?"</p>
+            <p className="text-muted-foreground"><em>"Bagus. Sekarang, kita ke pemurni. Bagaimana kondisi pemurni bahan bakar? Apakah siklus pembuangan lumpur terakhirnya berjalan dengan benar?"</em></p>
+            <p><strong>Oiler:</strong> "Yes, sir. It de-sludged about 15 minutes ago. The operating water pressure was correct, and the bowl is running quietly. The flow rate is also stable."</p>
+            <p className="text-muted-foreground"><em>"Ya, Pak. Proses de-sludge berjalan 15 menit yang lalu. Tekanan air operasi sudah benar, dan bowl-nya berputar dengan tenang. Laju alirannya juga stabil."</em></p>
+            <p><strong>Second Engineer:</strong> "Excellent. Let's check the Fresh Water Generator. What's the vacuum reading and how much fresh water are we producing per hour?"</p>
+            <p className="text-muted-foreground"><em>"Bagus sekali. Mari kita periksa Generator Air Tawar. Berapa pembacaan vakumnya dan berapa banyak air tawar yang kita produksi per jam?"</em></p>
+            <p><strong>Oiler:</strong> "The vacuum is holding strong at about 92% on the gauge. Production is good, around 1.2 tons per hour, sir."</p>
+            <p className="text-muted-foreground"><em>"Vakumnya kuat, sekitar 92% pada alat ukur. Produksi bagus, sekitar 1,2 ton per jam, Pak."</em></p>
+            <p><strong>Second Engineer:</strong> "Perfect, that's what we want to see. Now, what about the air compressors? Which one is on standby?"</p>
+            <p className="text-muted-foreground"><em>"Sempurna, itu yang ingin kita lihat. Sekarang, bagaimana dengan kompresor udara? Kompresor mana yang siaga?"</em></p>
+            <p><strong>Oiler:</strong> "Number one compressor is running, it just cut out as the main air receiver pressure reached 30 bar. Number two is on standby, ready to cut in."</p>
+            <p className="text-muted-foreground"><em>"Kompresor nomor satu sedang jalan, baru saja berhenti otomatis karena tekanan di tabung udara utama mencapai 30 bar. Nomor dua dalam posisi siaga, siap untuk menyala."</em></p>
+            <p><strong>Second Engineer:</strong> "Very good. One last thing for this area. Check the log book for the provision refrigeration system. What were the last recorded temperatures for the freezer and chiller rooms?"</p>
+            <p className="text-muted-foreground"><em>"Sangat bagus. Satu hal terakhir di area ini. Periksa buku catatan untuk sistem pendingin provisi. Berapa suhu terakhir yang tercatat untuk ruang freezer dan chiller?"</em></p>
+            <p><strong>Oiler:</strong> "Let me see... The freezer room is at minus 20 degrees Celsius, and the chiller room is at plus 4 degrees Celsius. Both are within the required range, sir."</p>
+            <p className="text-muted-foreground"><em>"Sebentar saya lihat... Ruang freezer di minus 20 derajat Celsius, dan ruang chiller di plus 4 derajat Celsius. Keduanya dalam rentang yang disyaratkan, Pak."</em></p>
+            <p><strong>Second Engineer:</strong> "Excellent work, Oiler. Keep a sharp eye on everything. A smooth running engine room depends on these auxiliaries working perfectly."</p>
+            <p className="text-muted-foreground"><em>"Kerja bagus, Oiler. Awasi semuanya dengan cermat. Kamar mesin yang berjalan lancar bergantung pada mesin-mesin bantu ini yang bekerja dengan sempurna."</em></p>
           </div>
         </CardContent>
       </Card>
