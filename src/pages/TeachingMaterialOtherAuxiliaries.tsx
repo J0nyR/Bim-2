@@ -111,27 +111,30 @@ const TeachingMaterialOtherAuxiliaries = () => {
             <p>Mentransfer panas dari satu fluida ke fluida lain tanpa mencampurnya. Di kamar mesin, ini biasanya digunakan untuk mendinginkan atau memanaskan fluida. / Transfers heat from one fluid to another without mixing them. In the engine room, this is usually used to cool or heat a fluid.</p>
             <div className="mt-4 space-y-4">
               <div>
-                <h4 className="font-semibold text-lg">A. Jenis Pelat / Plate Type</h4>
-                <p className="text-muted-foreground mb-2">Terdiri dari tumpukan pelat logam tipis bergelombang yang dipisahkan oleh paking (gasket). Fluida panas dan dingin mengalir di saluran-saluran alternatif di antara pelat.</p>
-                <ul className="list-disc list-inside space-y-1 ml-4">
-                  <li><strong>Kelebihan:</strong> Transfer panas sangat efisien, desain kompak, mudah dibersihkan.</li>
-                  <li><strong>Kekurangan:</strong> Paking bisa rusak, tidak cocok untuk tekanan/suhu yang sangat tinggi.</li>
+                <h4 className="font-semibold text-lg">A. Konsep Dasar Perpindahan Panas / Basic Concepts of Heat Transfer</h4>
+                 <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Pendinginan (Cooling):</strong> Proses yang paling umum, membuang panas dari fluida kerja. Contoh: mendinginkan oli pelumas.</li>
+                  <li><strong>Pemanasan (Heating):</strong> Menambahkan panas ke fluida untuk mengubah propertinya. Contoh: memanaskan bahan bakar berat (HFO) agar viskositasnya turun.</li>
+                  <li><strong>Penguapan (Evaporation):</strong> Mengubah cairan menjadi gas dengan menambahkan panas. Contoh: evaporator pada sistem AC atau generator air tawar.</li>
+                  <li><strong>Pengkondensasian (Condensation):</strong> Mengubah gas menjadi cairan dengan membuang panas. Contoh: kondensor pada sistem AC atau generator air tawar.</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-lg">B. Jenis Shell & Tube</h4>
-                <p className="text-muted-foreground mb-2">Terdiri dari sebuah bejana (shell) dengan sekelompok pipa (tube bundle) di dalamnya. Satu fluida mengalir di dalam pipa-pipa, sementara fluida lainnya mengalir di luar pipa di dalam shell.</p>
+                <h4 className="font-semibold text-lg">B. Jenis-jenis Penukar Panas / Types of Heat Exchangers</h4>
+                <p className="text-muted-foreground mb-2">Dua jenis yang paling umum di kapal adalah:</p>
                 <ul className="list-disc list-inside space-y-1 ml-4">
-                  <li><strong>Kelebihan:</strong> Sangat kuat, andal, dapat menangani tekanan dan suhu tinggi.</li>
-                  <li><strong>Kekurangan:</strong> Kurang efisien dan lebih besar dari jenis pelat untuk kapasitas yang sama.</li>
+                  <li><strong>Jenis Pelat (Plate Type):</strong> Terdiri dari tumpukan pelat logam tipis bergelombang. Sangat efisien, kompak, dan mudah dibersihkan, tetapi rentan terhadap kebocoran paking (gasket).</li>
+                  <li><strong>Jenis Shell & Tube:</strong> Terdiri dari sebuah bejana (shell) dengan sekelompok pipa (tube bundle) di dalamnya. Sangat kuat, andal untuk tekanan tinggi, tetapi lebih besar dan kurang efisien dibandingkan jenis pelat.</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-lg">Aplikasi Umum / Common Applications</h4>
+                <h4 className="font-semibold text-lg">C. Alat/Mesin Penukar Panas di Kapal / Heat Exchanger Equipment on Ships</h4>
                 <ul className="list-disc list-inside space-y-1 ml-4">
                   <li><strong>Pendingin Oli Pelumas (Lube Oil Cooler):</strong> Mendinginkan oli pelumas panas dari mesin.</li>
-                  <li><strong>Pendingin Air Tawar Jaket (Jacket Water Cooler):</strong> Mendinginkan air tawar pendingin mesin menggunakan air laut.</li>
-                  <li><strong>Pemanas Bahan Bakar (Fuel Oil Heater):</strong> Memanaskan bahan bakar berat (HFO) agar tidak terlalu kental.</li>
+                  <li><strong>Pendingin Air Tawar Jaket (Jacket Water Cooler):</strong> Pendingin utama untuk sistem pendingin mesin, biasanya menggunakan air laut sebagai media pendingin.</li>
+                  <li><strong>Pemanas Bahan Bakar (Fuel Oil Heater):</strong> Memanaskan HFO menggunakan uap atau oli termal agar mudah dipompa dan disemprotkan.</li>
+                  <li><strong>Kondensor (Condenser):</strong> Mendinginkan uap (misalnya uap refrigerant di sistem AC) menjadi cairan.</li>
+                  <li><strong>Evaporator / Generator Air Tawar:</strong> Menggunakan panas untuk menguapkan air laut.</li>
                 </ul>
               </div>
             </div>
