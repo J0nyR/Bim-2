@@ -19,7 +19,7 @@ export const teachingModules: TeachingModule[] = [
     title: '1.2 Ketel Uap Kapal',
     englishTitle: 'Marine Boiler',
     entryPath: '/lesson-plan-marine-boiler',
-    status: 'coming-soon',
+    status: 'available',
   },
   {
     id: 'shafting-installations',
