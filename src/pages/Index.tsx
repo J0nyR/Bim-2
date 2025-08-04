@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { teachingModules } from "@/data/modules";
-import { Book, ClipboardCheck, Ship } from "lucide-react";
+import { Book, ClipboardCheck, Ship, BookOpen } from "lucide-react";
 
 const Index = () => {
   return (
@@ -29,7 +29,7 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Learning Modules Card */}
           <Card className="md:col-span-2 bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
             <CardHeader className="text-center">
@@ -54,6 +54,21 @@ const Index = () => {
                   </Link>
                 </Button>
               ))}
+            </CardContent>
+          </Card>
+
+          {/* Student Handbook Card */}
+          <Card className="md:col-span-2 bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+            <CardHeader className="text-center pb-4">
+              <CardTitle className="text-xl font-semibold">Buku Saku Taruna</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild variant="default" className="w-full py-3 text-base h-auto">
+                <Link to="/student-handbook">
+                  <BookOpen className="mr-2 h-5 w-5" />
+                  Buka Buku Saku
+                </Link>
+              </Button>
             </CardContent>
           </Card>
 

@@ -29,6 +29,7 @@ import RubricOtherAuxiliaries from "./pages/RubricOtherAuxiliaries";
 import Syllabus from "./pages/Syllabus";
 import SummativeTest from "./pages/SummativeTest";
 import SummativeTestAnswerKey from "./pages/SummativeTestAnswerKey";
+import StudentHandbook from "./pages/StudentHandbook";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/syllabus" element={<Syllabus />} />
           <Route path="/summative-test" element={<SummativeTest />} />
           <Route path="/summative-test-answer-key" element={<SummativeTestAnswerKey />} />
+          <Route path="/student-handbook" element={<StudentHandbook />} />
 
           <Route element={<Layout />}>
             {/* Marine Engines Module Routes */}
