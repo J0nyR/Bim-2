@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import FormativeQuiz from '@/components/FormativeQuiz';
 import { formativeQuestions } from '@/data/formativeQuestions';
+import { Button } from '@/components/ui/button';
+import { BookText } from 'lucide-react';
 
 const TeachingMaterialShaftingInstallations = () => {
   const moduleQuestions = formativeQuestions.filter(q => q.topic === 'shafting-installations');
@@ -135,6 +138,15 @@ const TeachingMaterialShaftingInstallations = () => {
               <li>"A CPP is <strong>more expensive</strong> and <strong>more complex</strong>."</li>
               <li>"A CPP offers <strong>better</strong> maneuverability." (better is the irregular comparative of good)</li>
             </ul>
+          </div>
+          <Separator />
+          <div className="text-center">
+            <Button asChild variant="outline" className="w-full md:w-auto">
+              <Link to="/grammar-reference">
+                <BookText className="mr-2 h-4 w-4" />
+                Lihat Referensi Tata Bahasa Lengkap
+              </Link>
+            </Button>
           </div>
         </CardContent>
       </Card>

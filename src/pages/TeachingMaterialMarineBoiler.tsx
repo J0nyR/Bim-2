@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import FormativeQuiz from '@/components/FormativeQuiz';
 import { formativeQuestions } from '@/data/formativeQuestions';
+import { Button } from '@/components/ui/button';
+import { BookText } from 'lucide-react';
 
 const TeachingMaterialMarineBoiler = () => {
   const moduleQuestions = formativeQuestions.filter(q => q.topic === 'marine-boiler');
@@ -169,6 +172,15 @@ const TeachingMaterialMarineBoiler = () => {
               <li>"In a water-tube boiler, water is <strong>in</strong> the tubes and hot gas is <strong>outside</strong>."</li>
               <li>"The safety valves are located <strong>on</strong> top of the steam drum."</li>
             </ul>
+          </div>
+          <Separator />
+          <div className="text-center">
+            <Button asChild variant="outline" className="w-full md:w-auto">
+              <Link to="/grammar-reference">
+                <BookText className="mr-2 h-4 w-4" />
+                Lihat Referensi Tata Bahasa Lengkap
+              </Link>
+            </Button>
           </div>
         </CardContent>
       </Card>

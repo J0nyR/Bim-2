@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import FormativeQuiz from '@/components/FormativeQuiz';
 import { formativeQuestions } from '@/data/formativeQuestions';
+import { Button } from '@/components/ui/button';
+import { BookText } from 'lucide-react';
 
 const TeachingMaterialMarineEngines = () => {
   const moduleQuestions = formativeQuestions.filter(q => q.topic === 'marine-engines');
@@ -211,6 +214,15 @@ const TeachingMaterialMarineEngines = () => {
               <li>"Fuel <strong>is injected</strong> into the cylinder."</li>
               <li>"Water <strong>is heated</strong> in a boiler to become steam."</li>
             </ul>
+          </div>
+          <Separator />
+          <div className="text-center">
+            <Button asChild variant="outline" className="w-full md:w-auto">
+              <Link to="/grammar-reference">
+                <BookText className="mr-2 h-4 w-4" />
+                Lihat Referensi Tata Bahasa Lengkap
+              </Link>
+            </Button>
           </div>
         </CardContent>
       </Card>
