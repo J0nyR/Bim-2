@@ -13,7 +13,12 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 export function ThemeToggle() {
-  const { setTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
+
+  // Menambahkan console log untuk melihat apakah tema berubah secara internal
+  React.useEffect(() => {
+    console.log("Tema saat ini:", theme);
+  }, [theme]);
 
   return (
     <DropdownMenu>
@@ -25,13 +30,22 @@ export function ThemeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuItem onClick={() => {
+          setTheme("light");
+          console.log("Mengatur tema ke: Light");
+        }}>
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+        <DropdownMenuItem onClick={() => {
+          setTheme("dark");
+          console.log("Mengatur tema ke: Dark");
+        }}>
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
+        <DropdownMenuItem onClick={() => {
+          setTheme("system");
+          console.log("Mengatur tema ke: System");
+        }}>
           System
         </DropdownMenuItem>
       </DropdownMenuContent>
