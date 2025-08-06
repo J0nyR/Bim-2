@@ -127,7 +127,7 @@ const Syllabus = () => {
                 </CardHeader>
                 <CardContent className="pl-12 space-y-2">
                     <ul className="list-disc list-inside space-y-1">
-                        <li><strong>Utama:</strong> Perangkat Ajar Digital Bahasa Inggris Maritim Teknika 1 (Aplikasi ini).</li>
+                        <li><strong>Utama:</strong> Perangkat Ajar Digital Bahasa Inggris Maritim Teknika 2 (Aplikasi ini).</li>
                         <li><strong>Referensi:</strong> IMO Model Course 7.04, SOLAS, STCW Manila Amendments 2010.</li>
                         <li><strong>Pendukung:</strong> Video animasi operasi mesin dari platform online (YouTube, dll.), diagram teknis, dan manual mesin.</li>
                     </ul>
