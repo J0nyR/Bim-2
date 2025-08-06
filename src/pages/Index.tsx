@@ -36,9 +36,9 @@ const Index = () => {
 
         <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Learning Modules Card */}
-          <Card className="md:col-span-2 bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
+          <Card className="md:col-span-2 bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl font-semibold">Modul Pembelajaran / Learning Modules</CardTitle> {/* Re-added CardTitle */}
+              <CardTitle className="text-2xl font-semibold">Modul Pembelajaran / Learning Modules</CardTitle>
             </CardHeader>
             <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {teachingModules.map((module) => (
@@ -63,7 +63,7 @@ const Index = () => {
           </Card>
 
           {/* Student Handbook Card */}
-          <Card className="bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-xl font-semibold">Buku Saku Taruna</CardTitle>
             </CardHeader>
@@ -78,7 +78,7 @@ const Index = () => {
           </Card>
 
           {/* Grammar Reference Card */}
-          <Card className="bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-xl font-semibold">Referensi Tata Bahasa</CardTitle>
             </CardHeader>
@@ -93,7 +93,7 @@ const Index = () => {
           </Card>
 
           {/* Syllabus Card */}
-          <Card className="bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-xl font-semibold">Silabus</CardTitle>
             </CardHeader>
@@ -108,7 +108,7 @@ const Index = () => {
           </Card>
 
           {/* Assessment Card */}
-          <Card className="bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-xl font-semibold">Ujian Akhir</CardTitle>
             </CardHeader>
