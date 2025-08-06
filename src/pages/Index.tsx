@@ -18,7 +18,7 @@ const Index = () => {
         style={{ backgroundImage: "url('/engine-room-bg.svg')" }}
       />
       {/* Overlay */}
-      <div className="absolute inset-0 z-10 bg-background/80" />
+      <div className="absolute inset-0 z-10 bg-background" /> {/* Changed bg-background/80 to bg-background */}
 
       <div className="relative z-20 flex flex-col items-center justify-center min-h-screen p-4">
         <div className="text-center mb-10">
@@ -63,7 +63,7 @@ const Index = () => {
           </Card>
 
           {/* Student Handbook Card */}
-          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
+          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-xl font-semibold">Buku Saku Taruna</CardTitle>
             </CardHeader>
@@ -78,7 +78,7 @@ const Index = () => {
           </Card>
 
           {/* Grammar Reference Card */}
-          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
+          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-xl font-semibold">Referensi Tata Bahasa</CardTitle>
             </CardHeader>
@@ -93,7 +93,7 @@ const Index = () => {
           </Card>
 
           {/* Syllabus Card */}
-          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
+          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-xl font-semibold">Silabus</CardTitle>
             </CardHeader>
@@ -108,7 +108,7 @@ const Index = () => {
           </Card>
 
           {/* Assessment Card */}
-          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
+          <Card className="bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-xl font-semibold">Ujian Akhir</CardTitle>
             </CardHeader>
