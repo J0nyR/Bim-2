@@ -9,6 +9,7 @@ export const MadeWithDyad = () => {
       >
         Made with Dyad
       </a>
+      <p className="text-xs text-gray-500 dark:text-gray-400">Copyright by Jony Rabuansyah</p> {/* Added copyright text */}
     </div>
   );
 };

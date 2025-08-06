@@ -31,60 +31,75 @@ import SummativeTest from "./pages/SummativeTest";
 import SummativeTestAnswerKey from "./pages/SummativeTestAnswerKey";
 import StudentHandbook from "./pages/StudentHandbook";
 import GrammarReference from "./pages/GrammarReference";
+import { useTheme } from "next-themes"; // Import useTheme
+import React, { useEffect } from "react"; // Import React and useEffect
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          
-          {/* Course Overview Routes */}
-          <Route path="/syllabus" element={<Syllabus />} />
-          <Route path="/summative-test" element={<SummativeTest />} />
-          <Route path="/summative-test-answer-key" element={<SummativeTestAnswerKey />} />
-          <Route path="/student-handbook" element={<StudentHandbook />} />
-          <Route path="/grammar-reference" element={<GrammarReference />} />
+const App = () => {
+  const { theme } = useTheme(); // Dapatkan tema saat ini dari next-themes
 
-          <Route element={<Layout />}>
-            {/* Marine Engines Module Routes */}
-            <Route path="/lesson-plan-marine-engines" element={<LessonPlanMarineEngines />} />
-            <Route path="/teaching-material-marine-engines" element={<TeachingMaterialMarineEngines />} />
-            <Route path="/worksheet-marine-engines" element={<WorksheetMarineEngines />} />
-            <Route path="/answer-key-marine-engines" element={<AnswerKeyMarineEngines />} />
-            <Route path="/rubric-marine-engines" element={<RubricMarineEngines />} />
+  // Gunakan useEffect untuk menerapkan atau menghapus kelas 'dark' pada elemen html
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]); // Jalankan ulang efek ini setiap kali tema berubah
 
-            {/* Marine Boiler Module Routes */}
-            <Route path="/lesson-plan-marine-boiler" element={<LessonPlanMarineBoiler />} />
-            <Route path="/teaching-material-marine-boiler" element={<TeachingMaterialMarineBoiler />} />
-            <Route path="/worksheet-marine-boiler" element={<WorksheetMarineBoiler />} />
-            <Route path="/answer-key-marine-boiler" element={<AnswerKeyMarineBoiler />} />
-            <Route path="/rubric-marine-boiler" element={<RubricMarineBoiler />} />
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            
+            {/* Course Overview Routes */}
+            <Route path="/syllabus" element={<Syllabus />} />
+            <Route path="/summative-test" element={<SummativeTest />} />
+            <Route path="/summative-test-answer-key" element={<SummativeTestAnswerKey />} />
+            <Route path="/student-handbook" element={<StudentHandbook />} />
+            <Route path="/grammar-reference" element={<GrammarReference />} />
 
-            {/* Shafting Installations Module Routes */}
-            <Route path="/lesson-plan-shafting-installations" element={<LessonPlanShaftingInstallations />} />
-            <Route path="/teaching-material-shafting-installations" element={<TeachingMaterialShaftingInstallations />} />
-            <Route path="/worksheet-shafting-installations" element={<WorksheetShaftingInstallations />} />
-            <Route path="/answer-key-shafting-installations" element={<AnswerKeyShaftingInstallations />} />
-            <Route path="/rubric-shafting-installations" element={<RubricShaftingInstallations />} />
+            <Route element={<Layout />}>
+              {/* Marine Engines Module Routes */}
+              <Route path="/lesson-plan-marine-engines" element={<LessonPlanMarineEngines />} />
+              <Route path="/teaching-material-marine-engines" element={<TeachingMaterialMarineEngines />} />
+              <Route path="/worksheet-marine-engines" element={<WorksheetMarineEngines />} />
+              <Route path="/answer-key-marine-engines" element={<AnswerKeyMarineEngines />} />
+              <Route path="/rubric-marine-engines" element={<RubricMarineEngines />} />
 
-            {/* Other Auxiliaries Module Routes */}
-            <Route path="/lesson-plan-other-auxiliaries" element={<LessonPlanOtherAuxiliaries />} />
-            <Route path="/teaching-material-other-auxiliaries" element={<TeachingMaterialOtherAuxiliaries />} />
-            <Route path="/worksheet-other-auxiliaries" element={<WorksheetOtherAuxiliaries />} />
-            <Route path="/answer-key-other-auxiliaries" element={<AnswerKeyOtherAuxiliaries />} />
-            <Route path="/rubric-other-auxiliaries" element={<RubricOtherAuxiliaries />} />
-          </Route>
+              {/* Marine Boiler Module Routes */}
+              <Route path="/lesson-plan-marine-boiler" element={<LessonPlanMarineBoiler />} />
+              <Route path="/teaching-material-marine-boiler" element={<TeachingMaterialMarineBoiler />} />
+              <Route path="/worksheet-marine-boiler" element={<WorksheetMarineBoiler />} />
+              <Route path="/answer-key-marine-boiler" element={<AnswerKeyMarineBoiler />} />
+              <Route path="/rubric-marine-boiler" element={<RubricMarineBoiler />} />
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+              {/* Shafting Installations Module Routes */}
+              <Route path="/lesson-plan-shafting-installations" element={<LessonPlanShaftingInstallations />} />
+              <Route path="/teaching-material-shafting-installations" element={<TeachingMaterialShaftingInstallations />} />
+              <Route path="/worksheet-shafting-installations" element={<WorksheetShaftingInstallations />} />
+              <Route path="/answer-key-shafting-installations" element={<AnswerKeyShaftingInstallations />} />
+              <Route path="/rubric-shafting-installations" element={<RubricShaftingInstallations />} />
+
+              {/* Other Auxiliaries Module Routes */}
+              <Route path="/lesson-plan-other-auxiliaries" element={<LessonPlanOtherAuxiliaries />} />
+              <Route path="/teaching-material-other-auxiliaries" element={<TeachingMaterialOtherAuxiliaries />} />
+              <Route path="/worksheet-other-auxiliaries" element={<WorksheetOtherAuxiliaries />} />
+              <Route path="/answer-key-other-auxiliaries" element={<AnswerKeyOtherAuxiliaries />} />
+              <Route path="/rubric-other-auxiliaries" element={<RubricOtherAuxiliaries />} />
+            </Route>
+
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

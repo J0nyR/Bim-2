@@ -28,6 +28,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-foreground">
             Perangkat Ajar Bahasa Inggris Maritim Teknika 1
           </h1>
+          <p className="text-lg md:text-xl text-foreground mt-2">SMKN 9 Pontianak</p> {/* Added school name */}
           <p className="text-xl md:text-2xl text-muted-foreground">
             Teknika Kapal Niaga - Tingkat Operasional
           </p>
@@ -37,7 +38,7 @@ const Index = () => {
           {/* Learning Modules Card */}
           <Card className="md:col-span-2 bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl font-semibold">Modul Pembelajaran / Learning Modules</CardTitle>
+              {/* Removed CardTitle: <CardTitle className="text-2xl font-semibold">Modul Pembelajaran / Learning Modules</CardTitle> */}
             </CardHeader>
             <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {teachingModules.map((module) => (
