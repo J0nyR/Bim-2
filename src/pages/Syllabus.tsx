@@ -64,23 +64,23 @@ const Syllabus = () => {
                     <CardTitle className="flex items-center text-2xl font-semibold"><GraduationCap className="mr-3 h-6 w-6 text-primary" />Materi Pembelajaran</CardTitle>
                 </CardHeader>
                 <CardContent className="pl-12">
-                    <p>Kursus ini dibagi menjadi beberapa sub-topik utama sesuai IMO Model Course 7.04:</p>
+                    <p>Kursus ini dibagi menjadi beberapa sub-topik utama sesuai IMO Model Course 7.04 untuk Teknika 2:</p>
                     <ul className="list-decimal list-inside space-y-2 mt-2">
                         <li>
-                            <strong>Marine diesel engines, marine steam turbine and marine gas turbine:</strong>
-                            <p className="text-sm text-muted-foreground ml-6">Mempelajari prinsip kerja, komponen, serta kelebihan dan kekurangan dari setiap jenis mesin penggerak utama.</p>
+                            <strong>Sistem Kemudi, Geladak & Kontrol (Steering, Deck & Control Systems):</strong>
+                            <p className="text-sm text-muted-foreground ml-6">Mencakup Steering Gear, Deck Machinery, dan Automatic Control Systems.</p>
                         </li>
                         <li>
-                            <strong>Marine boiler:</strong>
-                            <p className="text-sm text-muted-foreground ml-6">Memahami jenis, komponen, perlengkapan keselamatan, dan operasi dasar ketel uap kapal.</p>
+                            <strong>Sistem Fluida, Perpompaan & Separasi (Fluid, Pumping & Separation Systems):</strong>
+                            <p className="text-sm text-muted-foreground ml-6">Mencakup karakteristik fluida (pelumas, bahan bakar, pendingin), sistem pompa & perpipaan, dan Oily-Water Separators (OWS).</p>
                         </li>
                         <li>
-                            <strong>Shafting installations and propeller:</strong>
-                            <p className="text-sm text-muted-foreground ml-6">Mempelajari sistem transmisi daya dari mesin ke baling-baling, termasuk komponen poros dan jenis-jenis baling-baling.</p>
+                            <strong>Sistem Elektrikal & Elektronik (Electrical & Electronic Systems):</strong>
+                            <p className="text-sm text-muted-foreground ml-6">Mencakup sistem kelistrikan, elektronik, dan sistem kontrol terkait.</p>
                         </li>
                         <li>
-                            <strong>Other auxiliaries:</strong>
-                            <p className="text-sm text-muted-foreground ml-6">Mencakup berbagai mesin bantu vital seperti pompa, kompresor, pemurni, generator air tawar, penukar panas, sistem refrigerasi, dan pembangkit listrik.</p>
+                            <strong>Penggunaan Publikasi Teknis (Using Technical Publications):</strong>
+                            <p className="text-sm text-muted-foreground ml-6">Mencakup penggunaan publikasi terkait perkakas, pencegahan polusi, kelaiklautan, pemadam kebakaran, alat keselamatan, dan kepatuhan legislatif.</p>
                         </li>
                     </ul>
                 </CardContent>
@@ -92,15 +92,13 @@ const Syllabus = () => {
                 </CardHeader>
                 <CardContent className="pl-12 space-y-2">
                     <p><strong>Pertemuan 1:</strong> Pengantar, Kontrak Belajar, dan Pre-Test</p>
-                    <p><strong>Pertemuan 2-3:</strong> Modul 1.1 - Marine Engines (Diesel, Steam, Gas)</p>
-                    <p><strong>Pertemuan 4-5:</strong> Modul 1.2 - Marine Boiler</p>
-                    <p><strong>Pertemuan 6:</strong> Review & Latihan Praktis Modul 1.1 & 1.2</p>
-                    <p><strong>Pertemuan 7-8:</strong> Modul 1.3 - Shafting Installations & Propeller</p>
+                    <p><strong>Pertemuan 2-4:</strong> Modul 2.1 - Sistem Kemudi, Geladak & Kontrol</p>
+                    <p><strong>Pertemuan 5-7:</strong> Modul 2.2 - Sistem Fluida, Perpompaan & Separasi</p>
+                    <p><strong>Pertemuan 8:</strong> Review & Latihan Praktis Modul 2.1 & 2.2</p>
                     <p><strong>Pertemuan 9:</strong> Ujian Formatif Tengah Semester</p>
-                    <p><strong>Pertemuan 10-11:</strong> Modul 1.4 - Other Auxiliaries (Part 1: Pumps, Compressors, Purifiers)</p>
-                    <p><strong>Pertemuan 12-13:</strong> Modul 1.4 - Other Auxiliaries (Part 2: FWG, Heat Exchangers, Refrigeration)</p>
-                    <p><strong>Pertemuan 14:</strong> Review & Latihan Praktis Modul 1.3 & 1.4</p>
-                    <p><strong>Pertemuan 15-16:</strong> Studi Kasus Terintegrasi & Persiapan Ujian Akhir</p>
+                    <p><strong>Pertemuan 10-12:</strong> Modul 2.3 - Sistem Elektrikal & Elektronik</p>
+                    <p><strong>Pertemuan 13-15:</strong> Modul 2.4 - Penggunaan Publikasi Teknis</p>
+                    <p><strong>Pertemuan 16:</strong> Review & Latihan Praktis Modul 2.3 & 2.4</p>
                     <p><strong>Pertemuan 17:</strong> Review Final & Pembahasan Kisi-kisi Ujian Sumatif</p>
                     <p><strong>Minggu ke-18:</strong> Ujian Sumatif Akhir Semester</p>
                 </CardContent>
