@@ -1,4 +1,4 @@
-import { MadeWithDyad } from "@/components/made-with-dyad";
+import AppFooter from "@/components/AppFooter"; // Import AppFooter
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -28,7 +28,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-foreground">
             Perangkat Ajar Bahasa Inggris Maritim Teknika 1
           </h1>
-          <p className="text-lg md:text-xl text-foreground mt-2">SMKN 9 Pontianak</p> {/* Added school name */}
+          <p className="text-lg md:text-xl text-foreground mt-2">SMKN 9 Pontianak</p> {/* Keep school name here */}
           <p className="text-xl md:text-2xl text-muted-foreground">
             Teknika Kapal Niaga - Tingkat Operasional
           </p>
@@ -123,9 +123,7 @@ const Index = () => {
           </Card>
         </div>
 
-        <div className="absolute bottom-0 hide-on-print">
-          <MadeWithDyad />
-        </div>
+        <AppFooter /> {/* Add the footer here */}
       </div>
     </div>
   );

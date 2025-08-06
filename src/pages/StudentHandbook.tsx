@@ -8,6 +8,7 @@ import ChapterMarineBoiler from '@/components/chapters/ChapterMarineBoiler';
 import ChapterShaftingInstallations from '@/components/chapters/ChapterShaftingInstallations';
 import ChapterOtherAuxiliaries from '@/components/chapters/ChapterOtherAuxiliaries';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import AppFooter from '@/components/AppFooter'; // Import AppFooter
 
 type ChapterId = 'marine-engines' | 'marine-boiler' | 'shafting-installations' | 'other-auxiliaries';
 
@@ -61,7 +62,7 @@ const StudentHandbook = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-6 md:p-8 overflow-y-auto relative">
+      <main className="flex-1 p-6 md:p-8 overflow-y-auto relative flex flex-col"> {/* Added flex flex-col */}
         <div className="absolute top-6 right-8 z-50 hide-on-print">
             <ThemeToggle />
         </div>
@@ -72,6 +73,7 @@ const StudentHandbook = () => {
           </div>
           <ActiveChapterComponent />
         </div>
+        <AppFooter /> {/* Add the footer here */}
       </main>
     </div>
   );

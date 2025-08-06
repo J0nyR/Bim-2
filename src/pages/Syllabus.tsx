@@ -4,14 +4,15 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from '@/components/ui/button';
 import { Home, BookCopy, Target, Calendar, Users, FileText, Percent, GraduationCap } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import AppFooter from '@/components/AppFooter'; // Import AppFooter
 
 const Syllabus = () => {
   return (
-    <div className="relative">
+    <div className="relative flex flex-col min-h-screen"> {/* Added flex flex-col min-h-screen */}
         <div className="absolute top-6 right-6 z-50 hide-on-print">
             <ThemeToggle />
         </div>
-        <div className="container mx-auto p-6 space-y-8">
+        <div className="container mx-auto p-6 space-y-8 flex-1"> {/* Added flex-1 */}
             <div className="flex justify-between items-center mb-8 flex-wrap gap-4">
                 <h1 className="text-4xl font-bold text-primary">
                 Silabus Mata Pelajaran
@@ -115,7 +116,7 @@ const Syllabus = () => {
                         <li><strong>Presentasi & Diskusi:</strong> Penjelasan konsep diikuti dengan diskusi kelas.</li>
                         <li><strong>Studi Kasus & Analisis Skenario:</strong> Menganalisis masalah operasional hipotetis.</li>
                         <li><strong>Pembelajaran Berbasis Perangkat Ajar Digital:</strong> Menggunakan aplikasi ini sebagai media utama untuk materi, latihan, dan penilaian.</li>
-                        <li><strong>Kuis Formatif Interaktif:</strong> Pengecekan pemahaman di akhir setiap modul.</li>
+                        <li><strong>Kuis Formatif Interaktif:</strong> Pengecekan pemahaman di setiap akhir materi ajar.</li>
                     </ul>
                 </CardContent>
             </Card>
@@ -167,6 +168,7 @@ const Syllabus = () => {
                 </CardContent>
             </Card>
         </div>
+        <AppFooter /> {/* Add the footer here */}
     </div>
   );
 };

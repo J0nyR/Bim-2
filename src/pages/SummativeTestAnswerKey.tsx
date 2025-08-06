@@ -5,16 +5,17 @@ import { Button } from '@/components/ui/button';
 import { summativeQuestions } from '@/data/summativeQuestions';
 import { Home } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import AppFooter from '@/components/AppFooter'; // Import AppFooter
 
 const SummativeTestAnswerKey = () => {
   const topics = ['Marine Engines', 'Marine Boiler', 'Shafting & Propeller', 'Other Auxiliaries'];
 
   return (
-    <div className="relative">
+    <div className="relative flex flex-col min-h-screen"> {/* Added flex flex-col min-h-screen */}
         <div className="absolute top-6 right-6 z-50 hide-on-print">
             <ThemeToggle />
         </div>
-        <div className="container mx-auto p-6 space-y-8">
+        <div className="container mx-auto p-6 space-y-8 flex-1"> {/* Added flex-1 */}
             <div className="flex justify-between items-center mb-8 flex-wrap gap-4">
                 <h1 className="text-4xl font-bold text-primary">
                 Kunci Jawaban Ujian Sumatif
@@ -53,6 +54,7 @@ const SummativeTestAnswerKey = () => {
                 );
             })}
         </div>
+        <AppFooter /> {/* Add the footer here */}
     </div>
   );
 };

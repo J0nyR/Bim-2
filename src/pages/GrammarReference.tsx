@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from '@/components/ui/button';
 import { Home, BookText } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import AppFooter from '@/components/AppFooter'; // Import AppFooter
 import {
   Accordion,
   AccordionContent,
@@ -13,11 +14,11 @@ import {
 
 const GrammarReference = () => {
   return (
-    <div className="relative">
+    <div className="relative flex flex-col min-h-screen"> {/* Added flex flex-col min-h-screen */}
         <div className="absolute top-6 right-6 z-50 hide-on-print">
             <ThemeToggle />
         </div>
-        <div className="container mx-auto p-6 space-y-8">
+        <div className="container mx-auto p-6 space-y-8 flex-1"> {/* Added flex-1 */}
             <div className="flex justify-between items-center mb-8 flex-wrap gap-4">
                 <h1 className="text-4xl font-bold text-primary flex items-center">
                     <BookText className="mr-4 h-10 w-10" />
@@ -168,6 +169,7 @@ const GrammarReference = () => {
 
             </Accordion>
         </div>
+        <AppFooter /> {/* Add the footer here */}
     </div>
   );
 };
