@@ -36,9 +36,9 @@ const Index = () => {
 
         <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Learning Modules Card */}
-          <Card className="md:col-span-2 bg-card/80 backdrop-blur-sm border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+          <Card className="md:col-span-2 bg-card border-border/20 transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"> {/* Removed /80 and backdrop-blur-sm */}
             <CardHeader className="text-center">
-              {/* Removed CardTitle: <CardTitle className="text-2xl font-semibold">Modul Pembelajaran / Learning Modules</CardTitle> */}
+              <CardTitle className="text-2xl font-semibold">Modul Pembelajaran / Learning Modules</CardTitle> {/* Re-added CardTitle */}
             </CardHeader>
             <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {teachingModules.map((module) => (
