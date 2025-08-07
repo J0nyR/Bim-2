@@ -12,7 +12,7 @@ export const teachingModules: TeachingModule[] = [
     title: '2.1 Sistem Kemudi, Geladak & Kontrol',
     englishTitle: 'Steering, Deck & Control Systems',
     entryPath: '/lesson-plan-steering-deck-control',
-    status: 'coming-soon',
+    status: 'available',
   },
   {
     id: 'fluid-pumping-separation',

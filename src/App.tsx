@@ -14,6 +14,13 @@ import GrammarReference from "./pages/GrammarReference";
 import { useTheme } from "next-themes";
 import React, { useEffect } from "react";
 
+// Import pages for module 2.1
+import LessonPlanSteeringDeckControl from "./pages/LessonPlanSteeringDeckControl";
+import TeachingMaterialSteeringDeckControl from "./pages/TeachingMaterialSteeringDeckControl";
+import WorksheetSteeringDeckControl from "./pages/WorksheetSteeringDeckControl";
+import AnswerKeySteeringDeckControl from "./pages/AnswerKeySteeringDeckControl";
+import RubricSteeringDeckControl from "./pages/RubricSteeringDeckControl";
+
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -44,7 +51,12 @@ const App = () => {
             <Route path="/grammar-reference" element={<GrammarReference />} />
 
             <Route element={<Layout />}>
-              {/* Rute untuk modul Teknika 2 akan ditambahkan di sini */}
+              {/* Routes for Module 2.1 */}
+              <Route path="/lesson-plan-steering-deck-control" element={<LessonPlanSteeringDeckControl />} />
+              <Route path="/teaching-material-steering-deck-control" element={<TeachingMaterialSteeringDeckControl />} />
+              <Route path="/worksheet-steering-deck-control" element={<WorksheetSteeringDeckControl />} />
+              <Route path="/answer-key-steering-deck-control" element={<AnswerKeySteeringDeckControl />} />
+              <Route path="/rubric-steering-deck-control" element={<RubricSteeringDeckControl />} />
             </Route>
 
             <Route path="*" element={<NotFound />} />

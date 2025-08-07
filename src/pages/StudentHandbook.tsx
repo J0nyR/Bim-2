@@ -7,20 +7,29 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import AppFooter from '@/components/AppFooter';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-// Tipe ChapterId sekarang lebih dinamis
+// Import chapter components
+import ChapterSteeringDeckControl from '@/components/chapters/ChapterSteeringDeckControl';
+
 type ChapterId = typeof teachingModules[number]['id'];
 
-// Komponen Chapter Placeholder
-const ChapterPlaceholder = ({ title }: { title: string }) => (
-  <Card>
-    <CardHeader>
-      <CardTitle>Konten untuk {title}</CardTitle>
-    </CardHeader>
-    <CardContent>
-      <p>Materi pembelajaran untuk modul ini akan segera ditambahkan.</p>
-    </CardContent>
-  </Card>
-);
+const ChapterContent = ({ activeChapter }: { activeChapter: ChapterId }) => {
+  switch (activeChapter) {
+    case 'steering-deck-control':
+      return <ChapterSteeringDeckControl />;
+    // Add cases for other chapters as they are created
+    default:
+      return (
+        <Card>
+          <CardHeader>
+            <CardTitle>Konten Belum Tersedia</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Materi pembelajaran untuk modul ini akan segera ditambahkan.</p>
+          </CardContent>
+        </Card>
+      );
+  }
+};
 
 const StudentHandbook = () => {
   const [activeChapter, setActiveChapter] = useState<ChapterId>(teachingModules[0].id);
@@ -67,13 +76,12 @@ const StudentHandbook = () => {
         <div className="absolute top-6 right-8 z-50 hide-on-print">
             <ThemeToggle />
         </div>
-        <div className="container mx-auto">
+        <div className="container mx-auto flex-1">
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-primary">{activeModule?.title}</h1>
             <p className="text-xl text-muted-foreground">{activeModule?.englishTitle}</p>
           </div>
-          {/* Render placeholder karena komponen chapter belum dibuat */}
-          <ChapterPlaceholder title={activeModule?.title || ''} />
+          <ChapterContent activeChapter={activeChapter} />
         </div>
         <AppFooter />
       </main>
