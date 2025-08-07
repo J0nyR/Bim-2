@@ -26,7 +26,7 @@ export const teachingModules: TeachingModule[] = [
     title: '2.3 Sistem Elektrikal & Elektronik',
     englishTitle: 'Electrical & Electronic Systems',
     entryPath: '/lesson-plan-electrical-electronic',
-    status: 'coming-soon',
+    status: 'available',
   },
   {
     id: 'technical-publications',

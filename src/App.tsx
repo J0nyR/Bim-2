@@ -28,6 +28,13 @@ import WorksheetFluidPumpingSeparation from "./pages/WorksheetFluidPumpingSepara
 import AnswerKeyFluidPumpingSeparation from "./pages/AnswerKeyFluidPumpingSeparation";
 import RubricFluidPumpingSeparation from "./pages/RubricFluidPumpingSeparation";
 
+// Import pages for module 2.3
+import LessonPlanElectricalElectronic from "./pages/LessonPlanElectricalElectronic";
+import TeachingMaterialElectricalElectronic from "./pages/TeachingMaterialElectricalElectronic";
+import WorksheetElectricalElectronic from "./pages/WorksheetElectricalElectronic";
+import AnswerKeyElectricalElectronic from "./pages/AnswerKeyElectricalElectronic";
+import RubricElectricalElectronic from "./pages/RubricElectricalElectronic";
+
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -71,6 +78,13 @@ const App = () => {
               <Route path="/worksheet-fluid-pumping-separation" element={<WorksheetFluidPumpingSeparation />} />
               <Route path="/answer-key-fluid-pumping-separation" element={<AnswerKeyFluidPumpingSeparation />} />
               <Route path="/rubric-fluid-pumping-separation" element={<RubricFluidPumpingSeparation />} />
+
+              {/* Routes for Module 2.3 */}
+              <Route path="/lesson-plan-electrical-electronic" element={<LessonPlanElectricalElectronic />} />
+              <Route path="/teaching-material-electrical-electronic" element={<TeachingMaterialElectricalElectronic />} />
+              <Route path="/worksheet-electrical-electronic" element={<WorksheetElectricalElectronic />} />
+              <Route path="/answer-key-electrical-electronic" element={<AnswerKeyElectricalElectronic />} />
+              <Route path="/rubric-electrical-electronic" element={<RubricElectricalElectronic />} />
             </Route>
 
             <Route path="*" element={<NotFound />} />
