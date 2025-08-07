@@ -21,6 +21,13 @@ import WorksheetSteeringDeckControl from "./pages/WorksheetSteeringDeckControl";
 import AnswerKeySteeringDeckControl from "./pages/AnswerKeySteeringDeckControl";
 import RubricSteeringDeckControl from "./pages/RubricSteeringDeckControl";
 
+// Import pages for module 2.2
+import LessonPlanFluidPumpingSeparation from "./pages/LessonPlanFluidPumpingSeparation";
+import TeachingMaterialFluidPumpingSeparation from "./pages/TeachingMaterialFluidPumpingSeparation";
+import WorksheetFluidPumpingSeparation from "./pages/WorksheetFluidPumpingSeparation";
+import AnswerKeyFluidPumpingSeparation from "./pages/AnswerKeyFluidPumpingSeparation";
+import RubricFluidPumpingSeparation from "./pages/RubricFluidPumpingSeparation";
+
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -57,6 +64,13 @@ const App = () => {
               <Route path="/worksheet-steering-deck-control" element={<WorksheetSteeringDeckControl />} />
               <Route path="/answer-key-steering-deck-control" element={<AnswerKeySteeringDeckControl />} />
               <Route path="/rubric-steering-deck-control" element={<RubricSteeringDeckControl />} />
+
+              {/* Routes for Module 2.2 */}
+              <Route path="/lesson-plan-fluid-pumping-separation" element={<LessonPlanFluidPumpingSeparation />} />
+              <Route path="/teaching-material-fluid-pumping-separation" element={<TeachingMaterialFluidPumpingSeparation />} />
+              <Route path="/worksheet-fluid-pumping-separation" element={<WorksheetFluidPumpingSeparation />} />
+              <Route path="/answer-key-fluid-pumping-separation" element={<AnswerKeyFluidPumpingSeparation />} />
+              <Route path="/rubric-fluid-pumping-separation" element={<RubricFluidPumpingSeparation />} />
             </Route>
 
             <Route path="*" element={<NotFound />} />

@@ -19,7 +19,7 @@ export const teachingModules: TeachingModule[] = [
     title: '2.2 Sistem Fluida, Perpompaan & Separasi',
     englishTitle: 'Fluid, Pumping & Separation Systems',
     entryPath: '/lesson-plan-fluid-pumping-separation',
-    status: 'coming-soon',
+    status: 'available',
   },
   {
     id: 'electrical-electronic',
