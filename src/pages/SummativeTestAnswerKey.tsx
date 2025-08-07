@@ -8,7 +8,12 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import AppFooter from '@/components/AppFooter'; // Import AppFooter
 
 const SummativeTestAnswerKey = () => {
-  const topics = ['Marine Engines', 'Marine Boiler', 'Shafting & Propeller', 'Other Auxiliaries'];
+  const topics = [
+    'Steering, Deck & Control Systems',
+    'Fluid, Pumping & Separation Systems',
+    'Electrical & Electronic Systems',
+    'Using Technical Publications'
+  ];
 
   return (
     <div className="relative flex flex-col min-h-screen"> {/* Added flex flex-col min-h-screen */}
@@ -30,6 +35,7 @@ const SummativeTestAnswerKey = () => {
 
             {topics.map(topic => {
                 const topicQuestions = summativeQuestions.filter(q => q.topic === topic);
+                if (topicQuestions.length === 0) return null;
                 return (
                 <Card key={topic} className="bg-card text-card-foreground shadow-lg">
                     <CardHeader>
