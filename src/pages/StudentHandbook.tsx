@@ -11,6 +11,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import ChapterSteeringDeckControl from '@/components/chapters/ChapterSteeringDeckControl';
 import ChapterFluidPumpingSeparation from '@/components/chapters/ChapterFluidPumpingSeparation';
 import ChapterElectricalElectronic from '@/components/chapters/ChapterElectricalElectronic';
+import ChapterTechnicalPublications from '@/components/chapters/ChapterTechnicalPublications';
 
 type ChapterId = typeof teachingModules[number]['id'];
 
@@ -22,7 +23,8 @@ const ChapterContent = ({ activeChapter }: { activeChapter: ChapterId }) => {
       return <ChapterFluidPumpingSeparation />;
     case 'electrical-electronic':
       return <ChapterElectricalElectronic />;
-    // Add cases for other chapters as they are created
+    case 'technical-publications':
+      return <ChapterTechnicalPublications />;
     default:
       return (
         <Card>

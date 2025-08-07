@@ -35,6 +35,13 @@ import WorksheetElectricalElectronic from "./pages/WorksheetElectricalElectronic
 import AnswerKeyElectricalElectronic from "./pages/AnswerKeyElectricalElectronic";
 import RubricElectricalElectronic from "./pages/RubricElectricalElectronic";
 
+// Import pages for module 2.4
+import LessonPlanTechnicalPublications from "./pages/LessonPlanTechnicalPublications";
+import TeachingMaterialTechnicalPublications from "./pages/TeachingMaterialTechnicalPublications";
+import WorksheetTechnicalPublications from "./pages/WorksheetTechnicalPublications";
+import AnswerKeyTechnicalPublications from "./pages/AnswerKeyTechnicalPublications";
+import RubricTechnicalPublications from "./pages/RubricTechnicalPublications";
+
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -85,6 +92,13 @@ const App = () => {
               <Route path="/worksheet-electrical-electronic" element={<WorksheetElectricalElectronic />} />
               <Route path="/answer-key-electrical-electronic" element={<AnswerKeyElectricalElectronic />} />
               <Route path="/rubric-electrical-electronic" element={<RubricElectricalElectronic />} />
+
+              {/* Routes for Module 2.4 */}
+              <Route path="/lesson-plan-technical-publications" element={<LessonPlanTechnicalPublications />} />
+              <Route path="/teaching-material-technical-publications" element={<TeachingMaterialTechnicalPublications />} />
+              <Route path="/worksheet-technical-publications" element={<WorksheetTechnicalPublications />} />
+              <Route path="/answer-key-technical-publications" element={<AnswerKeyTechnicalPublications />} />
+              <Route path="/rubric-technical-publications" element={<RubricTechnicalPublications />} />
             </Route>
 
             <Route path="*" element={<NotFound />} />

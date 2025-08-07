@@ -33,6 +33,6 @@ export const teachingModules: TeachingModule[] = [
     title: '2.4 Penggunaan Publikasi Teknis',
     englishTitle: 'Using Technical Publications',
     entryPath: '/lesson-plan-technical-publications',
-    status: 'coming-soon',
+    status: 'available',
   },
 ];
