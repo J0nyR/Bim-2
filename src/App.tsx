@@ -6,47 +6,26 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
-import LessonPlanMarineEngines from "./pages/LessonPlanMarineEngines";
-import TeachingMaterialMarineEngines from "./pages/TeachingMaterialMarineEngines";
-import WorksheetMarineEngines from "./pages/WorksheetMarineEngines";
-import AnswerKeyMarineEngines from "./pages/AnswerKeyMarineEngines";
-import RubricMarineEngines from "./pages/RubricMarineEngines";
-import LessonPlanMarineBoiler from "./pages/LessonPlanMarineBoiler";
-import TeachingMaterialMarineBoiler from "./pages/TeachingMaterialMarineBoiler";
-import WorksheetMarineBoiler from "./pages/WorksheetMarineBoiler";
-import AnswerKeyMarineBoiler from "./pages/AnswerKeyMarineBoiler";
-import RubricMarineBoiler from "./pages/RubricMarineBoiler";
-import LessonPlanShaftingInstallations from "./pages/LessonPlanShaftingInstallations";
-import TeachingMaterialShaftingInstallations from "./pages/TeachingMaterialShaftingInstallations";
-import WorksheetShaftingInstallations from "./pages/WorksheetShaftingInstallations";
-import AnswerKeyShaftingInstallations from "./pages/AnswerKeyShaftingInstallations";
-import RubricShaftingInstallations from "./pages/RubricShaftingInstallations";
-import LessonPlanOtherAuxiliaries from "./pages/LessonPlanOtherAuxiliaries";
-import TeachingMaterialOtherAuxiliaries from "./pages/TeachingMaterialOtherAuxiliaries";
-import WorksheetOtherAuxiliaries from "./pages/WorksheetOtherAuxiliaries";
-import AnswerKeyOtherAuxiliaries from "./pages/AnswerKeyOtherAuxiliaries";
-import RubricOtherAuxiliaries from "./pages/RubricOtherAuxiliaries";
 import Syllabus from "./pages/Syllabus";
 import SummativeTest from "./pages/SummativeTest";
 import SummativeTestAnswerKey from "./pages/SummativeTestAnswerKey";
 import StudentHandbook from "./pages/StudentHandbook";
 import GrammarReference from "./pages/GrammarReference";
-import { useTheme } from "next-themes"; // Import useTheme
-import React, { useEffect } from "react"; // Import React and useEffect
+import { useTheme } from "next-themes";
+import React, { useEffect } from "react";
 
 const queryClient = new QueryClient();
 
 const App = () => {
-  const { theme } = useTheme(); // Dapatkan tema saat ini dari next-themes
+  const { theme } = useTheme();
 
-  // Gunakan useEffect untuk menerapkan atau menghapus kelas 'dark' pada elemen html
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [theme]); // Jalankan ulang efek ini setiap kali tema berubah
+  }, [theme]);
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -65,33 +44,7 @@ const App = () => {
             <Route path="/grammar-reference" element={<GrammarReference />} />
 
             <Route element={<Layout />}>
-              {/* Marine Engines Module Routes */}
-              <Route path="/lesson-plan-marine-engines" element={<LessonPlanMarineEngines />} />
-              <Route path="/teaching-material-marine-engines" element={<TeachingMaterialMarineEngines />} />
-              <Route path="/worksheet-marine-engines" element={<WorksheetMarineEngines />} />
-              <Route path="/answer-key-marine-engines" element={<AnswerKeyMarineEngines />} />
-              <Route path="/rubric-marine-engines" element={<RubricMarineEngines />} />
-
-              {/* Marine Boiler Module Routes */}
-              <Route path="/lesson-plan-marine-boiler" element={<LessonPlanMarineBoiler />} />
-              <Route path="/teaching-material-marine-boiler" element={<TeachingMaterialMarineBoiler />} />
-              <Route path="/worksheet-marine-boiler" element={<WorksheetMarineBoiler />} />
-              <Route path="/answer-key-marine-boiler" element={<AnswerKeyMarineBoiler />} />
-              <Route path="/rubric-marine-boiler" element={<RubricMarineBoiler />} />
-
-              {/* Shafting Installations Module Routes */}
-              <Route path="/lesson-plan-shafting-installations" element={<LessonPlanShaftingInstallations />} />
-              <Route path="/teaching-material-shafting-installations" element={<TeachingMaterialShaftingInstallations />} />
-              <Route path="/worksheet-shafting-installations" element={<WorksheetShaftingInstallations />} />
-              <Route path="/answer-key-shafting-installations" element={<AnswerKeyShaftingInstallations />} />
-              <Route path="/rubric-shafting-installations" element={<RubricShaftingInstallations />} />
-
-              {/* Other Auxiliaries Module Routes */}
-              <Route path="/lesson-plan-other-auxiliaries" element={<LessonPlanOtherAuxiliaries />} />
-              <Route path="/teaching-material-other-auxiliaries" element={<TeachingMaterialOtherAuxiliaries />} />
-              <Route path="/worksheet-other-auxiliaries" element={<WorksheetOtherAuxiliaries />} />
-              <Route path="/answer-key-other-auxiliaries" element={<AnswerKeyOtherAuxiliaries />} />
-              <Route path="/rubric-other-auxiliaries" element={<RubricOtherAuxiliaries />} />
+              {/* Rute untuk modul Teknika 2 akan ditambahkan di sini */}
             </Route>
 
             <Route path="*" element={<NotFound />} />

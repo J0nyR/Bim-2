@@ -1,56 +1,23 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, BookOpen, ClipboardList, Key, FileText, GanttChartSquare } from "lucide-react";
+import { Home } from "lucide-react";
+import { teachingModules } from "@/data/modules";
 
 const Sidebar = () => {
   const location = useLocation();
   const { pathname } = location;
 
-  const isMarineEngineModule = pathname.includes("-marine-engines");
-  const isMarineBoilerModule = pathname.includes("-marine-boiler");
-  const isShaftingModule = pathname.includes("-shafting-installations");
-  const isOtherAuxiliariesModule = pathname.includes("-other-auxiliaries");
+  // Find the active module based on the current path
+  const activeModule = teachingModules.find(module => pathname.includes(module.id));
+  const moduleTitle = activeModule ? activeModule.title : "Module";
 
-  let navItems: { href: string; label: string; icon: React.ElementType }[] = [];
-  let moduleTitle = "Module";
-
-  if (isMarineEngineModule) {
-    moduleTitle = "1.1 Marine Engines";
-    navItems = [
-      { href: "/lesson-plan-marine-engines", label: "Lesson Plan", icon: GanttChartSquare },
-      { href: "/teaching-material-marine-engines", label: "Teaching Material", icon: BookOpen },
-      { href: "/worksheet-marine-engines", label: "Worksheet", icon: ClipboardList },
-      { href: "/answer-key-marine-engines", label: "Answer Key", icon: Key },
-      { href: "/rubric-marine-engines", label: "Assessment Rubric", icon: FileText },
-    ];
-  } else if (isMarineBoilerModule) {
-    moduleTitle = "1.2 Marine Boiler";
-    navItems = [
-      { href: "/lesson-plan-marine-boiler", label: "Lesson Plan", icon: GanttChartSquare },
-      { href: "/teaching-material-marine-boiler", label: "Teaching Material", icon: BookOpen },
-      { href: "/worksheet-marine-boiler", label: "Worksheet", icon: ClipboardList },
-      { href: "/answer-key-marine-boiler", label: "Answer Key", icon: Key },
-      { href: "/rubric-marine-boiler", label: "Assessment Rubric", icon: FileText },
-    ];
-  } else if (isShaftingModule) {
-    moduleTitle = "1.3 Shafting & Propeller";
-    navItems = [
-      { href: "/lesson-plan-shafting-installations", label: "Lesson Plan", icon: GanttChartSquare },
-      { href: "/teaching-material-shafting-installations", label: "Teaching Material", icon: BookOpen },
-      { href: "/worksheet-shafting-installations", label: "Worksheet", icon: ClipboardList },
-      { href: "/answer-key-shafting-installations", label: "Answer Key", icon: Key },
-      { href: "/rubric-shafting-installations", label: "Assessment Rubric", icon: FileText },
-    ];
-  } else if (isOtherAuxiliariesModule) {
-    moduleTitle = "1.4 Other Auxiliaries";
-    navItems = [
-      { href: "/lesson-plan-other-auxiliaries", label: "Lesson Plan", icon: GanttChartSquare },
-      { href: "/teaching-material-other-auxiliaries", label: "Teaching Material", icon: BookOpen },
-      { href: "/worksheet-other-auxiliaries", label: "Worksheet", icon: ClipboardList },
-      { href: "/answer-key-other-auxiliaries", label: "Answer Key", icon: Key },
-      { href: "/rubric-other-auxiliaries", label: "Assessment Rubric", icon: FileText },
-    ];
-  }
+  const navItems = activeModule ? [
+      { href: `/lesson-plan-${activeModule.id}`, label: "Lesson Plan" },
+      { href: `/teaching-material-${activeModule.id}`, label: "Teaching Material" },
+      { href: `/worksheet-${activeModule.id}`, label: "Worksheet" },
+      { href: `/answer-key-${activeModule.id}`, label: "Answer Key" },
+      { href: `/rubric-${activeModule.id}`, label: "Assessment Rubric" },
+  ] : [];
 
   return (
     <aside className="hidden md:flex md:flex-col w-64 flex-shrink-0 border-r bg-card p-4">
@@ -65,7 +32,6 @@ const Sidebar = () => {
               className="justify-start"
             >
               <Link to={item.href}>
-                <item.icon className="mr-2 h-4 w-4" />
                 {item.label}
               </Link>
             </Button>

@@ -3,27 +3,28 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Home, BookOpen } from 'lucide-react';
 import { teachingModules } from '@/data/modules';
-import ChapterMarineEngines from '@/components/chapters/ChapterMarineEngines';
-import ChapterMarineBoiler from '@/components/chapters/ChapterMarineBoiler';
-import ChapterShaftingInstallations from '@/components/chapters/ChapterShaftingInstallations';
-import ChapterOtherAuxiliaries from '@/components/chapters/ChapterOtherAuxiliaries';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import AppFooter from '@/components/AppFooter'; // Import AppFooter
+import AppFooter from '@/components/AppFooter';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-type ChapterId = 'marine-engines' | 'marine-boiler' | 'shafting-installations' | 'other-auxiliaries';
+// Tipe ChapterId sekarang lebih dinamis
+type ChapterId = typeof teachingModules[number]['id'];
 
-// Map chapter IDs to their corresponding components for cleaner rendering logic
-const chapterComponents: Record<ChapterId, React.ComponentType> = {
-  'marine-engines': ChapterMarineEngines,
-  'marine-boiler': ChapterMarineBoiler,
-  'shafting-installations': ChapterShaftingInstallations,
-  'other-auxiliaries': ChapterOtherAuxiliaries,
-};
+// Komponen Chapter Placeholder
+const ChapterPlaceholder = ({ title }: { title: string }) => (
+  <Card>
+    <CardHeader>
+      <CardTitle>Konten untuk {title}</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <p>Materi pembelajaran untuk modul ini akan segera ditambahkan.</p>
+    </CardContent>
+  </Card>
+);
 
 const StudentHandbook = () => {
-  const [activeChapter, setActiveChapter] = useState<ChapterId>('marine-engines');
+  const [activeChapter, setActiveChapter] = useState<ChapterId>(teachingModules[0].id);
 
-  const ActiveChapterComponent = chapterComponents[activeChapter] || ChapterMarineEngines;
   const activeModule = teachingModules.find(m => m.id === activeChapter);
 
   return (
@@ -62,7 +63,7 @@ const StudentHandbook = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-6 md:p-8 overflow-y-auto relative flex flex-col"> {/* Added flex flex-col */}
+      <main className="flex-1 p-6 md:p-8 overflow-y-auto relative flex flex-col">
         <div className="absolute top-6 right-8 z-50 hide-on-print">
             <ThemeToggle />
         </div>
@@ -71,9 +72,10 @@ const StudentHandbook = () => {
             <h1 className="text-4xl font-bold text-primary">{activeModule?.title}</h1>
             <p className="text-xl text-muted-foreground">{activeModule?.englishTitle}</p>
           </div>
-          <ActiveChapterComponent />
+          {/* Render placeholder karena komponen chapter belum dibuat */}
+          <ChapterPlaceholder title={activeModule?.title || ''} />
         </div>
-        <AppFooter /> {/* Add the footer here */}
+        <AppFooter />
       </main>
     </div>
   );
