@@ -34,6 +34,24 @@ const GrammarReference = () => {
 
             <Accordion type="single" collapsible className="w-full space-y-4">
               
+              {/* Key Tenses Review Section */}
+              <AccordionItem value="item-0" className="border rounded-lg">
+                <AccordionTrigger className="p-4 text-lg font-semibold">Review of Key Tenses (Tinjauan Tenses Kunci)</AccordionTrigger>
+                <AccordionContent className="p-4 pt-0">
+                  <Card>
+                    <CardContent className="pt-6">
+                      <p className="mb-2"><strong>Penggunaan:</strong> Memilih tenses yang tepat sangat penting untuk kejelasan dalam laporan teknis dan komunikasi.</p>
+                      <ul className="list-disc list-inside ml-4 bg-muted p-3 rounded-md space-y-2">
+                        <li><strong>Simple Present:</strong> Untuk fakta umum dan deskripsi fungsi. <br/><em>"The centrifugal pump <strong>uses</strong> an impeller to create flow."</em></li>
+                        <li><strong>Simple Past:</strong> Untuk tindakan yang selesai di masa lalu (laporan harian/log book). <br/><em>"The engineer <strong>inspected</strong> the purifier yesterday."</em></li>
+                        <li><strong>Present Perfect:</strong> Untuk tindakan di masa lalu yang hasilnya masih relevan sekarang. <br/><em>"We <strong>have completed</strong> the maintenance as per the schedule."</em></li>
+                        <li><strong>Past Perfect:</strong> Untuk tindakan yang terjadi sebelum tindakan lain di masa lalu (analisis insiden). <br/><em>"The alarm <strong>had sounded</strong> before the engine tripped."</em></li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </AccordionContent>
+              </AccordionItem>
+
               {/* Advanced Passive Voice Section */}
               <AccordionItem value="item-1" className="border rounded-lg">
                 <AccordionTrigger className="p-4 text-lg font-semibold">Advanced Passive Voice (Passive Lanjutan)</AccordionTrigger>
